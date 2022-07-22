@@ -1,3 +1,5 @@
+> 记录此项目实现过程中用到的git知识
+
 ### 阮一峰 Git 教程
 https://www.bookstack.cn/read/git-tutorial/docs-basic.md
 git add
