@@ -21,9 +21,9 @@ Your branch is `ahead of` 'origin/master' by 1 commit.
 
 ### 使用git进行word版本管理
 
-## 廖雪峰
+## [廖雪峰官网](https://www.liaoxuefeng.com)
 
-https://www.liaoxuefeng.com
+
 
 ### 版本回退
 ```
@@ -101,8 +101,23 @@ Git支持多种协议，包括https，但ssh协议速度最快。
 
 ```
 
+### 只commit或push指定的几个文件
 
+```
+git 只提交指定文件，如果此时修改了其他的代码。可先提交指定代码，然后忽略不想提交的代码，最后push之后，恢复之前忽略的代码。
 
+关键步骤：2、6
+
+git add src/xxxxxxxx 添加需要提交的文件名（加路径–参考git status打印出来的路径）
+git stash -u -k 忽略其他文件，把现修改的隐藏起来，这样提交的时候就不会提交未被add的文件；
+git commit -m ‘fix：xxxxxxxx’；
+git pull 拉去合并
+git push 推送到远程仓库
+git stash pop 恢复之前忽略的文件
+————————————————
+版权声明：本文为CSDN博主「小海豚~游啊游啊游~」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/haibo1101/article/details/125517638
+```
 
 
 
