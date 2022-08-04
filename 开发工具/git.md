@@ -1,3 +1,8 @@
+>Git
+
+版本管理node,npm,elementui,
+
+
 
 ```
 D:\otherSystem\group-integrationiplatform-frontend-co>git push
