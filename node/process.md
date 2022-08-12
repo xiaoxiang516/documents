@@ -1,3 +1,22 @@
+## http://api.nodejs.cn/
+node官网支持搜索具体命令
+
+## http://nodejs.cn/api-v16/process/process_argv.html
+
+process.argv 属性返回数组，其中包含启动 Node.js 进程时传入的命令行参数。 第一个元素将是 process.execPath。 
+如果需要访问 argv[0] 的原始值，请参阅 process.argv0。 第二个元素将是正在执行的 JavaScript 文件的路径。 其余元素将是任何其他命令行参数。
+
+#
+```js
+  title: 'npm run new input',
+  argv: [
+    'D:\\Program\\nodejs\\node.exe',
+    'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\bin\\new.js',
+    'input'
+  ],
+```
+
+## process
 ```javascript
  process {
   version: 'v16.13.2',
