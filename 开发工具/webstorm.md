@@ -1,4 +1,6 @@
 
+[WebStorm 中文网](https://www.webstorm.net.cn/scratches.html)
+
 <--- Last few GCs --->
 
 [11884:000001C84367B2B0]  1798680 ms: Mark-sweep 3914.2 (4140.1) -> 3880.8 (4114.0) MB, 3810.3 / 0.1 ms  (average mu = 0.225, current mu = 0.041) external memory pressure scavenge might not succeed
