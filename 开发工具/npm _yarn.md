@@ -1,4 +1,4 @@
-
+npm config set registry https://npm.countrygarden.com.cn/
 1、查看一下当前源
 yarn config get registry
 2、切换为淘宝源
