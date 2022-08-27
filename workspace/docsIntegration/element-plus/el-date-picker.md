@@ -57,5 +57,14 @@ PayDateP: [
 
  return time.getTime() <= new Date('2022-08-16').getTime() - 8.64e7
 ```
+## JS实现日期比较大小(JavaScript)
+```js
+function compareDate(dateTime1,dateTime2) {
+    return new Date(dateTime1) < new Date(dateTime2)
+}
+var date = compareDate("2019-05-01","2019-05-05")//须将日期转换成“YYYY-MM-DD”格)
+
+```
+
 
 
