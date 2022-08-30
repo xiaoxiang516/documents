@@ -1,3 +1,4 @@
+npm get config registry
 npm config set registry https://npm.countrygarden.com.cn/
 1、查看一下当前源
 yarn config get registry
@@ -58,4 +59,41 @@ npm install 下载速度慢，即使是重新 install 时速度依旧慢
 版权声明：本文为CSDN博主「小白目」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_37974755/article/details/124475338
 
+npm config set registry https://npm.countrygarden.com.cn/
+npm install --save md5
+## vue引入md5
 
+一. 简述
+登录，修改重要信息等场景需要用到md5加密，来保证传输数据保密性，安全性。
+二. 步骤
+
+1. 引入md5：yarn add md5 -s
+
+2. 使用md5: 在需要加密的页面，引入该模块
+
+```js
+<script>
+import {post} from '@/common/net/serviceUtil.js'
+import md5 from 'md5'
+ 
+export default {
+  data () {
+    return {
+      form: {
+        password: '',
+        username: ''
+      }
+   }
+ },
+  methods: {
+    loginOpretion () {
+       let params = {
+            username: this.form.username,
+            password: md5(this.form.password)
+          }
+    }
+  }
+ 
+}
+</script>
+```
