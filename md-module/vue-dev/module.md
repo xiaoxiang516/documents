@@ -1,7 +1,6 @@
-**version 8+**,version 8+
-
-
-md中引入图片
+**md文件在vscode中预览**
+![Alt](vscode插件.jpg)
+## md中引入图片
 
 1. 在sublime中写markdowm，引入图片写法如下
    参考样式：![Alt](img.png)
