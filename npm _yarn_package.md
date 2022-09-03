@@ -1,3 +1,10 @@
+
+
+## FAQ
+权限：
+分支权限
+安装依赖权限
+
 npm get config registry
 npm config set registry https://npm.countrygarden.com.cn/
 1、查看一下当前源

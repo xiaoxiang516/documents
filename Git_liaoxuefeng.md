@@ -1,8 +1,11 @@
-> 记录此项目实现过程中用到的git知识
+## 安装Git
+在Windows上使用Git，可以从Git官网直接下载安装程序，然后按默认选项安装即可。
 
-### 阮一峰 Git 教程
-https://www.bookstack.cn/read/git-tutorial/docs-basic.md
-git add
+安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！
+![Alt](gitBash.jpg)
+根目录
+![Alt](/md-module/vue-dev/img.png)
+![Alt](md-module/vue-dev/img.png)
 
 
 ### 【git】——使用git对word文件进行管理
@@ -19,12 +22,6 @@ Your branch is `ahead of` 'origin/master' by 1 commit.
 ### 【git】——使用git对word文件进行管理
 
 
-### 使用git进行word版本管理
-
-## [廖雪峰官网](https://www.liaoxuefeng.com)
-
-
-
 ### 版本回退
 ```
 小结
@@ -36,12 +33,40 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 
 要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
 ```
-### 工作区和暂存区
-```
-小结
-暂存区是Git非常重要的概念，弄明白了暂存区，就弄明白了Git的很多操作到底干了什么。
+### 工作区、暂存区、版本库（Repository）【本地仓库、远程仓库】
+工作区（Working Directory）: 在电脑里能看到的目录(有一个隐藏目录.git)
+暂存区:称为stage（或者叫index）
+版本库（Repository）:
 
-没弄明白暂存区是怎么回事的童鞋，请向上滚动页面，再看一次。
+
+```
+https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576
+感觉大家把简单问题复杂化了，看着头晕，
+
+Git管理的文件分为：工作区，版本库，版本库又分为暂存区stage和暂存区分支master(仓库)
+
+工作区>>>>暂存区>>>>仓库
+
+git add把文件从工作区>>>>暂存区，git commit把文件从暂存区>>>>仓库，
+
+git diff查看工作区和暂存区差异，
+
+git diff --cached查看暂存区和仓库差异，
+
+git diff HEAD 查看工作区和仓库的差异，
+
+git add的反向命令git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，
+
+git commit的反向命令git reset HEAD，就是把仓库最新版本转移到暂存区。
+
+不知道我分析的对不对。
+```
+
+
+
+
+```
+
 ```
 ### 管理修改
 https://www.liaoxuefeng.com/wiki/896043488029600/897884457270432
@@ -118,23 +143,3 @@ git stash pop 恢复之前忽略的文件
 版权声明：本文为CSDN博主「小海豚~游啊游啊游~」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/haibo1101/article/details/125517638
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-@所有人 前端代码分支管理【以下要求，将从 2022.8.30  22:00 实施并执行】
-1. sit/uat/prod/dev/micro-dev 分支作为保护分支，只有 maintainer 权限可以 push&merge
-2. 业财（财务、投策、营销、采购）：micro-dev-integration 分支，责任人：陈露佳@高高高高高高高  maintainer 权限
-3. SRM：micro-dev-srm 分支，责任人：过彪@过彪 Bryan &关华@hua  maintainer 权限
-4. 成本：micro-dev-co-cost 分支，责任人：张华@张华  maintainer 权限
-5. 履约：micro-dev-co-fulfill 分支，责任人：伍健聪@Tony ⁵  maintainer 权限
-6. 各组责任人可 merge 本组分支到 micro-dev，注意如果有修改了除 views 文件夹的，需要知会高铭@M
