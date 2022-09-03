@@ -1,14 +1,14 @@
 > 记录此项目实现过程中用到的git知识
 
-### [Git官网](https://git-scm.com/downloads)
+对话形式（讨论式写作）
+### [Git官网教程](https://git-scm.com/downloads)
 
 
 ### [阮一峰 Git 教程](https://www.bookstack.cn/read/git-tutorial/docs-basic.md)
 
 
-## [廖雪峰官网](https://www.liaoxuefeng.com)
-
-git add
+### [廖雪峰官网](https://www.liaoxuefeng.com)
+>官网下的讨论值得关注
 
 笔记内容化见：Git_liaoxuefeng.md
 ### 使用git进行word版本管理
