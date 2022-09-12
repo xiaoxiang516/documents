@@ -1,0 +1,15 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Open index.html",
+      "file": "d:\\做过的需求 文档分析与比较\\工具\\documents\\开发工具\\工具\\VSCode\\index.html",
+      "url": "http://localhost:8080"
+    }
+  ]
+}
