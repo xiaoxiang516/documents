@@ -1,3 +1,6 @@
+vscode 挂网 https://code.visualstudio.com/
+
+> 记录此项目实现过程中用到的git知识
 ## 安装Git
 在Windows上使用Git，可以从Git官网直接下载安装程序，然后按默认选项安装即可。
 
