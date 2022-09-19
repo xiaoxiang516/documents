@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			/**
+			 * 获取激励列表
+			 */
+			async getData () {
+				const params = this.formatParams()
+				let data = await this.$promiseGet('/api/pdm/incentiveApplications/GetIncentiveApproveProject', params)
+				if (data.Code !== 0) return
+				let NewArry = []
+				data.Data.Rows.forEach(item => {
+					item.listBuilding[0] = {
+						...item.listBuilding[0],
+						colspan: item.listBuilding.length
+					}
+					item.listBuilding = item.listBuilding.map(build => {
+						build = {
+							...item,
+							...build,
+							BuildSaleableR2: build.SaleableR2,
+							LandActualEndTime: this.$dateFormat('yyyy-MM-dd', item.LandActualEndTime),
+							PreSalePremitAcqTime: this.$dateFormat('yyyy-MM-dd', build.PreSalePremitAcqTime)
+						}
+						return build
+					})
+					NewArry = NewArry.concat(item.listBuilding)
+				})
+				this.taskTableData = NewArry
+			},
+			 arraySpanMethod ({ row, column, rowIndex, columnIndex }) {
+				if (column.property && !['BuildingName', 'ProductTypeName', 'FloorNumber', 'PreSalePremitAcqTime', 'ApplicationVersionSaleableArea', 
+				'ForecastVersionSaleableArea', 'BuildSaleableR2', 'IncentiveAmount', 'ApproveRemark'].includes(column.property)) {
+					return {
+						rowspan: row.colspan,
+						colspan: 1
+					}
+				}
+			}
+
+		</script>
+	</body>
+</html>
