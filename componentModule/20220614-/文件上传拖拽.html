@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div  id="drop_area" style="border:3px dashed silver;width:200px; height:200px">将图片拖拽到此</div>  
+		<button οnclick="xhr2()">ajax上传</button>  
+		<script type="text/javascript">
+			document.addEventListener("drop",function(e){  //拖离   
+			    e.preventDefault();      
+			})  
+			document.addEventListener("dragleave",function(e){  //拖后放   
+			    e.preventDefault();      
+			})  
+			document.addEventListener("dragenter",function(e){  //拖进  
+			    e.preventDefault();      
+			})  
+			document.addEventListener("dragover",function(e){  //拖来拖去    
+			    e.preventDefault();      
+			})  
+			
+			var box = document.getElementById('drop_area'); //拖拽区域     
+			box.addEventListener("drop",function(e){           
+			    var fileList = e.dataTransfer.files; //获取文件对象    
+			    //检测是否是拖拽文件到页面的操作            
+			    if(fileList.length == 0){                
+			        return false;            
+			    }             
+			    //拖拉图片到浏览器，可以实现预览功能    
+			    //规定视频格式  
+			    Array.prototype.S=String.fromCharCode(2);  
+			    Array.prototype.in_array=function(e){  
+			        var r=new RegExp(this.S+e+this.S);  
+			        return (r.test(this.S+this.join(this.S)+this.S));  
+			    };  
+			    var video_type=["video/mp4","video/ogg"];  
+			      
+			    //创建一个url连接,供src属性引用  
+			    var fileurl = window.URL.createObjectURL(fileList[0]);                
+			    if(fileList[0].type.indexOf('image') === 0){  //如果是图片  
+			        var str="<img width='200px' height='200px' src='"+fileurl+"'>";  
+			        document.getElementById('drop_area').innerHTML=str;                   
+			    }else if(video_type.in_array(fileList[0].type)){   //如果是规定格式内的视频                    
+			        var str="<video width='200px' height='200px' controls='controls' src='"+fileurl+"'></video>";  
+			        document.getElementById('drop_area').innerHTML=str;        
+			    }else{ //其他格式，输出文件名  
+			        //alert("不预览");  
+			        var str="文件名字:"+fileList[0].name;  
+			        document.getElementById('drop_area').innerHTML=str;      
+			    }         
+			    resultfile = fileList[0];             
+			},false);  
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<script type="text/javascript" src="jquery-3.3.1.js">
+
+		</script>
+		<style type="text/css">
+			#divs>div {
+				margin-right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="divs" style="display: flex;">
+			<div onclick="aa(this)" data-number="1">111111</div>
+			<div style="background-color: #0000FF;" onclick="aa(this)" data-number="2">222222</div>
+			<div onclick="aa(this)" data-number="3">333333</div>
+		</div>
+		<button type="button" onclick="aa(0)">1111</button>
+		<button type="button" onclick="aa(1)">1111</button>
+		<script type="text/javascript">
+			function aa(e) {
+				// console.log($('#divs>div'));
+				// $('#divs>div').indexOf(e)
+				// var index = Array.prototype.indexOf.call(e.parentNode,e);
+				// console.log(index)//1
+				var child = e;
+				var i = 0;
+				while ((child = child.previousElementSibling) != null) i++;
+				console.log(i) //console 1
+				if (i == 1) return
+				if (i == 2) i = i - 1
+				var arr = $('#divs').find('div').toArray(); // 把三个div放进数组里面
+				var temp;
+				temp = arr[i];
+				arr[i] = arr[i + 1];
+				arr[i + 1] = temp;
+				$('#divs').html(arr)
+
+			}
+		</script>
+	</body>
+</html>
+0 file committed, 1 file failed to commit: commit On branch dev-0630-顺茵图档管理系统 Changes not staged for commit: (use "git
+add ..." to update what will be committed) (use "git restore ..." to discard changes in working directory) modified:
+FrontWeb/.idea/workspace.xml modified: FrontWeb/build/webpack.tool.js modified:
+FrontWeb/src/pages/pdm/templateSystem/flowSystem/Index.vue no changes added to commit (use "git add" and/or "git commit
+-a"
+
