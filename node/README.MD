@@ -11,3 +11,5 @@ http://api.nodejs.cn/?v=14
 // Returns: '/foo/bar/baz/asdf'
 
 '/foo/bar/baz/asdf/quux' 再退后一个
+
+node的demo，课本。一名node教师
