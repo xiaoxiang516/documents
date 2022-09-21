@@ -11,3 +11,6 @@ http://api.nodejs.cn/?v=14
 // Returns: '/foo/bar/baz/asdf'
 
 '/foo/bar/baz/asdf/quux' 再退后一个
+
+
+书籍下载源地址：[深入浅出Node.pdf](https://www.infoq.cn/minibook/nodejs)
