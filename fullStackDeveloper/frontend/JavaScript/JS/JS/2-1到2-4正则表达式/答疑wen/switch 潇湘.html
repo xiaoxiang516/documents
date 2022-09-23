@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+		<!-- switch语句中的return （本题return效果等同break）； -->
+		<script type="text/javascript">
+			/*潇湘
+			确定性(break)：遇到break,跳出switch语句
+			switch语句执行顺序：先匹配所有case语句,再执行存在的default语句(即default没必要存在,可以省略)(注：不管default位置在何处)
+			假如switch语句中没有break:(减少变量,假设不存在)
+			1)case m:匹配成功:01.执行case m之后存在的任何语句(default语句若在后面也会执行),不用再进行判断
+			
+			2)case m:匹配失败:01.若default不存在,则什么语句都不执行;
+			02.default存在,那么执行自身语句及之后存在的任何语句 */
+
+  /* case 有穿透现象  (break防止穿透)
+  某个case语句执行完成后,由于没有书写break;语句,导致switch语句并没有立即跳出结束语句,
+  而直接向下执行其他的case语句,这种现象称为case穿透。 */
+			var i = 2;
+			switch (i) {  
+				case 1:
+					console.log('01');
+				case 2:
+					console.log('02');
+				case 3:
+					console.log('03');
+				default:
+					console.log('default lalala');
+			}
+			console.log('--------------------------------01');
+		</script>
+
+		<script type="text/javascript">
+			
+			var i =1;
+			switch (i) {
+				default:  
+					console.log('default lalala');
+				case 1:
+					console.log('01');
+				case 2:
+					console.log('02');
+					/* break; */
+				case 3:
+					console.log('03');
+			}
+			console.log('--------------------------------01');
+		</script>
+		<script type="text/javascript">
+			var i = 1;
+			switch (i) {
+				case 1:
+					console.log('01');
+				case 2:
+					console.log('02');
+					// break;
+				case 3:
+					console.log('03');
+				default:
+					console.log('default 123');
+			}
+			console.log('--------------------符合条件case中有break');
+		</script>
+
+	</body>
+</html>

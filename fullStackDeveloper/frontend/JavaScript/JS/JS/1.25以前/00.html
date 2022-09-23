@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 在创建完一个对象后,动态给对象添加属性 */
+			/* 方式一 */
+			var obj = {};
+			obj.name = '张三';
+			obj.age = 22;
+			console.log(obj);
+			
+			/* 方式二 */
+			var key='address';//字符串
+			var value='镇雄果珠';
+			obj[key]=value;
+			console.log(obj);
+			
+			obj["tel"]='1920702314';
+			console.log(obj);
+			
+			var obj = {};
+			key=111;//数字
+			value=12;
+			obj[key]=value;
+			console.log(obj);
+			
+			var aa={name:"李四"};
+			obj[aa]="lalala";
+			console.log(obj);
+		</script>
+	</body>
+</html>

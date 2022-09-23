@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		当case 都不满足时,执行default语句
+		无论default的位置在哪里,输出的结果都没有问题,都会与default在最下面一样
+		若switch中所有的case与表达式不匹配,读
+		default后,若都没有break结束,则default在哪里他前面的case都会被它吃掉,不会读取,只能读取default以及
+		它之后的case。
+		
+		
+		源头：https://www.runoob.com/js/js-switch.html
+		整理笔记来源：https://www.cnblogs.com/blueskyli/p/9931428.html
+		switch(n)//01.表达式 n（通常是一个变量）
+		{
+		case 1://02.结构中的每个case 的值(只能是常量,不能是变量)与表达式的值做比较
+		  执行代码块 1    //可以是空语句  
+		  break;
+		case 2:// 多个case后面的值不能出现相同的值
+		  执行代码块 2
+		  break;
+		default://可以在任意位置。但是建议在最后   相当于if语句中的else  当case都不满足的时候,才跳转到default的相应代码处执行。
+		  n 与 case 1 和 case 2 不同时执行的代码
+		}
+		
+		02. 
+		注意：switch 中 case的判断是===的判断,即数据类型和值的双重判断,这点要注意。
+		另外switch的判断条件可以是String 、Number、Boolean、char、枚举、null、undefined
+		
+		switch语句的结束条件
+		　　a:遇到break就结束了
+		　　b:执行到末尾就结束了
+		格式解释说明
+		switch表达式:可以是byte,short,int,char;;	JDK5以后可以是枚举;;JDK7以后可以是字符串
+		case:后面的值就是要和表达式进行比较的值
+		break:表示程序到这里中断,跳出switch语句
+		default:如果所有的情况都不匹配,就执行这里,相当于if语句中的else
+		
+		
+		总结：
+		case穿透和break有关,只有当遇到break时才会终止,不然会继续执行后面case中的代码块
+		default的位置不会影响执行结果,不管你编写的代码中default放在那里,这里的条件判断都是先按顺序比较其他非default值,当这些条件都不满足的时候,才跳转到default的相应代码处执行。
+	</body>
+</html>

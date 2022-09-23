@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实现引用类型的深复制</title>
+	</head>
+	<body>
+		
+		<script>
+			// 简单类型的深复制,赋值,拷贝;
+			// 深复制与浅复制 深赋值与浅赋值,深拷贝,浅拷贝
+			// 深复制:以a为蓝本，复制出b,如果修改其中一个，另一个没有受影响则为深复制;否则为浅复制;
+
+			//深复制:以a为蓝本，复制出b,如果修改其中一个，另一个没有受影响则为深复制， 否则为浅复制;(浅联动)
+			//平时最常见的复制就是直接采用=进行复制
+			
+			// 1)浅复制一个对象:定义一个空对象来接,给该空对象定义(添加)要复制的对象同样的属性名(两种方式：点与[]) 
+			var obj = { a: 100, b: "zs" };
+			// var obj2 = {};
+			// obj2.a = obj.a;		obj2.b = obj.b;
+			// //简单类型的值的复制，直接就是深复制， 因为这个值就是一个具体的值而非一 个地值
+			// //引用类的赋值，默认是地址的拷贝，这是一种浅拷贝，让两东西指向一个地方，这有可能正是你想要的，
+
+			// var obj = { a: 100, b: 'zs' };
+			// var obj2 = {};
+			// for(var key in obj) {
+			// 	obj2[key] = obj[key];
+			// }
+
+			// // 深复制有什么作用?传参时，你平明是怎么样实现深复制的?
+			// // 0.使用0bject.assign来进行‘伪深复制’
+			// 优点:可以进行深复制,	缺点:只能深复制一层
+			// var obj2 = object.assign({}, obj);//不断往第一个参数叠加,若前面有后面也有,听后面的,覆盖前面的
+			// obj={ a: [1,2,3],b: 'zs' };
+			var obj3 = {...obj };//展开运算符,去壳运算符
+			// // 1.我用JSON.stringify+JSON.parse实现了深复制
+			// // 优点:简洁明了
+			// // 缺点:有很多情况不适用,
+			// // 当有正则表达式时会变成{};日期对象会变成字符串;当有函数时会变成undefined;等等。。
+			// // 会让对象丢失constructor,让所有对象的constructor都是Object
+			
+			function Fun() {} 
+			var obj = {
+				a: /abcd/,
+				b: new Date(),
+				c: new Fun(),
+				d: function() {
+					console.log(11);
+				}
+			};
+			var obj2 = JSON.parse(JSON.stringify(obj));
+			console.log(obj);
+			console.log(obj2);
+			// 扁平化
+			
+			
+			
+			
+			
+			
+			
+			
+			// var obj2 = JSON.parse(JSON.stringify(obj));
+			// //测试
+			// console.log(typeof obj.d);
+			// console.log(typeof obj2.d);
+			// console.log(obj.d.constructor);
+			// console.log(obj2.d.constructor) 
+			// //总结:如果要拷贝的对象中的所有值都是数字、字符串、boolean、数组等扁平化的数据时可以全用这个方法
+			// var obj2 = JSON. parse(JSON.stringify(obj));
+			// console.log(obj);
+			// console.log(obj2);
+
+			
+			
+			// // 2.自己写了一个深复制函数
+			// function deepClone(){  
+			// 	var obj2 = {};
+			// 	for(var key in obj) {
+			// 	obj2[key] = obj[key];
+			// }		
+			// // 3.使用lodash里的cloneDeep函数
+
+			// console.log({} === {});//值类型比值，引用类型比地址
+			// arr =  地址;
+			// var arr = [1,2,3,4,5];
+			// arr=地址=>[地址，地址];
+			// var arr=[{},{}];
+			// var arr2 = [...arr];
+
+			// 值类型比值，引用用类型比地址，引用类型两个和三个等号其实都是比地址
+			// 两个等号比值，类型不同转化为相同类型后再比; === 直接先类型，比完类型再比值|
+			console.log(1 == '1');//
+			console.log(1 === '1');//
+			
+			
+		</script>
+	</body>
+</html>

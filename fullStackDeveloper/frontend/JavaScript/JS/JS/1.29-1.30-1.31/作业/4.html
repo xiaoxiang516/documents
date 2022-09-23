@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		4.写一个函数对传入的字符串中每个单词的首字母大写
+		 输入myCap('the quick brown fox'); 返回The Quick Brown Fox
+		 
+		<!-- <script type="text/javascript">
+			function myCap(str) {
+				/* 空格i 字母i + 1 */
+				var index = str.indexOf(" ");
+				var space1=str.substr(index, 1);
+				var space2=str.substr(index+1, 1);
+				if(space1==" "&&space2!=" "){
+					var newstr = str.substr(index + 1, 1);
+					var big = newstr.toLocaleUpperCase();
+				}
+				return big;
+			}
+			var result = myCap("the quick brown fox");
+			console.log(result);
+		</script>
+		 -->
+		<script type="text/javascript">
+			var big = [],
+				big2 = [];
+
+			function myCap(str) {
+				var newstr = str.split("");
+				for (var i = 0; i < newstr.length; i++) {
+					if (newstr[i] == " " && newstr[i + 1] != " ") {
+						big[i] = newstr[i];
+						big[i + 1] = newstr[i + 1].toLocaleUpperCase();
+						console.log(big[i + 1]);//检测
+						big2.push(i+1);
+
+					} else if (newstr[i] != " " && newstr[i + 1] != " ") {
+						big[i] = newstr[i];
+						big[i + 1] = newstr[i + 1];
+
+					} else if (newstr[i] != " " && newstr[i + 1] == " ") {
+						big[i] = newstr[i];
+						big[i + 1] = newstr[i + 1];
+
+					} else if (newstr[i] != " " && newstr[i + 1] == " ") {
+						big[i] = newstr[i];
+						big[i + 1] = newstr[i + 1];
+
+					}
+
+
+				}
+				console.log(big2+"-------------------big2");//检测效果
+				console.log(newstr+"-------------------newstr");//检测效果
+				console.log(big.join(""));//检测效果
+
+
+				return big2;
+			}
+			var result = myCap(" the   quick brown fox");
+			console.log(result);
+		</script>
+
+	</body>
+</html>

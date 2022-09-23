@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div><input type="text" id="grade" /><button type="button" id="calculate">计算得分</button></div>
+		<script type="text/javascript">
+			var grade = document.getElementById('grade');
+			var gv = parseInt(grade.value);
+			var sum = 0;
+			if (isNaN(gv)) {
+				alert('只能输入数字');
+			} else if(gv<0||gv>50){
+				alert('只能输入0-50之间的数字');
+			}else{
+				for(var i=1;i<gv;i++){
+					if(i<20){
+						sum+=i;
+					}else if(i<30){
+						sum+=10;
+					}else if(i<40){
+						sum+=20;
+					}else if(i<50){
+						sum+=30;
+					}else if(i=50){
+						sum+=100;
+					}
+				}
+			}
+			alert(sum);
+		</script>
+	</body>
+</html>

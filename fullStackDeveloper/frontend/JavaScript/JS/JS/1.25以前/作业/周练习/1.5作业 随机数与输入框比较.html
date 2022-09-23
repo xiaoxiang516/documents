@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 
+		5.使用随机数生成一个30-100内的数值,通过浏览器的输入框输入数值,
+		比较输入的值和随机数的大小,(局部变量和全局变量) -->
+
+
+		<!-- [0,1),[n,m)映射
+		Math.random()在指定的范围内生成随机数 
+		最小值n,最大值m
+		Math.random()*(m-n)+n;
+		由于Math.random() 函数返回一个浮点,  伪随机数在范围[0,1),
+		所以Math.random()*(m-n)+n返回的结果为[n,m)。-->
+		<input type="text" id="num" />
+		<button type="button" onclick="compare()">比较大小</button>
+		<script type="text/javascript">
+			
+			rand=Math.random() * 70 + 30
+			function compare(){
+				var num_get=document.getElementById("num").value;
+				var number=parseFloat(num_get);/*parseFloat*/
+				if(rand>number){
+					console.log("随机数"+rand+"大于输入的数"+number);
+				}
+				else if(rand==number){
+					console.log("两个数相等");
+				}
+				else{
+					console.log("随机数"+rand+"小于输入的数"+number);
+				}
+			}
+			
+		</script>
+	</body>
+</html>

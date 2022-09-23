@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>潇湘</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var scope = "global";
+			function f() {
+				console.log(scope);
+			}
+			f();
+		</script>
+		
+	<!-- JavaScript的函数作用域是指在函数内声明的所有变量在函数体内始终
+	是可见的。有意思的是,这意味着变量在声明之前甚至已经可用。
+	JavaScript的这个特性被非正式地称为声明提前(hoisting) ,即
+	JavaScript函数里声明的所有变量(但不涉及赋值)都被"提前”至函
+	数体的顶部,看一下如下代码: -->
+	
+		<script type="text/javascript">
+			console.log("--------");
+			var scope = "global";
+			function f() {
+				console.log(scope);
+				var scope='local';
+				console.log(scope);
+			}
+			f();
+		</script>
+	</body>
+</html>

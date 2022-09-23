@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			事件对象上有哪些重要的属性
+			事件触发会，会自动产生一个事件对象，事件对象中记录与事件相关的所有信息，事件的处理函数,
+			这与vue中的一些属性值是函数，而事件触发时它会自动收到某些参数一样
+			
+			事件对象_上有哪些常用的重要的方法和属性:
+			e.type
+			e.target指向事件的源对象
+			e.currentTarget 指向事件当前处理对象 	等同于this
+			e.stopPropagation()阻止事件冒泡
+			e.preventDefault()阻止默认行为
+			事件对象的获取是存在兼容性的: ie678需要使用window. event来获取事件对象，而非ie678事件对象直接
+			就在事件处理函数的第一个参数上
+ 
+		 -->
+		<div class="box">
+			<button class="btn">点击</button>
+		</div>
+		
+		<script>
+			// 事件触发式调用
+			document.addEventListener('click', function(){
+				console.log(123);
+			},false);
+			
+			// document.querySelector('.btn').addEventListener("click", function(e){
+			// 	console.log(e.target);
+			// },false);
+			
+			// document.querySelector('.btn').addEventListener("click", function(e){
+			// 	console.log(e.currentTarget);
+			// 	console.log(this);
+			// },false);
+		</script>
+	</body>
+</html>

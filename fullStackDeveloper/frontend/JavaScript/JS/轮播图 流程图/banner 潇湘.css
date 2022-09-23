@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body,
+html {
+	width: 100%;
+}
+.show{
+	width: 100%;
+	overflow: hidden;
+}
+.banner{
+	width: 400%;
+	position: relative;
+}
+.banner>div {
+	width: 25%;
+	height: 400px;
+	background-repeat:no-repeat ;
+	background-position: center;
+	float: left;
+}
+.clearfix{
+	content: '';
+	clear: both;
+	display: block;
+}
+.div1 {
+	background-image: url(img/banner01.jpg);
+}
+
+.div2 {
+	background-image: url(img/banner02.jpg);
+}
+
+.div3 {
+	background-image: url(img/banner03.jpg);
+}
+
+.div4 {
+	background-image: url(img/banner04.jpg);
+}

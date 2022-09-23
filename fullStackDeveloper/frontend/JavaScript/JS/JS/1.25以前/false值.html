@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			if(0){
+				alert("0是false值");
+			}
+			if(-0){
+				alert("-0是false值");
+			}
+			
+			if(null){//在if判断句中null是false值
+				alert("null是false值")
+			}
+			// var bool=null;不是false
+			if(""){//不要加空格
+			//"0"零串不是false
+				alert("空串是false值");
+			}
+			if(undefined){
+				alert("undefined是false值")
+			}
+			
+			if(NaN=="Not a Number"){//本意是Not a Number;NaN是变量
+				alert("false值")
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var reg = /ab/,
+			str = 'abcdABcdAbcdab';			
+			console.log(reg.test(str),reg.global,reg.source);
+			reg = /ab/g;
+			console.log(str.replace(reg,12),reg.global,reg.source);
+			// 打印正则表达式里面的文本
+			
+			reg=/cd/;
+			reg.compile();
+			 
+			
+		</script>
+	</body>
+</html>

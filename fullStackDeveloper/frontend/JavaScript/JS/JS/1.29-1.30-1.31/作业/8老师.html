@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>		
+	</head>
+	<body>
+		本篇主要讲了函数实参arguments
+		
+		<!-- https://blog.csdn.net/qq_16339527/article/details/53231725 -->
+		<hr>
+		8.实现一个函数,向元素尾部添加一个或多个元素,但是不更改原数组内容,返回新数组
+		push([1,2],2,3,4)-->原数组还是[1,2],返回新数组[1,2,2,3,4] 
+
+		
+
+		<script type="text/javascript">
+			/* js把传入到这个函数的全部参数存储在一个叫做arguments的东西里面 */
+			function push(arr) {/* 参见闭包中参数的传递:push([10, 0], 2, 3, 4)形参[10,0]对应传给arr,而不是这个整体([10, 0], 2, 3, 4)整个传给arr*/
+				var fromarr = Array.from(arr); /* Array.from(arr)只有数组或类数组,可迭代对象,才能转入新数组fromarr作为元素 */
+				console.log(fromarr);
+				for (var i =1; i < arguments.length; i++) {/*从第二个参数开始加入第一个参数*/
+					fromarr.push(arguments[i]);/*第二个实参及之后的一次添加到fromarr数组末尾*/
+					
+					console.log(arguments[i], '-----typeof arguments------',typeof arguments); /*测试*/
+				} 
+				return fromarr;
+			}
+			var result = push([10, 0], 2, 3, 4);/*参数传递,调用同名函数是传递的实参不一定与定义函数时一样多,调用时传递的参数,依次传入定义函数的参数*/
+			console.log(result);
+
+
+
+			function push2(arr) {
+				var narr = []; //将原数组的元素赋值到新的数组
+				arr.forEach(function(item, index, array) {
+					narr.push(item);
+				});
+
+				for (var i = 1; i < arguments.length; i++) {
+					narr.push(arguments[i]);
+				}
+				return narr;
+			}
+
+			var arr = [1, 2];
+			var newarr = push2(arr, 1, 2, 3);
+			console.log(newarr);
+		</script>
+
+		<script type="text/javascript">
+			console.log('');
+
+			function showargs() {
+				console.log(arguments);
+				console.log('arguments.length：', arguments.length);
+			}
+			showargs(1, 2, 3, 4);
+			// 它的属性名是按照传入参数的序列来的,第1个参数的属性名是’0’,第2个参数的属性名是’1’,以此类推,并且它还有length属性,
+			/* arguments对象将我传入的五个参数以数组的形式保存在里面,还有保存了我传入函数的实参的个数（length）。而且我们可以看到arguments对象的 __ proto __ 是指向object的,
+			这也说明了他是个类数组对象,而不是一个数组。 */
+		</script>
+		
+		<script>
+			function push(arr) {
+				console.log(arguments[0]);
+				console.log(arguments[0].constructor);
+				console.log(typeof arguments[0]);
+				console.log( arguments[0] instanceof Array);
+				console.log(arguments[1].constructor);
+				console.log(arguments.constructor);
+				console.log(typeof [1])
+				console.log( [1] instanceof Array);
+				console.log([1].constructor)
+			}
+			var result = push([1, 2], 1, 2, 3, 4);
+			 
+		</script>
+	</body>
+</html>

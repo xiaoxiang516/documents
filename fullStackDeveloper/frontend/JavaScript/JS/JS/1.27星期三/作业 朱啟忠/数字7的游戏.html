@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- viewport  https://blog.csdn.net/qq_16339527/article/details/52996316
+		 initial-scale设置页面的初始缩放值,为一个数字,可以带小数-->
+		<title>Document</title>
+	</head>
+	<body>
+		<h4>做一个小游戏,报7游戏的安全数(轮流报数,报到能被7整除或者尾数是7都要表演节目),
+			报出1-100之间的安全数,请写出一个函数来计算</h4>
+
+		<!-- 解： 轮流报数,假如有10人
+		safe_number:safe_number%7==0||safe_number.toString().lastIndexof("7");
+		位数 -->
+		<script type="text/javascript">
+			function safenumber() {
+				safe_number = parseInt(Math.random() * 99 + 1);
+				// console.log(safe_number);
+				if (safe_number % 7 != 0 && safe_number.toString().lastIndexOf("7") != 1) {
+					return safe_number;
+				}else{
+					return "表演节目";
+				}
+				
+
+			}
+			var sa_nu = safenumber();
+			console.log(safenumber());
+		</script>
+		
+		<!-- 问：可能100%不表演节目吗 -->
+		
+		
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
+<!-- console.log("---------------");
+			var str = "7";
+			console.log(str.lastIndexOf("7"));
+			str = "77";
+			console.log(str.lastIndexOf("7"));
+			str = "71";
+			console.log(str.lastIndexOf("7")); -->

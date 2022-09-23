@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function sum() {
+				// arguments  实参的数组
+				console.log(arguments);
+				var max = 0;
+				for (var i = 0; i < arguments.length; i++) {
+					max += arguments[i];
+				}
+				return max;
+			}
+			
+			var s = sum(1, 2, 3, 4, 56, 7);
+			console.log("实参的数组"+s);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

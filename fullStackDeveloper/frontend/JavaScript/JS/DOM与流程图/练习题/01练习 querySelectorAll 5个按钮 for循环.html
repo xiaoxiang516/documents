@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- querySelectorAll类数组结构 -->
+		<div>
+			<button type="button">button1</button>
+			<button type="button">button2</button>
+			<button type="button">button3</button>
+			<button type="button">button4</button>
+			<button type="button">button5</button></div>
+		<script type="text/javascript">
+			var btns = document.querySelectorAll('button'); /*类数组结构*/
+			/* var arr=document.querySelectorAll("div,button,span"); *//* 多种类型的选择器添加到数组,类数组长度为文档中各类标签的和 */
+			console.log(btns);/*打印出节点列表测试eg:NodeList(6) [button.div, button.div, div.div, button.div, span, span]*/
+			console.dir(btns);
+			
+			for (var i = 0; i < btns.length; i++) { /*类数组结构*/
+				btns[i].onclick = function() { /*定义了函数*/
+					/* console.log(btns[i].innerText); *//* 从上往下加载,当点击button时,i=5;所以在加载完文档后 */
+					alert(this.innerText); /* this,给谁绑定函数就是谁 */
+				}
+			}
+			
+		</script>
+	</body>
+</html>

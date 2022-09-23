@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> scope of variable变量作用域</title>
+
+	</head>
+	<body>
+		<!-- 浏览器内存 -->
+		<!-- 代码从上往下运行 -->
+		<script type="text/javascript">
+			//变量作用域
+			//变量的生效范围
+			//局部变量,在函数中声明的变量的只在函数内生效
+			//不使用var声明的变量是全局变量
+			// 浏览器提前申明变量,只是undefined;只有到赋值语句才有值
+			
+			console.log(a + "-----提前打印")
+			var a = 12;
+			b = 23;
+
+			function fun() { //定义函数
+				var i = 0;
+				str = "不使用var申明的变量"
+				console.log(str);
+				console.log(i);//0
+				console.log(a);//12
+			}
+			fun(); //调用函数
+
+			console.log(i);
+			console.log(a);//uncaught 不是全局变量,
+			//声明变量一定要使用var声明；函数运行的压栈过程;函数运行完,局部变量空间释放
+		</script>
+	</body>
+</html>

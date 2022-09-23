@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 	array.slice(start, end)  	 	
+			array:值没变,字符串对象也可调用stringObject.slice(start,end)
+			参数：参考
+			返回值：
+			*/
+			var arr = [12, 34, 56, 78, 89, 90];
+			var new_arr = arr.slice(0, 3); //(3) [12, 34, 56]
+			console.log(new_arr ,"------slice--------" ,arr); //arr没变
+			console.log("------slice--------" ,arr.slice(-arr.length, -1)); //不包括最后一个元素90
+
+
+			/* array.splice(index,howmany,item1,.....,itemX)   拼接,接合（胶片等）；移接
+			 00.array：改变                在某位置index添加(item1,2,……m)或者删除howmany个元素
+			 01.参数：
+			 index	必需。在index处开始删除,也在index处开始添加元素。
+			 该参数是开始插入和（或）删除的数组元素的下标,必须是数字。
+			 howmany	可选。规定应该删除多少元素。必须是数字,但可以是 "0"。
+			 如果未规定此参数,则删除从 index 开始到原数组结尾的所有元素。
+			 item1, ..., itemX	可选。要添加到数组的新元素
+			 02.返回值:如果从 arrayObject 中删除了元素,则返回的是含有被删除的元素的原数组
+			 */
+
+			// 1个参数:开始删除的位置下标
+			arr = [12, 34, 56, 20, 78, 89, 90];
+			console.log(arr.splice(1), "------splice1-----", arr); //00
+			arr = [12, 34, 56, 20, 78, 89, 90];
+			console.log(arr.splice(0, 5), "------splice2-----", arr); //(5) [34, 56, 20, 78, 89]
+			console.log("");
+
+			// 其后的参数要在开始位置加入新的元素
+			arr = [12, 34, 56, 20, 78, 89, 90];
+			new_arr = arr.splice(1, 5, 0, 1, 2); //整体返回被删除的元素
+			console.log(new_arr, "----------splice3-----------", arr);//前者整体返回被删除的元素
+
+
+			/* array.toString() 数组转为字符串*/
+			arr = [12, 34, 56, 20, 78, 89, 90];
+			console.log(arr.toString(),'--------arr.toString()-------'); // 12,34,56,20,78,89,90
+			console.log(arr.join("-"),'--------arr.join("-")-------'); //12-34-56-20-78-89-90
+		 
+		</script>
+	</body>
+</html>

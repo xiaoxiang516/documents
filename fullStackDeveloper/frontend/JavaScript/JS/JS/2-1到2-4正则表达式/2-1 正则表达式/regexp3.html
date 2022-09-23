@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			reg = /^12{1,3}8$/;//以1做开始位(^),以8做结束位($),1和8之间2出现1到3次
+			console.log(reg.test('122228'));//出现4次  false 
+			
+			reg = /12(?=3)/;//子字符串是123 12后面紧跟指定字符串3
+			console.log('124     123   125'.replace(reg,'abc')); 
+			reg = /12(?=3)/g;// g全局匹配,所有的都匹配
+			console.log('124     123   125'.replace(reg,'abc')); 
+			reg = /12(?!=3)/;//匹配12   他的后面不能跟着3
+			console.log('124     123   125'.replace(reg,'abc')); 
+			reg = /12(?!=3)/g;//匹配12   他的后面不能跟着3
+			console.log('124     123   125'.replace(reg,'abc')); 
+			
+			reg = /12|23|34/g;//匹配12   他的后面不能跟着3
+			console.log('12 23   45'.replace(reg,'abc')); 
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			var arr = [1, 2, 3];
+			console.log(arr);
+			arr = new Array(1,2,3,4);
+			console.log(arr);
+			arr = new Array(3); //声明一个长度为3的数组
+			console.log(arr[0]);
+			//通过下标获取元素,下标从0开始的
+			arr[0] = 12;
+			console.log(arr);
+			arr[50] = 23;//赋值:数组的长度自动补全,与其他开发语言不同
+			console.log(arr);
+			console.log(arr[100]);
+			console.log(arr);
+			
+			 /* (Java核心技术第10版(套装共2册)3.3 数据类型)
+			JavaScript是个弱类型的脚本开发语言.在赋值时确定数据类型
+			Java是一种强类型语言。这就意味着必须为每一个变量声明一种类型。在Java中,一共有8种基本类型（primitive type）,
+			其中有4种整型、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char（请参见论述char类型的章节）和1种用于表示真值的boolean类型。 */
+			arr=[{name:"李四"},{name:"王五"},2,"你好"];
+			console.log(arr.length);
+			console.log(arr.constructor);
+		</script>
+	</body>
+</html>

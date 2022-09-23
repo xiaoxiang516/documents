@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 问几个为什么 -->
+		01.使用正则表达式匹配用户名, 只能是字母数字_ ,长度在8-16之间,首字母不能是数字
+ 
+		02.使用正则表达式匹配一个字符串是否是一个加减法运算 
+		1+2=3   true 1+3=2  true
+	 
+		使用整个表达式匹配张某某
+		<script type="text/javascript">
+			// 01
+			// 用户名：只能是字母数字_(/$/) ,长度在8-16之间,首字母不能是数字
+			var user_reg = /^[A-Za-z_][\w]{7,15}$/; //用户名：只能是字母数字_(//) ,长度在8-16之间,首字母不能是数字
+			// user_reg = /^[^0-9][\w]{7,15}$/; //首字母占长度1
+			console.log(user_reg.test('_516619xiaoxiang'));
+			console.log(user_reg.test('516619xiaoxiang'));
+
+			// 02
+			var subtraction = /^[0-9]{1,10}-[0-9]{1,10}=[0-9]{1,10}$/;
+			console.log(subtraction.test('1111-1=0'), '------subtraction-------');
+  
+		/* 	04. 封装函数 检查字符串结尾是否是想要的结果:
+				例如: 输入confirmEnding("He has to give me a new name", "me") 返回true */
+			var a = '123';
+			var m = /\\a$/;
+			console.log(m);
+
+			function confirmEnding(str1, str2) {
+				var a = str1.slice(str1.length - str2.length);
+				// console.log(a,'------------00');
+				var patt=new RegExp(str2);//str2作为正则表达式的内容
+				return patt.test(a);
+			}
+			// 如果传的不是一个字符串
+			var in_str1 = "He has to give me a new name",
+				in_str2 = "name"; //空格也要好
+			var result = confirmEnding(in_str1, in_str2);
+			console.log(result);
+		</script>
+	</body>
+</html>

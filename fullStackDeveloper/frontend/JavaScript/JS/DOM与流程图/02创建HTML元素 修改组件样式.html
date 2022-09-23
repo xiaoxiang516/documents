@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{}
+			.box1{
+				height: 200px;
+				width: 200px;
+				background-color: orange;
+				border:2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 语言先实现,相当于提出问题 -->
+		<!-- 在for循环里生成10个button,并绑定click事件，点击button分别弹出1~10（数字代表每一个button的序号） -->
+		<div class="box">123</div>
+		<script type="text/javascript">
+			var box = document.querySelector("div");
+			for (var i = 1; i <= 10; i++) {
+				var btn = document.createElement("button"); /*createElement():创建元素标签,参数为标签名*/
+				btn.innerText = i;
+				btn.onclick = function() {
+					console.log(this.innerText);
+				};
+				box.appendChild(btn);/*box的子节点是btn*/
+				 /* append附加；贴上；盖章 */
+			}
+			box.onclick = function() {
+				document.write("hello world!");
+				document.writeln("hello world");
+			}
+		</script>
+
+		<input type="button" name="22" id="" value="222222" disabled="disabled" />
+		<script type="text/javascript">
+			document.querySelector("input").accessKey = 'a'; /*accessKey设置或返回元素的快捷键。浏览器上alt键 加a,input出现黑边框*/
+			var attr = document.querySelector("input").attributes;
+			console.dir(attr); /*获取标签组件所有属性*/
+
+			var obj = document.querySelector("input");
+			var attrs = obj.attributes;
+			console.log(obj.getAttribute('type')); /*获取组件属性值*/
+			obj.setAttribute('name', 'loginname'); /*设置组件指定属性的属性值*/
+			console.log(obj);
+			obj.setAttribute('disabled', 'disabled');
+			obj.removeAttribute("name"); /*删除件指定属性*/
+			console.log(obj);
+		</script>
+
+
+		<div class="box1">123</div>
+		<script type="text/javascript">
+			/*修改组件样式*/
+			var box = document.querySelector(".box1");
+			box.style.padding='100px'
+			box.style.position='fixed';
+			box.style.bottom="0px";
+			box.style.right='0px';
+			
+			box.className='box';
+			console.log(box);
+			console.log(box.classList);
+			box.classList.add('bg');
+		</script>
+	</body>
+</html>

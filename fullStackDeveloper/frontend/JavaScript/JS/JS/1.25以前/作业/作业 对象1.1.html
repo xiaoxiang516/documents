@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			students = {
+				UI: {
+					name: 'UI设计201632班',
+					man: 10,
+					woman: 8
+				},
+				Andriod: {
+					name: '安卓开发201608班',
+					man: 11,
+					woman: 0
+				},
+				IOS: {
+					name: 'IOS开发201612班',
+					man: 9,
+					woman: 5
+				}
+			};
+			var boy_sum = students.UI.man + students.Andriod.man + students.IOS.man;
+			var girl_sum = students.UI.woman + students.Andriod.woman + students.IOS.woman;
+			console.log(boy_sum);
+			console.log(girl_sum);
+			
+			var school={
+				man_count:boy_sum,
+				woman_count:girl_sum
+			}
+			console.log(school);
+		</script>
+	</body>
+</html>

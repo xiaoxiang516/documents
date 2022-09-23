@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function check(str,code){
+				var reg=eval("/"+code+'$/');
+				console.log(reg.source);
+				return reg.test(str);
+			}
+			console.log(check(1234565,5));
+		</script>
+		
+		<script type="text/javascript">
+			function check(str,code){
+				var reg=new RegExp(code+'$');//字符串拼接
+				console.log(reg.source,'-------------');
+				return reg.test(str);
+			}
+			console.log(check(1234565,5));
+			
+			
+			// 匹配张某某(某某可以是任何中文字)
+			var reg=/^张[\u4e00-\u9fa5]{2}$/;
+			
+			// 02.使用正则表达式匹配一个字符串是否是一个减法运算 
+			
+			var reg=/^\d+[+-]\d=\d+$/;//\d+[+-]  \d后面的+代表量词,表示/d即[0-9]中的任意一个至少出现一次
+			console.log(reg.test('12+23=98'));
+			
+			reg=/^(0|[1-9]\d*)[+-](0|[1-9]\d*)=(0|[1-9]\d*)$/;
+			console.log(reg.test());
+			
+			
+			var reg=/^(?![0-9])\w{8,16}$/;
+			
+			console.log(reg.test(',123456789123456'),'000000000');
+			
+			// reg=/^（?![0-9]）\w{8,16}$/;   /* []占一个字符位,在这儿（?![0-9]）不占字符位 */
+ 
+			
+		</script>
+	</body>
+</html>

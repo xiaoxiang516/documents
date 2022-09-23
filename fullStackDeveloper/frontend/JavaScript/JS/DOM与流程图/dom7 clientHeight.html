@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.div1{
+				height: 100px;
+				width: 100px;
+				/* overflow: scroll; */
+				border: 10px solid #000000;
+				padding: 8px;
+				margin: 7px;
+			}
+			.div2{
+				height: 200px;
+				width:200px;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div2"></div>
+		</div>
+		<script type="text/javascript">
+			var div1=document.querySelector('.div1');
+			var div1=document.querySelector('.div1');
+			console.log(div1.clientHeight);
+			/*height(可见)+padding*/
+			/*height-滚动条高度+paddiing*//* 83+8+8 *//* 返回元素的可见高度 */
+			console.log(div1.clientWidth);
+			
+			
+			
+			console.log('--------------');/* 高度变成宽度 */
+			console.log("div1.offsetHeight:",div1.offsetHeight);
+			/*height+padding+border*/
+			console.log("div1.offsetWidth:",div1.offsetWidth);
+			console.log('--------------');
+			console.log("div1.scrollHeight:",div1.scrollHeight);
+			/* 当没有滚动条时,容器div1承载子元素所需要的最小高度 */
+		</script>
+	</body>
+</html>

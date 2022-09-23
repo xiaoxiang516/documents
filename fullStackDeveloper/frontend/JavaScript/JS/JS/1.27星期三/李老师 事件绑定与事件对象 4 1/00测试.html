@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">跳到百度</a>
+		
+		<form action="">
+			<input type="text" placeholder="测试" name="ti-jiao"/ >
+			<input type="text" placeholder="测试" name="ti-jiao"/ >
+			<button type="submit">提交</button>
+		</form>
+		<script>
+			document.querySelector('a').onclick = function(e) {
+				e.preventDefault();//不能跳转
+			}
+			document.querySelector('button').onclick = function(e) {
+				e.preventDefault();//本来地址栏在点击submit提交后,地址栏会出现？，并在后面出现name的拼接
+				// 见images中图片 表单的默认提交.png
+			}
+		</script>
+	</body>
+</html>

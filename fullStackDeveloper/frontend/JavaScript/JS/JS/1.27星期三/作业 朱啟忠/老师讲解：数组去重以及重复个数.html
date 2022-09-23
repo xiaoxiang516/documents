@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>数组去重</title>
+	</head>
+	<body>
+		<pre>
+		var arr = [1, 42, 65, 46, 28, 65, 53, 1, 32, 7, 65, 46, 1, 53, 6, 46, 65, 32, 28, 39, 65, 32, 1, 23, 65, 32, 39, 65, 46, 53, 46, 53, 65, 32, 53, 28, 65, 1, 53, 65, 23, 32, 7, 65, 32, 46, 6, 1, 53, 46, 7, 53, 9, 23, 46, 7, 53, 6, 1, 65, 28, 7, 28, 32, 65, 23, 46, 7, 53, 9]
+
+		2、求出现频率最高的十个数字
+		
+	</pre>
+		<script>
+			var arr = [1, 42, 65, 46, 28, 65, 53, 1, 32, 7, 65, 46, 1, 53, 6, 46, 65, 32, 28, 39, 65, 32, 1, 23, 65, 32, 39, 65, 46, 53, 46, 53, 65, 32, 53, 28, 65, 1, 53, 65, 23, 32, 7, 65, 32, 46, 6, 1, 53, 46, 7, 53, 9, 23, 46, 7, 53, 6, 1, 65, 28, 7, 28, 32, 65, 23, 46, 7, 53, 9];
+			//键值对
+			//数字和出现的次数相对应
+			var obj={};//准备存放键值对 
+			 //42:5
+			 //56:2
+			for(var i=0;i<arr.length;i++){
+				//arr[i]
+				if(obj[arr[i]]==undefined){
+					//arr[i]这个数值没有出现过
+					obj[arr[i]]=1;//1是arr[i]这个数值出现的次数
+				}else{
+					obj[arr[i]]++;
+				}
+			}
+			console.log(obj);//属性number会自动排序
+			// console.log(obj,'-------obj.length----',obj.length);//有问题
+			//将数组转换成了数组:出现次数的对象
+			//[{数字:次数},{数字:次数}]
+			var obj_arr=[];//对象,数组,存储对象的数组
+			var temp;
+			for(key in obj){//取出对象的每个属性存入数组,属性是对象？ 
+				
+				temp={};//方便分多次存入obj属性
+				temp[key]=obj[key];
+				obj_arr.push(temp);//在obj_arr内容前添加元素temp,但函数返回值是数组长度
+			}
+			console.log(obj_arr);
+			function fun_sort(a,b){
+				//出现次数大的排在前
+				//a,b代表数组中相邻的元素
+				//a?前{num:次数}
+				//b?后{num:次数}
+				var a_num,b_num;
+				for(key in a){//取出数组元素属性对象存储值
+					a_num=a[key];
+				}
+				for(key in b){
+					b_num=b[key];
+				}
+				//a_num,b_num就是两个数值出现的次数
+				return b_num-a_num;
+			}
+			obj_arr.sort(fun_sort);//比较对象属性中存的值,交换数组元素
+			
+			/* 
+			array.sort(sortfunction)
+			00.array改变
+			02.返回值：数组  
+			请注意,数组在原数组上进行排序,不生成副本*/
+			
+			console.log(obj_arr);
+			obj_arr=obj_arr.slice(0,10);
+			console.log(obj_arr);
+			var array=[];
+			obj_arr.forEach(function(item,index,array){
+				// {45:20}
+				for(key in item){
+					window.array.push(key);/* 调用函数之外的变量 */
+				}
+			})
+			console.log(array);
+		</script>
+
+	</body>
+</html>

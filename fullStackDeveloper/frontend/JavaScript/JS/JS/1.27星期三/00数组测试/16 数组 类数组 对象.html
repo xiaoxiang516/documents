@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 类数组可以像数组一样有length属性，可以像数组一样通过[]里的下标访问里面的元素，所以叫类数组。
+			// 类数组增添属性
+			function test() {
+			    console.log(arguments);
+			    arguments.a = 66;
+				 
+			    console.log(arguments.a);
+				console.log(arguments);
+			}
+			test(1,2,3,4,5);//[1,2,3,4,5]
+			
+			//数组增添属性
+			// 键值对:数组也是对象,给这个对象添加属性
+			var arr=[1,2];
+			arr.b='dddd';
+			console.log(arr.b);
+			delete arr.b;
+			console.log(arr);
+			console.log(arr.c);
+			//(2) [1, 2, b: 1111112] //数组元素还是指两个
+			
+		 
+		</script>
+	</body>
+</html>

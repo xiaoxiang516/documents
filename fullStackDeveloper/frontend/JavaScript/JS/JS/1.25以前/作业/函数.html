@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- JavaScript对象是一种复合值：它是属性或已命名值的集合。
+		通过“.”符号来引用属性值。当属性值是一个函数的时候，称其为方法
+		 
+		 -->
+		<script type="text/javascript">
+			//声明函数
+			function fun(){
+				console.log("你好");
+			}
+			fun();
+			
+			
+			var fun1=function(a,b){//a,b是全局变量,所以不用var声明
+			if(typeof a!="number"){
+				console.log("a参数不是数字类型-进行转换");
+				a=parseInt(a)
+			}
+			if(typeof b!="number"){
+				console.log("b参数不是数字类型-进行转换");
+				b=parseInt(b)
+			}
+				console.log(a+b);
+			}
+			 fun1(12,'23');//字符串拼接
+		</script>
+	</body>
+</html>

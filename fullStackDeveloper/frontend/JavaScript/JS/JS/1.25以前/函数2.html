@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> 函数语句和表达式两种方式的函数定义</title>
+	</head>
+	<body>
+			
+		<script type="text/javascript">
+			//第一种定义方式,固定了
+			function sum() {
+				var a = 12;
+				var b = 23;
+				console.log(a+b);
+			}
+			sum();//调用函数
+			
+			function sum2(a,b) {
+				console.log(a+b);
+			}
+			sum2(3,6);//调用函数
+			
+			// 用表达式定义函数,//形式上参数--定义函数时,形式上定义的参数名称
+			var sum1=function(a,b){
+				console.log(a+b);
+			}
+			sum1(22,23);//调用函数,传递实参
+			
+			
+			
+			
+			// 练习题1求最大值
+			var max=function(a,b){
+				console.log("最大值是：")
+				console.log(a>b?a:b);
+			}
+			sum1(22,23);//调用函数,传递实参
+			
+			// 练习题1求奇数偶数
+			var odd_even=function(number){//
+				console.log(number+"是"+(number%2==0?"偶数":"奇数"))//三元运算符
+			}
+			odd_even(7);
+			
+		</script>
+	</body>
+</html>

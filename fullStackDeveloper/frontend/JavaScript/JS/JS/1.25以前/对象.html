@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		JavaScript中没有类的概念,这给JavaScript带来了极大的灵活性,因为你不必提前知晓关于对象的任何信息,也不需要类的“蓝图”（译注：指类的结构）。
+		但JavaScript同样具有构造函数,它的语法和Java或其他语言中基于类的对象创建非常类似。
+		<!-- 对象是拥有属性和方法的数据。 -->
+		为什么字面量要比等价的内置构造函数（如Object()、Array()等）要更好。
+
+		https://www.cnblogs.com/mauan/p/7050391.html
+		面向对象的基本概念(js没有类的概念)
+		万物皆对象。对象的实质是属性和行为。
+		类(普遍)是具有共同属性和行为的对象(个体)的集合。 类定义了对象的属性和方法。
+		分析过程先有对象后有类,开发过程先有类后有对象。
+		类的作用：类就是一个模板,定义多个对象共同的属性和方法 如：学生类（张三,李四）　手机类（华为.oppo）
+		<script type="text/javascript">
+			/* 使用字面量而不是Object()构造函数创建实例对象
+			字面量写法的一个明显优势是,它的代码更少。(比较构造函数)
+			“创建对象的最佳模式是使用字面量”还有一个原因,它可以强调对象就是一个简单的可变的散列表,
+			而不必一定派生自某个类。
+			你调用Object()的时候,解析器需要顺着作用域链从当前作用域开始查找,直到找到全局Object()构造函数为止。 */
+			var car = { //对象字面量写法 强调对象就是 一个简单的可变的散列表
+				color: "银色",
+				brand: "宝马",
+				model: "E5",
+				owner: {
+					name: "李四"
+				}, //对象中有一个对象
+				run: function() {
+					console.log("车载飞驰");
+				}
+			};
+
+
+			console.log(car);
+
+			console.log(car.color);
+			console.log(car["brand"], '--------//获取属性---------01');
+			// 修改属性
+			car.color = "红色";
+			console.log(car);
+
+			car.oil = "92#";
+			console.log(car, '-------//添加属性--------03');
+			console.log(car.oil);
+			// setTimeout(function() {}, 10);
+			setTimeout(function() {
+				delete car.oil;
+				console.log(car);
+			}, 3000); // 浏览器突然出现2
+			// 删除属性
+			// delete car.oil;
+			console.log(car);
+
+			// 调用对象函数
+			car.run();
+			car = 2; //js中变量类型在赋值时确定,此刻由对象Object变为number
+			console.log(car, typeof car);
+
+
+			
+			var car;// 声明前置,运行之前已经声明好了
+			var car = '潇湘'; //变量重复声明的问题,重新声明不会覆盖原来
+			console.log(car, "-----变量重复声明的问题------")
+
+
+
+
+			var item = "name",
+				key;
+			var obj = {
+				name: "张三",
+				item: 123
+			}
+			console.log(obj.item); //直接调用里面的属性
+			// obj["item"]=456;
+			console.log(obj['item']);
+			console.log(obj[item], '-----------------02', obj['name']); //相当于变量
+			console.log(obj['key']);
+		</script>
+
+
+		<script type="text/javascript">
+			// https: //www.cnblogs.com/neco/p/6168219.html
+			// 通过构造函数创建对象  一种方法,使用字面量
+			var car = {
+				goes: "far"
+			};
+
+			// 另一种方法,使用内置构造函数      注意：这是一种反模式
+			var car = new Object();
+			car.goes = "far";
+
+			/* 字面量写法的一个明显优势是,它的代码更少。“创建对象的最佳模式是使用字面量”
+			还有一个原因,它可以强调对象就是一个简单的可变的散列表,而不必一定派生自某个类。 */
+		</script>
+
+		<script type="text/javascript">
+			var obj = new Object(); //空对象
+			document.write("<br> obj：", obj);
+			document.write("<br> obj：", obj.constructor == Object);
+		</script>
+	</body>
+</html>

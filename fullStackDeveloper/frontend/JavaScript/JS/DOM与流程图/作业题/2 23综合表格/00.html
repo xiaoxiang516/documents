@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container {
+				width: 1200px;
+				margin: 0 auto;
+				border: 1px solid red;
+			}
+
+			table,
+			td,
+			th {
+				padding: 5px;
+				border: 1px solid black;
+				border-collapse: collapse;
+
+			}
+
+			td {
+				width: 230px;
+			}
+
+			th {
+				text-align: left;
+			}
+
+			button {
+				background: #00BFFF;
+				/* outline: red;//点击button时出现轮廓 */
+				padding: 5px 10px;
+				border-radius: 5px;
+				/* border-color: #00BFFF; */
+				border: none;
+				color: white;
+			}
+
+			.top,
+			.content {
+				margin-bottom: 20px;
+			}
+
+			input {
+				margin-right: 5px;
+				outline: none;
+				padding: 4px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="top">
+				<span>添加:</span>
+				<input type="text" id="name" placeholder="姓名" />
+				<input type="text" id="age" placeholder="年龄" />
+				<button type="button" id="add">添加</button>
+			</div>
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>姓名</th>
+							<th>年龄</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>张三</td>
+							<td>33</td>
+							<td>删除</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>李四</td>
+							<td>34</td>
+							<td>删除</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>王五</td>
+							<td>25</td>
+							<td>删除</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="footer">
+				<span>搜索：</label>
+				<input type="text" id="searchName" /><!-- placeholder="姓名" -->
+				<button type="button" id="search">搜索</button>
+				<span>排序：</span>
+				<button type="button" id="sort">年龄从小排序</button>   
+			</div>
+		</div>
+		<script type="text/javascript" src="teacher.js"></script>
+	</body>
+</html>

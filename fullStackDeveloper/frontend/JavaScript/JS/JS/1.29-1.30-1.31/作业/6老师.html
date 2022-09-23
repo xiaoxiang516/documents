@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		6.声明一个函数,传入一个数组,将数组中指定的元素去掉例如fun([1,2,3,4],1)-->[2,3,4]
+		<script type="text/javascript">
+			function delItem(arr, item) {
+				arr.forEach(function(it, index, array) {
+					if (item == it) {
+						array.splice(index, 1);
+					}
+				})
+				return arr;
+			}
+			var new_arr=delItem([1,2,3,4],4);
+			console.log(new_arr);
+		</script>
+	</body>
+</html>

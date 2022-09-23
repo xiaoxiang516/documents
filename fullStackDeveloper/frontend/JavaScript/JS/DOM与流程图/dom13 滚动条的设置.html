@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				width: 200px;
+				height: 200px;
+				border: 10px solid red;
+				overflow: scroll;
+			}
+
+			.div2 {
+				width: 100px;
+				height: 1000px;
+				border: 1px solid blue;
+			}
+			body{
+				height: 2000px;
+				width: 1000px;
+				/* 超出窗口就出现滚动条 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div2"></div>
+		</div>
+		<script type="text/javascript">
+			var div1 = document.querySelector('.div1');
+			var div2 = document.querySelector('.div2');
+
+
+			// console.log(div1.clientTop,div2.clientTop);
+			// console.log(div1.offsetTop,div2.offsetTop);//上边框到html内边界的距离
+
+			div1.onscroll = function() {//滚动条监听事件
+				console.log(div1.scrollTop);
+				console.log(div2.scrollTop);
+			}
+			
+			window.onscroll=function(){
+				var h=document.documentElement.scrollTop;//documentElement  HTML 文档返回对象为HTML元素。
+				console.log(h);
+			}
+		</script>
+	</body>
+</html>

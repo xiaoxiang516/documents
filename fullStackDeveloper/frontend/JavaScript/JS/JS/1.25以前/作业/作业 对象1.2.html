@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			sbData = {
+				name: "黄小米",
+				sex: 0,
+				age: 26,
+				yangLao: {
+					base: 2018,
+					companyPercent: 0.12,
+					personPercent: 0.08
+				},
+				yiLiao: {
+					base: 2725,
+					companyPercent: 0.08,
+					personPercent: 0.02
+				},
+				gongShang: {
+					base: 1300,
+					companyPercent: 0.005,
+					personPercent: 0
+				},
+				shiYe: {
+					base: 1300,
+					companyPercent: 0.02,
+					personPercent: 0.01
+				},
+				shengYu: {
+					base: 2725,
+					companyPercent: 0.0085,
+					personPercent: 0
+				}
+			}
+
+			function personPay() { //函数名规则
+				var person_pay = sbData.yangLao.base * sbData.yangLao.personPercent +
+					sbData.yiLiao.base * sbData.yiLiao.personPercent +
+					sbData.gongShang.base*sbData.gongShang.personPercent+
+					sbData.shiYe.base*sbData.shiYe.personPercent+
+					sbData.shengYu.base*sbData.shengYu.personPercent;
+					
+					console.log("每月个人缴费:"+person_pay);
+			}
+			personPay();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>防抖和节流</title>
+	</head>
+	<body>
+	<!-- 	1.什么是防抖?  debounce  延时响应（）   以减少事件处理函数的调用次数
+		对于某一频繁触发的事件， 我们不立即对其进行响应，而是事件触发后，等待一定时间后， 再对其进行响应;
+		如果在等待的时间内，又再次触发了事件，则重新计算等待时间! 
+		
+		潇湘：事件触发的条件：在延时的时间内(上一次触发事件的时间与下一次触发事件的时间)事件的不连续触发，
+		每次触发事件重新计时，上一次触发事件的时间与
+		下一次触发事件的时间超过延时的时间（事件的不连续触发），那么事件触发
+		
+		2.如何实现防抖?请写代码实现? (想让你写一个防抖得工具函数)
+		给我一个普通的函数，和防抖的时间，我返回一个防抖的函数
+ -->
+	<!-- timestamp
+	 英 [ˈtaɪmstæmp]  美 [ˈtaɪmstæmp] 
+	 n. 时间戳；时间邮票 
+	 时间戳在媒体同步和抖动计算中是不可缺少的。
+	 
+	 -->
+		<input class="name" type="text" />
+		
+		<script>
+		 
+			// document.querySelector('input.name').oninput = function() {
+			// 	console.log(this.value);
+			// 	alert(12);
+			// };
+			
+			
+			function debounce(fn,time){//fn函数
+				var timer = null;
+				return function(e){ //接收事件源对象e
+					if(timer) clearTimeout(timer); // 存在等待时间
+					timer = setTimeout(() => {
+						// fn();//,错误fn就是aaa,这个写法虽然形式对,但函数内部的console.log(this.value); this已经变成了window,不再是input
+						fn.call(this,e);
+						timer = null;
+					}, time);
+				}				
+			}
+			
+			// 对上面工具函数使用测试
+			function aaa(e) {
+				console.log(this.value);//当前对象的文本值吗,专指文本框的吗
+				console.log(e);//事件源
+			}
+			// 触发式调用（给的是function aaa() {} 事件，事件绑定 ）,与自动调用(给的是aaa())
+			document.querySelector('input.name').oninput = debounce(aaa,1000);
+			 //注意oninput 的值是函数声明而不是函数调用,这儿从形式来看debounce(aaa,1000)已经先调用,
+			 // 而不是等待输入事件触发才调用, debounce(aaa,1000)这儿的作用只是传参,将函数声明分成两部分
+			
+			
+			
+			// 如果函数中从来没有使用过this关键，普通函数和箭头函数可以任意使用
+			//箭头函数的this会穿透当前函数作用域指向父级作用域中的this
+			
+			
+			
+		</script>
+	</body>
+</html>

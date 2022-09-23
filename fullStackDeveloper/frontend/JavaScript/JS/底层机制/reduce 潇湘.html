@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- https://www.jianshu.com/p/e375ba1cfc47 -->
+		<!-- https://www.jianshu.com/p/e375ba1cfc47 -->
+		<script type="text/javascript">
+			// arr.reduce(callback,[initialValue])
+			// array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+		</script>
+		<script type="text/javascript">
+			var arr = [1, 2, 3, 4];
+			var sum = arr.reduce(function(prev, cur, index, arr) {
+			    console.log(prev, cur, index);
+			    return prev + cur;
+			})
+			console.log(arr, sum);
+			/* 这里可以看出,上面的例子index是从1开始的,
+			第一次的prev的值是数组的第一个值。数组长度是4,但是reduce函数循环3次。 */
+			
+		</script>
+		<script type="text/javascript">
+			console.log('例子二');
+			var  arr = [1, 2, 3, 4];
+			var sum = arr.reduce(function(prev, cur, index, arr) {
+			    console.log(prev, cur, index);
+			    return prev + cur;
+			},0) //注意这里设置了初始值
+			console.log(arr, sum);
+			
+			// 这个例子index是从0开始的,第一次的prev的值是我们设置的初始值0,数组长度是4,reduce函数循环4次。
+			// 结论：如果没有提供initialValue,reduce 会从索引1的地方开始执行 callback 方法,跳过第一个索引。如果提供initialValue,从索引0开始。
+			 
+		</script>
+		
+		<script type="text/javascript">
+			var  arr = [];
+			var sum = arr.reduce(function(prev, cur, index, arr) {
+			    console.log(prev, cur, index);
+			    return prev + cur;
+			},0)
+			console.log(arr, sum); // [] 0
+		</script>
+		<script type="text/javascript">
+			var  arr = [];
+			var sum = arr.reduce(function(prev, cur, index, arr) {
+			    console.log(prev, cur, index);
+			    return prev + cur;
+			})
+			console.log(arr, sum); // [] 0
+		</script>
+		
+		
+		<script type="text/javascript">
+			var  arr = [1, 2, 3, 4];
+			var sum = arr.reduce((x,y)=>x+y)
+			var mul = arr.reduce((x,y)=>x*y)
+			console.log( sum ); //求和,10
+			console.log( mul ); //求乘积,24
+		</script>
+		
+		
+		<script type="text/javascript">
+			// 计算数组中每个元素出现的次数
+			
+			let names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+			
+			let nameNum = names.reduce((pre,cur)=>{
+			  if(cur in pre){
+			    pre[cur]++;
+			  }else{
+			    pre[cur] = 1 ;
+			  }
+			  return pre
+			},{})
+			console.log(nameNum); //{Alice: 2, Bob: 1, Tiff: 1, Bruce: 1}
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- IIFE immedirate invoke function expression
+		(函数立即执行表达式)声明一个函数立即执行
+		声明一个函数，并马上调用这个匿名函数就叫做立即执行函数；也可以说立即执行函数是一种语法，让你的函数在定义以后立即执行
+		 https://www.jianshu.com/p/b10b6e93ddec
+		-->
+		
+
+		<button class="timeout">点我</button>
+		<script type="text/javascript">
+			// 点击事件与闭包
+			// 问题:下面的for循环输出的结果
+			for( var i = 0; i < 5; i ++){ // 全局变量与异步
+				setTimeout(function(){//i是全局变量，延时输出i,一定时间后再输出i时
+					console.log(i);
+				});
+			}
+			 
+			// 升级形式
+			// 我们在写代码的过程中:有可能希望多个函数关联使用同一个变量，也有可能希望多个函数
+			// 不要关联使用同一个变量;不要让这个函数闭包到同一个i
+			(function(){
+				document.querySelector('.timeout').onclick = function(){
+					for( var i = 0; i < 5; i ++){
+						setTimeout(function(){
+							console.log(i);//多个函数使用了(闭包)同一个i,五个函数用同一个作用域链
+						});
+					}
+				};
+			})(); 
+			
+			document.querySelector('.timeout').onclick = function(){
+				for( var i = 0; i < 5; i ++){//会变, 请描述一下这个过程
+					(function(i){
+						setTimeout(function(){
+							console.log(i); 
+						});
+					})(i);
+				}
+			};
+		</script>
+	 
+	</body>
+</html>

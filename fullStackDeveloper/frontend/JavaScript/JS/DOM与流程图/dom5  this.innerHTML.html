@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<!-- <div class="div1">aaa</div> -->
+		<div class="div1"><p>aaa</p></div>
+		<script type="text/javascript">
+			var box=document.querySelector(".div1");
+			console.log(box.innerHTML);/* innerHtml 打印标签之间的内容，包括标签和文本信息 */
+			console.log(box.innerText);
+			box.onclick=function(){
+				// this.innerHTML='<span style="color: red;">123</span>';/*this：谁绑定事件就是谁*/
+				/* 当前div内容变成一个span标签 */
+				this.innerText='<span style="color: red;">123</span>';/**/
+			}
+		</script>
+	</body>
+</html>
