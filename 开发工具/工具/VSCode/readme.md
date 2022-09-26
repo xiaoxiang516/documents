@@ -1,3 +1,5 @@
+# [VScode专栏](https://www.kancloud.cn/shangyewangchuan/vs_code/972681)
+
 # VScode查看word文档方法介绍
 
 在扩展界面的[搜索框中输入“office viewer”安装。Office Viewer(Markdown Editor)
