@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		要读取目录的内容，可先创建 DirectoryReader，然后调用 readEntries() 方法。我们不能保证所有目录条目都能在仅调用一次 readEntries() 的情况下同时返回。也就是说，您需要一直调用
+		DirectoryReader.readEntries()，直到系统不再返回结果为止。以下代码对此作了说明：
+		<ul id="filelist"></ul>
+		<script type="text/javascript">
+			function toArray(list) {
+				return Array.prototype.slice.call(list || [], 0);
+			}
+
+			function listResults(entries) { // Document fragments can improve performance since they're only appended // to the DOM once. Only one browser reflow occurs. var fragment = document.createDocumentFragment();
+
+				entries.forEach(function(entry, i) {
+					var img = entry.isDirectory ? '<img src="folder-icon.gif">' : '<img src="file-icon.gif">';
+					var li = document.createElement('li');
+					li.innerHTML = [img, '<span>', entry.name, '</span>'].join('');
+					fragment.appendChild(li);
+				});
+
+				document.querySelector('#filelist').appendChild(fragment);
+			}
+
+			function onInitFs(fs) {
+				var dirReader = fs.root.createReader();
+				var entries = []; // Call the reader.readEntries() until no more results are returned. var readEntries = function() { dirReader.readEntries (function(results) { if (!results.length) {
+				listResults(entries.sort());
+				} else {
+					entries = entries.concat(toArray(results));
+					readEntries();
+				}
+			}, errorHandler);
+			};
+
+			readEntries(); // Start reading dirs. }
+
+			window.requestFileSystem(window.TEMPORARY, 1024 * 1024, onInitFs, errorHandler);
+			删除目录
+		</script>
+	</body>
+</html>
