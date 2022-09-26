@@ -1,0 +1,115 @@
+windows 默认值 初始值 初始化
+使用为Windows 10构建的快速、全新的浏览器Microsoft Edge执行更多操作。
+单独键盘操作
+单独鼠标操作
+手机操作
+其他电脑操作
+webstorm关闭所有终端
+
+搜索环境变量可以不
+cmd教程
+webstorm代码风格配色的实现
+
+elemenntui
+新建两个项目：juejin-element-ui，juejin-element-ui-test
+vue 版本升降切换
+
+
+1. 根目录下的 lib 文件夹应该可以生成一个 element-ui.common.js 文件。
+
+01.根目录；package.json文件npm init -y
+一对 package.json 做配置 build 放配置文件
+
+原项目
+npm init -y
+npm install webpack@4.14.0 webpack-cli@3.0.8 -D
+npm install vue-loader@15.7.0 vue-template-compiler@2.6.14 -D
+npm run build
+文件 build/webpack.common.js   module plugins同级；plugins与rules
+npm pack
+
+
+npm install F:\juejin-element-ui\juejin-element-ui-1.0.0.tgz
+
+
+建立 webpack.common.js
+打包生成 element-ui.common.js 文件。
+生成 .tgz 包。
+
+
+项目2
+
+vue create juejin-element-ui-test(项目名，可以随意取)
+npm install F:\juejin-element-ui\juejin-element-ui-1.0.0.tgz(本地放置tgz包的全路径)
+
+
+D:\elementui\v1\juejin-element-ui-test\juejin-element-ui-1.0.0.tgz
+// main.js 
+import juejinElementUI from 'juejin-element-ui';
+Vue.use(juejinElementUI);
+
+// app.vue
+<template>
+  <div id="app">
+    <el-button></el-button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+}
+</script>
+
+
+梁山伯与祝英台史记记载
+
+
+this.$on('el.form.addField', （）=> { });作用是什么
+
+
+
+
+谷歌浏览器的卸载与重装
+
+
+
+http://user:pass@host.com:8080/path/to/file?query=string#hash
+
+
+
+注册，打包及配置处理vue文件
+
+
+
+书签 https://juejin.cn/post/6909814992120315911
+wenstorm导出目录结构
+
+
+word置顶水平滚动条
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
