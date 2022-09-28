@@ -6,3 +6,5 @@
 
 Vue.js 3 仍然保持了运行时 + 编译时的架构
 
+# 作者源代码
+本书勘误请见随书GitHub仓库：https://github.com/HcySunYang/code-for-vue-3-book/issues
