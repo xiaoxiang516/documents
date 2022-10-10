@@ -1,6 +1,21 @@
 ## 常用
 
-**md文件在vscode中预览**
+
+
+## Ecosystem
+
+| Project             | Status    | Description   |
+| ------------------- | --------- | ------------- |
+| [Vue-router]        | [![vue-router-status]][vue-router-package]| aa |
+
+[vue-router]: https://github.com/vuejs/vue-router
+
+## Documentation
+`潇湘`：字体颜色设置（不给具体链接）
+To check out [live examples]() and docs, visit [vuejs.org]()
+
+
+## **md文件在vscode中预览**
 ![Alt](vscode插件.jpg)
 ## md中引入图片
 > 剪贴板截图粘贴自动生成图片目录
@@ -106,6 +121,7 @@ font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
   "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 ```
 
+分割线---
 
 ---
 
@@ -118,14 +134,4 @@ Vue (pronounced `/vju:/`, like view) is a **progressive framework** for building
 
 Vue.js supports all browers that are [ES5-compliant]()(IE8 and blow are not supported).
 
-## Ecosystem
-
-| Project             | Status    | Description   |
-| ------------------- | --------- | ------------- |
-| [Vue-router]        | [![vue-router-status]][vue-router-package]| aa |
-
-[vue-router]: https://github.com/vuejs/vue-router
-
-## Documentation
-`潇湘`：字体颜色设置（不给具体链接）
-To check out [live examples]() and docs, visit [vuejs.org]()
+## 文档参考链接
