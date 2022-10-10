@@ -1,0 +1,27 @@
+ {
+   "name": "删除垃圾广告",
+   "manifest_version": 2,
+   "version": "1.0.0",
+   "description": "Chrome extension to delete advertise",
+   "icons": {
+       "16": "icons/16.png",
+       "48": "icons/48.png",
+       "128": "icons/128.png"
+     },
+   "content_scripts": [
+     {
+       "matches": [
+		   "https://www.dm5.com/*",
+		   "https://www.1kkk.com/*",
+		   "https://www.baidu.com/*",
+		   "http://www.jiahe.biz/*",
+		   "https://www.liaoxuefeng.com/*"
+		   ],
+       "js": [
+		   "jQuery-1.8.2.js",
+		   "myscript.js"
+	   ]
+     }
+   ]
+ }
+ 
