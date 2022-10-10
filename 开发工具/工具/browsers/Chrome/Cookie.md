@@ -1,4 +1,14 @@
+深入了解Cookie件文档Cookie.docx
+## FAQ
+如何查询本地某些网站生成的cookie
+Chrome的Cookie的存放位置及查看方法
+C:\Users\zhuqizhong\AppData\Local\Google\Chrome\User Data\Default
+
 Cookie最早是网景公司的前雇员Lou Montulli在1993年3月的发明。
+# 《XSS跨站脚本攻击剖析与防御》
+作者：邱永华出版社：人民邮电出版社出版时间：2013-09
+`该书有关Cookie的讲述比较清楚`
+
 书名：网络人格权侵权责任研究著作责任者：陈昶屹　著 出版发行：北京大学出版社 2014年5月第1版　2014年5月第1次印刷
 # 5.4.1　限禁性网络技术类型的技术原理与运行现状
 [1] Cookies技术，其中文名称为小型文字档案或小甜饼，指某些网站为了辨别用户身份而储存在用户本地终端上的数据，
