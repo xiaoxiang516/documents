@@ -53,3 +53,6 @@ hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
+
+解决： [npm install 报错 ‘The operation was rejected by your operating system‘](https://blog.csdn.net/Run_youngman/article/details/113987836)
+![1664423082230](image/gitFAQ/1664423082230.png)
