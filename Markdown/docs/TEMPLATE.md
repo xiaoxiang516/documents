@@ -3,6 +3,7 @@
 **md文件在vscode中预览**
 ![Alt](vscode插件.jpg)
 ## md中引入图片
+> 剪贴板截图粘贴自动生成图片目录
 
 1. 在sublime中写markdowm，引入图片写法如下
    参考样式：![Alt](img.png)
@@ -12,7 +13,6 @@
 
 3.可以通过如下方式解决
    <img src="img.png" width="30" height="30" />
-
 
 
 <!--
@@ -97,3 +97,35 @@ Nginx is running !
         <td>TN(真反例)</td>
     </tr>
 </table>
+
+
+### Font-family 代码
+
+```css
+font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+  "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+```
+
+
+---
+
+## Introduction
+
+Vue (pronounced `/vju:/`, like view) is a **progressive framework** for building user interfaces. 
+
+
+#### Browser Compatibility
+
+Vue.js supports all browers that are [ES5-compliant]()(IE8 and blow are not supported).
+
+## Ecosystem
+
+| Project             | Status    | Description   |
+| ------------------- | --------- | ------------- |
+| [Vue-router]        | [![vue-router-status]][vue-router-package]| aa |
+
+[vue-router]: https://github.com/vuejs/vue-router
+
+## Documentation
+`潇湘`：字体颜色设置（不给具体链接）
+To check out [live examples]() and docs, visit [vuejs.org]()
