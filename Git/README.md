@@ -2,6 +2,7 @@
 [github]()
 # [Git/gitlab/github/tortoiseGit](https://blog.csdn.net/amnesiac666/category_10571446.html)
 
+### [Gitee自动同步GitHub仓库](https://cdn.modb.pro/db/488180)
 
 
 对话形式（讨论式写作）
