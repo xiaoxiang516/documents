@@ -137,7 +137,13 @@ Vue.js supports all browers that are [ES5-compliant]()(IE8 and blow are not supp
 ## 文档参考链接
 
 
-## 目录
+## `[]()`的用法
+()中的url可以是
+- 空
+- `#加标题名 `
+- `http://github.com/ruanyf/es6tutorial/`
+- ![](./images/img.png)
+
 1. [前言](#README)
 1. [ECMAScript 6简介](#docs/intro)
 1. [let和const命令](#docs/let)

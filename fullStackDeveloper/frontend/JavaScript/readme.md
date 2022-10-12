@@ -7,3 +7,7 @@ const url = document.getElementById("original-creader-interative-canvas-1").toDa
 document.getElementById("textArea").value = url;
 
 ```
+
+
+### json文件的应用
+组件库
