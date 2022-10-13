@@ -1,5 +1,10 @@
 [谁在招人？ 阮一峰](https://github.com/ruanyf/weekly/issues/1747)
 
+
+
+牛客网，力扣
+
+
 前端职业样例要求：
 YjJjcd
 广州爱范儿科技股份有限公司

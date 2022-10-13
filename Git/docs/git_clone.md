@@ -11,3 +11,7 @@ Updating files: 100% (729/729), done.
 
 zhuqizhong@BDR23M70BKCPR MINGW64 /d/gitStudy
 $
+
+## git stash某一个文件
+git stash push src/views/co/contractPerformance/claimEvent/inventory/stop/MainContent.vue
+
