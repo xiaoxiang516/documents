@@ -1,1 +1,0 @@
-CSS的发明者：Håkon Wium Lie（赖先生）
