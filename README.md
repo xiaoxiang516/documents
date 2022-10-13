@@ -1,8 +1,9 @@
- >但在重新读了手稿之后，我找到了重新站起来开始新生活的动力。
+ >酒井法子：但在重新读了手稿之后，我找到了重新站起来开始新生活的动力。
  >从前的日子变得慢，车马邮件都慢，
 ---
 
 生活旅途--读书写作日记
+编书也挺难的
 
 # 目录
 
@@ -11,13 +12,16 @@
 
 
 > 第一编 环境配置与开发工具介绍
+生活场景例举
+百度首页的实现
+淘宝爬楼层
+上拉加载更多
+
 - HBuilder
 - VScode
 - WebStorm
 - Windows PowerShell
-- Git Bash GUI
-- [gitee](https://gitee.com/xiaoxiang516)
-- [github](https://github.com/elemefe)
+- [Git](./Git/README.md)
 
 FAQ:
 
@@ -51,4 +55,7 @@ FAQ:
 
 组合式练习
 系统练习
+
+代码练习
+技术说明文档练习
 ## windows系统，linux

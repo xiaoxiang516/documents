@@ -1,23 +1,19 @@
+对话形式（讨论式写作），访谈式写作（问答式写作）
+
+
 提示: 由于 Git 不支持空文件夾，创建文件夹后会生成空的 .keep 文件
-[gitee](https://gitee.com/xiaoxiang516/)
-[github]()
-# [Git/gitlab/github/tortoiseGit](https://blog.csdn.net/amnesiac666/category_10571446.html)
+- [gitee](https://gitee.com/xiaoxiang516/)
+- [github](https://github.com/elemefe)
+- [Git/gitlab/github/tortoiseGit](https://blog.csdn.net/amnesiac666/category_10571446.html)
 
-### [Gitee自动同步GitHub仓库](https://cdn.modb.pro/db/488180)
-
-
-对话形式（讨论式写作）
-### [Git官网教程](https://git-scm.com/)
-https://git-scm.com/downloads
-
-### [阮一峰 Git 教程](https://www.bookstack.cn/read/git-tutorial/docs-basic.md)
-
-
-### [廖雪峰官网](https://www.liaoxuefeng.com)
->官网下的讨论值得关注
-
+- [Git官网教程](https://git-scm.com/)
+- [阮一峰 Git 教程](https://www.bookstack.cn/read/git-tutorial/docs-basic.md)
+- [廖雪峰官网](https://www.liaoxuefeng.com)
+<!-- >官网下的讨论值得关注 -->
+- [Gitee自动同步GitHub仓库](https://cdn.modb.pro/db/488180)
+Bash GUI
 笔记内容化见：Git_liaoxuefeng.md
-### 使用git进行word版本管理
+- 使用git进行word版本管理
 
 ### 开发实践事件：
 团队公用一个分支开发，其中一个开发操作失误，出现代码覆盖，代码丢失
