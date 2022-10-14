@@ -1,21 +1,19 @@
-## 常用
+## 目录
+
+- [跳转]()
+- [图片](#图片)
+- [表格]()
+- [注释]()
+- [html]()
+- []()
+- []()
+- []()
 
 
 
-## Ecosystem
 
-| Project             | Status    | Description   |
-| ------------------- | --------- | ------------- |
-| [Vue-router]        | [![vue-router-status]][vue-router-package]| aa |
-
-[vue-router]: https://github.com/vuejs/vue-router
-
-## Documentation
-`潇湘`：字体颜色设置（不给具体链接）
-To check out [live examples]() and docs, visit [vuejs.org]()
-
-
-## **md文件在vscode中预览**
+## 图片
+**md文件在vscode中预览**
 ![Alt](vscode插件.jpg)
 ## md中引入图片
 > 剪贴板截图粘贴自动生成图片目录
@@ -28,6 +26,20 @@ To check out [live examples]() and docs, visit [vuejs.org]()
 
 3.可以通过如下方式解决
    <img src="img.png" width="30" height="30" />
+
+## 表格
+
+| Project             | Status    | Description   |
+| ------------------- | --------- | ------------- |
+| [Vue-router]        | [![vue-router-status]][vue-router-package]| aa |
+
+[vue-router]: https://github.com/vuejs/vue-router
+
+## Documentation
+`潇湘`：字体颜色设置（不给具体链接）
+To check out [live examples]() and docs, visit [vuejs.org]()
+
+
 
 
 <!--
