@@ -2,6 +2,7 @@
 ```typescript
 // [练习](https://www.tslang.cn/play/index.html)
 // ts
+// 给一个对象添加属性
 enum api {
   '01' = 'a',
   '02' = 'b',

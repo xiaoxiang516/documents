@@ -1,3 +1,7 @@
+### 实验 搭建typescript环境
+
+
+
 [官网 ts练习示例](https://www.tslang.cn/play/index.html)
 
 ## [TypeScript中文网](https://www.tslang.cn/docs/home.html)
@@ -10,3 +14,22 @@
 ## [TypeScript 教程](https://www.w3cschool.cn/typescript/)
 
 ## webpack vue typescript教程
+
+
+TypeScript 与组合式 API
+
+- 运行时声明
+
+
+
+```TypeScript
+<script setup lang="ts">
+const props = defineProps({
+  foo: { type: String, required: true },
+  bar: Number
+})
+
+props.foo // string
+props.bar // number | undefined
+</script>
+```

@@ -1,3 +1,7 @@
+### 实验 搭建环境
+- 安装卸载更新npm
+- 安装卸载更新yarn
+
 
 例子： 结合文件build-sit.sh,npm build-uat.sh
 ### 开发命令
