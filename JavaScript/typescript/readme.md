@@ -5,21 +5,19 @@
 [](https://www.typescriptlang.org/)
 
 [](https://github.com/microsoft/TypeScript.git)
+[](https://github.com/microsoft/TypeScript)
 [介绍](https://www.sohu.com/na/433426213_298038)
 
 
-[官网 ts练习示例](https://www.tslang.cn/play/index.html)
+- [官网 ts练习示例](https://www.tslang.cn/play/index.html)
 
-## [TypeScript中文网](https://www.tslang.cn/docs/home.html)
+- [TypeScript中文网](https://www.tslang.cn/docs/home.html)
+- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
 
-## [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
+- [TypeScript 快速上手学习系列](https://blog.csdn.net/hh18700418030/category_11716049.html)
 
-
-## [TypeScript 快速上手学习系列](https://blog.csdn.net/hh18700418030/category_11716049.html)
-
-## [TypeScript 教程](https://www.w3cschool.cn/typescript/)
-
-### [TypeScript 全面进阶指南](https://zhuanlan.zhihu.com/p/538934048)
+- [TypeScript 教程](https://www.w3cschool.cn/typescript/)
+- [TypeScript 全面进阶指南](https://zhuanlan.zhihu.com/p/538934048)
 ## webpack vue typescript教程
 
 
