@@ -1,5 +1,11 @@
 ### 实验 搭建typescript环境
 
+人物 安德斯·海尔斯伯格（Anders Hejlsberg）
+[](https://www.typescriptlang.org/zh/docs/)
+[](https://www.typescriptlang.org/)
+
+[](https://github.com/microsoft/TypeScript.git)
+[介绍](https://www.sohu.com/na/433426213_298038)
 
 
 [官网 ts练习示例](https://www.tslang.cn/play/index.html)
@@ -13,6 +19,7 @@
 
 ## [TypeScript 教程](https://www.w3cschool.cn/typescript/)
 
+### [TypeScript 全面进阶指南](https://zhuanlan.zhihu.com/p/538934048)
 ## webpack vue typescript教程
 
 

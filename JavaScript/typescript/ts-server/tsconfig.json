@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "module": "commonjs", //代码组织方式
+      "moduleResolution": "node", //模块解决策略
+      "experimentalDecorators": true, //开启装饰器定义
+      "allowSyntheticDefaultImports": true, //允许es6方式 --- import
+      "lib": [
+          "ES2015"
+      ],
+      "typeRoots": [
+          "./node_modules/@types"
+      ], //指定类型从哪里读取
+      // "noImplicitAny": false, //不允许有any属性
+      // "removeComments": true,
+      // "preserveConstEnums": true,
+      "sourceMap": true
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+  ]
+}

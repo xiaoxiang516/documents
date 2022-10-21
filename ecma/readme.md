@@ -1,5 +1,5 @@
-
-[](https://tc39.es/ecma262/multipage/#sec-intro)
+[ECMAScript® 2023 Language Specification(语言规范)](https://tc39.es/ecma262/multipage/#sec-intro)
+*`Draft(草案) ECMA-262 / October 20, 2022`*
 
 [es6](https://262.ecma-international.org/6.0/)
 [JavaScript 二十年](https://cn.history.js.org/index.html)
