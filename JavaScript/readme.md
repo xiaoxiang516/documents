@@ -25,3 +25,4 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - Internal JavaScript: We can add JavaScript code directly to our HTML file by writing the code inside the `<script> tag. The <script> tag can either be placed inside the <head> or the <body> tag according to the requirement.`
 
 - External JavaScript File: We can create a file with .js extension and paste the JavaScript code inside it. After creating the file, add this file in `<script src=”file_name.js”> tag inside <head> tag of the HTML file.`
+

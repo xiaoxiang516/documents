@@ -38,3 +38,11 @@ props.foo // string
 props.bar // number | undefined
 </script>
 ```
+```ts
+// 还能写中文？？？
+export enum TabsEnum {
+  '基础信息' = 1,
+  '扣罚信息' = 2,
+  '附件' = 3
+}
+```

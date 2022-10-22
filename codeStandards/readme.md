@@ -1,6 +1,10 @@
+
+
+组件prop用到接口调用的数据，组件使用加渲染条件v-if
+
 ## `代码规范`
 
-任何代码改了都要测一下
+任何代码改了都要测一下,从头走一遍流程
 
 ## 梳理流程
 - 是否已有参考的页面或代码
@@ -25,3 +29,5 @@ postman造数据,熟悉业务流程，熟悉组件参数定义明确传值
 row.Yfdays = row.Rldays - row.Rqdays - row.Fyfdays
   row.Yfdays = isNaN(row.Yfdays) ? '' : row.Yfdays
   row.Sfmzyq = row.Yfdays > 0 ? "" : "X"
+
+  
