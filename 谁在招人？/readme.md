@@ -1,10 +1,14 @@
+亮点： 面试官希望看到的简历是什么，而不是你想写什么
 [谁在招人？ 阮一峰](https://github.com/ruanyf/weekly/issues/1747)
 
+[面试官问系列 ](https://www.lxchuan12.cn/js-extend/)
+
+[牛客网](https://www.nowcoder.com/interview/ai/cover?jobTagId=644)
+[力扣](https://leetcode.cn/)
 
 
-牛客网，力扣
 
-
+[我在阿里招前端，我该怎么帮你？](https://blog.51cto.com/u_15490526/5291263)
 前端职业样例要求：
 YjJjcd
 广州爱范儿科技股份有限公司

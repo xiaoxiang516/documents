@@ -1,3 +1,7 @@
+[visualstudio](https://code.visualstudio.com/)
+名字来源
+VisualStudio 技术运用
+visual studio 可视化工作室
 ## 发明者：Erich Gamma
 Erich Gamma 是《设计模式》一书的作者之一
 
@@ -12,6 +16,7 @@ https://www.w3cschool.cn/vscode/vscode-intro.html
 
 
 [VSCode打断点](https://blog.csdn.net/mygoes/article/details/115363628)
+[visualstudio - debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 
 ## 断点：
 

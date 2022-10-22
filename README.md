@@ -25,8 +25,9 @@
 ### 首页
 
 搜索平台
-- [知乎](https://www.zhihu.com/)
-- [简书](https://www.jianshu.com/)
+- [![](./docs/images/zhihu.png)](https://www.zhihu.com/)
+
+- [![](./docs/images/jianshu.png)](https://www.jianshu.com/)
 - [CSDN](https://www.csdn.net/)
 - [juejin](https://juejin.cn/)
 - [segmentfault](https://segmentfault.com/)
@@ -34,6 +35,7 @@
 
 - [geeksforgeeks](https://www.geeksforgeeks.org/html/)
 - [blog.51cto](https://blog.51cto.com/u_15490526/5291263)
+- [geekbang](https://s.geekbang.org/)
 ---
 
 ### 搜书
