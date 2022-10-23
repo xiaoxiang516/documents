@@ -3,61 +3,44 @@
 ---
 
 生活旅途--读书写作日记
-编书也挺难的
+`Keep it simple,stupid 丹尼斯·里奇`
 
-# 目录
+--- 
 
 前言
-阮一峰在其博客中引入一句话到：“作为一名工程师，最被低估的技能是记录。说真的，如果有人可以教我怎么写文档，我会付钱，也许是 1000 美元。”
+写作不容易。阮一峰在其博客中引入一句话到：“作为一名工程师，最被低估的技能是记录。说真的，如果有人可以教我怎么写文档，我会付钱，也许是 1000 美元。”
+
+---
+### **45 岁以后的人生**
+
+**人的生理和智能的最高峰是 20 岁～30 岁这个年龄段。过了 30 岁，身体就慢慢走下坡路了，思维也不如
+以前活跃了。年轻的时候，长年累月的加班或许还可以承受，等进入中年，再这样拼，你的身体吃得消吗？
+加班好比折旧，加班越凶，折旧越快。我见过很多程序员刚过 30 岁，但看上去好像 40 岁，长期的缺乏运
+动和工作压力，使得他们的身体有着各种疾病，实际上已经不能承担高强度的工作，或者 deadline（截止期）的赶工压力了。**
+
+![](./docs/images/JavaScriptTutorial.png)
 
 
-> 第一编 环境配置与开发工具介绍
-生活场景例举
-百度首页的实现
-淘宝爬楼层
-上拉加载更多
 
-- HBuilder
-- VScode
-- WebStorm
-- Windows PowerShell
-- [Git](./Git/README.md)
+### 首页
 
-FAQ:
+搜索平台
+- [![](./docs/images/zhihu.png)](https://www.zhihu.com/)
 
-> 第二编 
-## 语言学习 官网阅读 写作练习
+- [![](./docs/images/jianshu.png)](https://www.jianshu.com/)
+- [CSDN](https://www.csdn.net/)
+- [juejin](https://juejin.cn/)
+- [segmentfault](https://segmentfault.com/)
+- [infoq](https://www.infoq.cn/)
 
-课外阅读,网站延伸：英语阅读，组件学习
-深入浅出Node.js 朴灵
-FAQ:
+- [geeksforgeeks](https://www.geeksforgeeks.org/html/)
+- [blog.51cto](https://blog.51cto.com/u_15490526/5291263)
+- [geekbang](https://s.geekbang.org/)
+---
 
-## 教案/教材编写:网站搭建：提供了后端
-基础最难复述，重复练习，不倦者何？
->前端三剑客基础
-- HTML及CSS 7个
-- js,jQuery 7个
-﻿CSS基础教程,JS基础教程，﻿拖拽事件没移除﻿，代码评审会议﻿看代码学习，写demo
-
-- html及CSS及js  7个
-FAQ:
-- 浏览器发展历史：
-- 谷歌
-- 算法 
-- 前端人物传记
-- 在此画作作品中，我关注的并非作品，而是作品背后的人
-## demo:功能代码块
-习题及答案
-水印
-文件上传:
-表格式：
-文件夹上传
-
-组合式练习
-系统练习
-
-代码练习
-技术说明文档练习
-## windows系统，linux
-
-
+### 搜书
+[小白盘](https://www.xiaobaipan.com/)
+[微信读书](https://developers.weixin.qq.com/miniprogram/dev/framework/)
+[月萌网](https://www.moonapi.com/news/books/id/172.html)
+[](https://www.moonapi.com/news/30053.html)
+[](http://geekdaxue.co/)

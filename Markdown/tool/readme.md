@@ -1,0 +1,2 @@
+[Typora下载、安装及使用](https://blog.csdn.net/xiaocui1995/article/details/123539701?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166640230816800192249433%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166640230816800192249433&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123539701-null-null.142^v59^pc_search_tree,201^v3^control_1&utm_term=typora%E4%B8%8B%E8%BD%BD&spm=1018.2226.3001.4187)
+[](https://typora.en.softonic.com/download)

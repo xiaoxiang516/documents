@@ -1,5 +1,7 @@
 ## 目录
-
+markdown中支持html
+典型理论：网页功能分析
+重点理论
 - [跳转]()
 - [图片](#图片)
 - [表格]()
@@ -17,15 +19,9 @@
 ![Alt](vscode插件.jpg)
 ## md中引入图片
 > 剪贴板截图粘贴自动生成图片目录
+- [![](./docs/images/zhihu.png)](https://www.zhihu.com/)
 
-1. 在sublime中写markdowm，引入图片写法如下
-   参考样式：![Alt](img.png)
-   
-2.如果想改变图片大小，写法按如下不支持
-    参考样式：![Alt](img.png =30x30)
-
-3.可以通过如下方式解决
-   <img src="img.png" width="30" height="30" />
+- [![](./docs/images/jianshu.png)](https://www.jianshu.com/)
 
 ## 表格
 

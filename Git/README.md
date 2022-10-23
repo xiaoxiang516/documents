@@ -2,7 +2,7 @@
 
 
 提示: 由于 Git 不支持空文件夾，创建文件夹后会生成空的 .keep 文件
-
+- [mozilla](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub)
 - [gitee](https://gitee.com/xiaoxiang516/)
 - [github](https://github.com/elemefe)
 - [Git/gitlab/github/tortoiseGit](https://blog.csdn.net/amnesiac666/category_10571446.html)
@@ -22,6 +22,11 @@ git的风险与不足
 Bash GUI
 笔记内容化见：Git_liaoxuefeng.md
 - 使用git进行word版本管理
+
+### 不同系统
+windows
+linux
+Mac
 
 ### 开发实践事件：
 团队公用一个分支开发，其中一个开发操作失误，出现代码覆盖，代码丢失
