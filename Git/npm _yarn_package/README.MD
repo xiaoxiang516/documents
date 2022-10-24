@@ -1,3 +1,6 @@
+[docs-npmjs](https://docs.npmjs.com/)
+
+[npmjs](https://www.npmjs.cn/)
 ### 实验 搭建环境
 - 安装卸载更新npm
 - 安装卸载更新yarn
