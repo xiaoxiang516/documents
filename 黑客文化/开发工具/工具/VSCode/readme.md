@@ -29,3 +29,5 @@ https://www.w3cschool.cn/vscode/vscode-intro.html
 
 
 vscode 写作计划
+安装插件
+![](./docs/images/extension.png)

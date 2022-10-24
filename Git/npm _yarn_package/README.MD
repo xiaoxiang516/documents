@@ -1,6 +1,12 @@
 [docs-npmjs](https://docs.npmjs.com/)
+Documentation for the npm registry, website, and command-line interface
+Managing your profile settings
+*profile*（记载个人心理或行为特点、喜好等的）档案
 
 [npmjs](https://www.npmjs.cn/)
+
+
+
 ### 实验 搭建环境
 - 安装卸载更新npm
 - 安装卸载更新yarn
