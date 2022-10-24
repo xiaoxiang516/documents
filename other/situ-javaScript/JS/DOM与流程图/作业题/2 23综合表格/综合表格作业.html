@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container {
+				width: 1200px;
+				margin: 0 auto;
+				border: 1px solid red;
+			}
+
+			table,
+			td,
+			th {
+				padding: 5px;
+				border: 1px solid black;
+				border-collapse: collapse;
+
+			}
+
+			td {
+				width: 230px;
+			}
+
+			th {
+				text-align: left;
+			}
+
+			button {
+				background: #00BFFF;
+				/* outline: red;//点击button时出现轮廓 */
+				padding: 5px 10px;
+				border-radius: 5px;
+				/* border-color: #00BFFF; */
+				border: none;
+				color: white;
+			}
+
+			.top-content,
+			.table-content {
+				margin-bottom: 20px;
+			}
+
+			input {
+				margin-right: 5px;
+				outline: none;
+				padding: 4px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 数据从哪里来(后端),数据要怎么展示  业务需求 -->
+		<div class="container">
+			<div class="top-content">
+				<label>添加：</label><!-- 问题，button底边框与input底边框对齐 -->
+				<input type="text" placeholder="姓名" class="name" />
+				<input type="text" placeholder="年龄" class="age" />
+				<button type="button" class="add">添加</button>
+				<!-- <label>变色：</label><button type="button">开始移入变色</button> -->
+			</div>
+			<div class="table-content">
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>姓名</th>
+							<th>年龄</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>张三</td>
+							<td>33</td>
+							<td>删除</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>李四</td>
+							<td>34</td>
+							<td>删除</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>王五</td>
+							<td>25</td>
+							<td>删除</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>赵六</td>
+							<td>16</td>
+							<td>删除</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="search-order">
+				<label>搜索：</label>
+				<input type="text" placeholder="姓名" class="input1"/>
+				<button type="button" class="btn1">搜索</button>
+				<label>排序：</label>
+				<button type="button" class="sort">年龄从小排序</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="table.js"></script>
+
+	</body>
+</html>

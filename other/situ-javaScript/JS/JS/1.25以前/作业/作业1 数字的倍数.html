@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 1/在页面中有一个输入框,一个按钮,    
+		 在输入框中输入数字,打印出这个数字是不是偶数
+,是不是3的倍数,是不是3和7的倍数 -->
+		<input type="text" id="num" />
+		<button type="button" onclick="getNum()">获取数字</button>
+		<script>
+			function getNum() {
+				var num1 = document.getElementById("num").value; //类型是怎么匹配的
+				// 左侧是不确定数据类型,那么,等号右侧的数据类型是什么
+				if (num1 % 2 == 0) {
+					console.log(num1 + "是偶数");
+				}
+				if (num1 % 3 == 0) {
+					console.log(num1 + "是3的倍数");
+					if (num1 % 7 == 0) {
+						console.log(num1 + "是3和7的倍数");
+					}
+				}
+				else console.log("没有判断标准");
+
+			}
+		</script>
+	</body>
+</html>

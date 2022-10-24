@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.grand {
+				width: 180px;
+				height: 180px;
+				
+				margin: 100px;
+				padding: 10px;
+				border: 10px solid orange;
+			}
+
+			.father {
+				width: 140px;
+				height: 140px;
+				
+				padding: 10px;
+				border: 10px solid black;
+			}
+			.son {
+				width: 100px;
+				height: 100px;
+				
+				padding: 10px;
+				border: 10px solid #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- https://www.jb51.net/article/201382.htm#_label0 -->
+		<!-- https://www.jb51.net/article/201382.htm -->
+		<!-- 元素可见的大小由其高度、宽度决定，包括所有内边距，滚动条和边框大小四个属性 -->
+		<div class="grand">
+			<div class="father">
+				<div class="son"></div>
+			</div>
+		</div>
+		<!-- 外边到内边
+		offsetLeft:元素的左外边框至包含元素的左内边框之间的像素距离
+		offsetTop：元素的上外边框至包含元素的上内边框之间的像素距离
+		offsetParent:offsetLeft与offsetTop属性与包含元素有关，包含元素的引用保存在offsetParent属性中 -->
+		<!--元素坐标是左上角顶点：(文档坐标) 所有HTML元素拥有offsetLeft和offsetTop属性来返回元素的X和Y坐标。 -->
+
+		<script type="text/javascript">
+			var grand = document.getElementsByClassName('grand')[0];
+			var father = document.getElementsByClassName('father')[0];
+			var son = document.getElementsByClassName('son')[0];
+
+			console.log(grand.offsetHeight); // 220
+			console.log(grand.offsetWidth); // 220
+
+			console.log(son.offsetParent); // <body></body>
+			console.log(son.offsetLeft); // 148 // body的8pxmargin
+			console.log(son.offsetTop); //
+
+			// 当我们去修改某一个父元素的position的时候发生了这样的变化
+			grand.style.position = 'relative';
+			console.log(son.offsetParent); // grand作为了包含元素
+			console.log(son.offsetLeft); // 30
+			console.log(son.offsetTop); // 30
+
+			console.log(son.scrollHeight);
+		</script>
+	</body>
+</html>
+HTML元素有几个offset、client、scroll开头的属性，总是让人摸不着头脑。在书中看到记下来，分享给需要的小伙伴。主要是以下几个属性：
+
+　　第一组：offsetWidth,offsetHeight,offsetLeft,offsetTop,offsetParent
+
+　 第二组：clientWidth,clientHeight,clientLeft,clientTop
+
+　　第三组：scrollWidth,scrollHeight,scrollLeft,scrollTop
+
+　　详细定义如下：
+
+　　1.1 HTML元素的offsetWidth,offsetHeight以CSS像素返回它的屏幕尺寸，包含元素的边框和内边距，不包含外边距。border+padding
+
+　　1.2 offsetLeft和offsetTop属性返回元素的X和Y坐标。通常，它们返回值即是文档坐标。
+但对于已定位元素的后代元素和一些其他元素（如表格单元），这些属性返回的坐标是相对于祖先元素的而非文档。
+
+　　1.3
+offsetParent属性指定offsetLeft,offsetTop相对的父元素。如果offsetParent为null，后两者的返回值则为文档坐标。
+因此一般来说，用offsetLeft和offsetTop来计算元素e的位置需要一个循环：
+ 
+//计算元素的文档坐标
+function getElementPosition(e){
+var x=0,y=0;
+while(e !=null){
+x +=e.offsetLeft;
+y +=e.offsetTop;
+e=e.offsetParent;
+}
+return {x:x, y:y} ;
+}
+该方法计算的位置也不总是正确的，推荐使用内置的getBoundingClientRect()方法。
+
+　　2.1
+clientWidth和clientHeight类似于offsetWidth和offsetHeight属性，不同的是它们不包含边框大小，只包含内容和内边距。
+同时，如果浏览器在内边距和边框之间添加了滚动条，clientWidth和clientHeight的返回值也不包含滚动条。
+注意，对于类型<i>,<code>和<span>这些内联元素，clientWidth和clientHeight总是返回0。
+
+			　　2.2
+			clientLeft和clientTop返回元素的内边距的外边缘和它的边框的外边缘之间的水平距离和垂直距离，通常这些值就等于左边和上边的边框宽度。
+			但是如果元素有滚动条，并且浏览器将这些滚动条旋转在左侧或顶部，他们就还包含了滚动条的宽度。对于内联元素，它们总是为0。
+			通常clientLeft和clientTop用处不大。
+
+			　　3.1
+			scrollWidth和scollHeight是元素的内容区域加上它的内边距再加上任何溢出内容的尺寸。当内容正好和内容区域匹配而没有溢出时，这些属性与clientWidth和clientHeight是相等的。但当溢出时，它们就包含溢出的内容，返回值比clientWidth和clientHeight要大。
+
+			　　3.2
+			scrollLeft和scrollTop指定元素的滚动条的位置。注意，scrollLeft和scrollTop是可写的，通过设置它们来让元素中的内容滚动(HTML元素并没有类似Window对象的scrollTo()方法)。
+<!-- scrollTop属性是什么? 有些情况下,“元素中内容”的高度会超过“元素本身”的高度, -->
+			obj.offset[WidthHeightTopLeft] 　取控件相对于父控的位置
+			event.offset[XY] 取鼠标相在触发事件的控件中的坐标
+			event.screen[XY] 鼠标相对于屏幕坐标
+			event.client[XY] 鼠标相对于网页坐标在在
+			obj.scroll[WidthHeightTopLeft]　获取对象滚动的大小
+			obj.client[WidthHeightTopLeft]　获取对象可见区域的大小
+

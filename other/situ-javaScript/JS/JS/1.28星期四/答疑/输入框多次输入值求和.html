@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 6.通过浏览器的输入框输入多次数值,点击记录按钮,
+		将数值保存起来,点击求和按钮,打印出所有输入数值之和 -->
+		<!-- 潇湘： -->
+		<!-- <input type="text" id="num" />
+		<button type="button" onclick="record()">记录数据</button>
+		<button type="button" onclick="sum1()">求和</button>
+		<script type="text/javascript">
+			var arr = [];
+			var a = 0,sum = 0;
+			function record() {
+				arr[a] = document.getElementById("num").value;
+				a++;
+			}
+			console.log(arr);
+			function sum1() {
+				for (var i = 0; i < arr.length; i++)
+					sum += parseFloat(arr[i]);
+				console.log("sum:"+sum);
+			}
+		</script> -->
+
+
+
+		<!-- 潇湘 -->
+		<!-- <input id="a" />
+		<input id="savebtn" type="button" value="保存" />
+		<input id="sumbtn" type="button" value="求和" />
+ -->
+		<!-- <script>
+			function save() {
+				console.log(document.getElementById("a").value + "-----------");
+				console.log(typeof document.getElementById("a").value + "-----------");//string
+				console.log(document.getElementById("a")); //打印结果<input id="a"/>
+				console.log(document.getElementById("savebtn"));
+				//打印结果 <input id="savebtn" type="button" value="保存" />
+				console.log(typeof document.getElementById("savebtn")); //object
+				
+			}
+			save();
+			
+			console.log("-----------------------------------");
+			obj={
+				name:"张三",
+				age:22
+			}
+			console.log(obj);
+			console.log(typeof obj.age);
+		</script> -->
+
+		<!-- 崔老师 -->
+		<input id="a" />
+		<input id="savebtn" type="button" value="保存" />
+		<input id="sumbtn" type="button" value="求和" />
+		<script>
+			var arr = [];
+			var index = 0;
+			var sum = 0;
+			document.getElementById("savebtn").onclick = save;
+			//onclick 是对象<input type="button"/>默认有的属性,相对于obj中属性是函数;onclick
+			//属性采用具名函数形式,若在script之外
+			/* var car = {
+				color: "银色",
+				brand: "宝马",
+				model: "E5",
+				owner: {
+					name: "李四"
+				}, //也是一个对象
+				run: function() {
+					console.log("车载飞驰");
+				}
+			}; */
+			function save() {
+				var ai = document.getElementById("a");
+				var ai_v = ai.value;
+				arr[index] = ai_v;
+				index++;
+			}
+
+			document.getElementById("sumbtn").onclick = function() { //对象sumbtn的属性onclick是一个函数
+				for (var i = 0; i < arr.length; i++) {
+					sum = sum + parseInt(arr[i]);
+				}
+				console.log(arr);
+				console.log(sum);
+			};
+		</script>
+
+
+
+	</body>
+</html>

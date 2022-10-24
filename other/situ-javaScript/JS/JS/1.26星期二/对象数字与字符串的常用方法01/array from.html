@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		 <!-- Array.from();的用途 -->
+		 数组对象中包含属性from,from存储着一个函数
+		<script type="text/javascript">
+			/* https://www.cnblogs.com/kongxianghai/p/7417210.html
+			https://www.cnblogs.com/jf-67/p/8440758.html
+			
+			Array增加了from函数用来将其他对象转换成数组.可以将两种对象转换成数组。
+			1.部署了Iterator接口的对象,比如：Set,Map,Array。(可迭代的对象)
+			2.类数组对象,什么叫类数组对象,就是一个对象必须有length属性,没有length,转出来的就是空数组。(拥有 length 属性的对象)
+			Array.from(object, mapFunction, thisValue)   浅拷贝的副本实例
+			 00.Array
+			 01.参数：mapFunction数组中每个元素要调用的函数。
+			 02.返回值：如果对象是数组返回 true,否则返回 false
+			 */
+			
+			/* 类数组对象。数组可以为空;元素之间逗号隔开;有长度,下标是数字
+			类数组对象,最基本的要求就是具有length属性的对象	 */
+			console.log(Array.from('123456'));/*字符串有length属性,可以将字符串转为一个数组*/
+			console.log(Array.from(123456));/*得到空数组,因为数字没有length属性 */
+			var num=123456; console.log(num.length,'-------------00');
+			console.log(Array.from([1,2,3]));/*返回数组本身*/
+			
+			var arrayLike = { //类数组对象
+				0: "潇湘",
+				1: '22',
+				2: '神',
+				3: ['娥皇', '女英'],
+				'length': 4
+			}
+			var arr = Array.from(arrayLike);/*类数组对象:属性名相当于数组下标(这个要求了类数组对象属性名为数值型或字符串型数字),属性存储值相当于数组元素;
+			逗号,分隔数组元素;length数组长度*/
+			console.log(arr);
+
+			var arrayLike = { //类数组对象
+				'0': "潇湘",
+				'1': '22',
+				'2': '神',
+				'3': ['娥皇', '女英'],
+				'length': 4
+			}
+			var arr = Array.from(arrayLike);
+			console.log(arr);
+			 
+			 
+			var arrayLike = {
+				0: "潇湘",
+				1: '22',
+				2: '神',
+				3: ['娥皇', '女英'],
+				// 'length':4
+			}
+			var arr = Array.from(arrayLike);
+			console.log(arr); //长度为0的空数组
+
+			var arrayLike = { //具有length属性,但是对象的属性名不再是数字类型的,而是其他字符串型的
+				'name': "潇湘",
+				'age': '22',
+				'sex': '神',
+				'who': ['娥皇', '女英'],
+				'length': 4
+			}
+			var arr = Array.from(arrayLike);
+			console.log(arr); // [ undefined, undefined, undefined, undefined ]
+			
+			
+			
+		</script>
+	</body>
+</html>

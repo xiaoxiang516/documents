@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fun(n, o) {
+				console.log(o);
+				return { //匿名对象
+					fun: function(m) {
+						return fun(m, n);
+						//不断引用顶层函数fun(n, o) 的参数n,闭包:该释放的变量没有得到释放,被保存下来
+					}
+				};
+			}
+			/* // 一样
+			function fun(n, o) {
+				console.log(o);
+				var obj = {
+					fun: function(m) {
+						return fun(m, n);
+					}
+				};
+				return obj;//有名对象
+			}*/
+ 
+
+
+			// 判断函数类型  具名函数（命名函数）和匿名函数(表达式)    匿名函数表达式function(m) {}。
+			Anonymous Function 
+			1958年LISP首先采用匿名函数,自此之后,越来越多编程语言陆续采用,主流的编程语言如PHP[1]和C++[2]也陆续采用
+			var s1 = fun,
+				s2 = fun().fun; //s2：在赋值过程中打印了一个undefined
+			console.log(s1.name + "--------------------1");
+			console.log(s2.name + "--------------------2");
+			// 在JS中函数可以分为两种,具名函数（命名函数）和匿名函数,赋值给一个变量xx,通过xx.name判断
+			console.log("");
+			// 第二个例子
+			var b = fun(0)
+				.fun(1)
+				.fun(2)
+				.fun(3);
+
+			// 一个语句, 进行了链式调用
+		</script>
+		
+		<script type="text/javascript">
+			https://www.wiki-wiki.top/baike-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0
+			// JavaScript支持匿名函数。
+			// 匿名函数（英语：Anonymous Function）在计算机编程中是指一类无需定义标识符（函数名）的函数或子程序,普遍存在于多种编程语言中。
+			alert((function(x){
+				return x*x;
+			})(10)); // 提示100
+			alert(());
+		</script>
+	</body>
+</html>

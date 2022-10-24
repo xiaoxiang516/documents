@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.numbox {
+	text-align: center;
+	color: dodgerblue;
+	font-size: 100px;
+	font-weight: bold;
+}
+
+.inputbox {
+	text-align: center;
+}
+
+.extract {
+	margin-top: 40px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+#maxnum {
+	height: 30px;
+	width: 260px;
+	font-size: 26px;
+	/* 垂直对齐 */
+	vertical-align: middle;
+	/* 和他对齐的元素也要有这个属性 */
+	outline: none;
+	/* 选中时不显示边框 */
+
+}
+
+button {
+	height: 30px;
+	padding: 0 10px;
+	background-color: dodgerblue;
+	border-radius: 3px;
+	/* 圆角 */
+	border: 0;
+	/* 去掉尖角 */
+	vertical-align: middle;
+	/* 和他对齐的元素也要有这个属性 */
+	outline: none;
+	/* 选中时不显示边框 */
+}

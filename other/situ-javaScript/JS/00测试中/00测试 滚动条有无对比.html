@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 单个div */
+			.div1{
+				height: 100px;
+				width: 100px;
+				/* overflow: scroll; */
+				border: 10px solid #000000;
+				padding: 8px;
+				margin: 7px;
+			}
+			.div2{
+				height: 100px;
+				width: 100px;
+				overflow: scroll;
+				border: 10px solid #000000;
+				padding: 8px;
+				margin: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<img src="../DOM与流程图/作业题/23下午作业.png" alt="">
+		<p>潇湘</p>
+		<a href="">宝儿</a>
+		
+		<script src="../JS/1.27星期三/jQuery-1.8.2.js"></script>
+		<script type="text/javascript">
+			
+			$('img').empty();
+			$('a').remove();
+			$("p").text('444'); $("p").text('555'); 
+			var div1=document.querySelector('.div1');
+			console.log("--------没有滚动条---------");			
+ 			console.log(div1.clientWidth,div1.clientHeight);
+			console.log(div1.offsetWidth,div1.offsetHeight);
+			console.log(div1.scrollWidth,div1.scrollHeight);
+			/*clientHeight = (content height) + (padding top+padding bottom);*/  /* 100+8+8 */
+			/*offsetHeight = height + padding + border.*/ /* 100+8*2+10*2=136 */
+			
+			console.log("--------有滚动条---------");
+			var div2=document.querySelector('.div2');
+			console.log("有滚动 client",div2.clientWidth,div2.clientHeight);
+			console.log("有滚动 offset",div2.offsetWidth,div2.offsetHeight);
+			console.log("有滚动 scroll",div2.scrollWidth,div2.scrollHeight);
+			/*clientHeight = (content height) + (padding top+padding bottom);*/  /* 100+8+8 */
+			/*offsetHeight = height + padding + border.*/ /* 100+8*2+10*2=136 */
+		</script>
+	</body>
+</html>

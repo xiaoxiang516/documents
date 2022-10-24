@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+		<!-- 声明一个函数,传入一个值,判断这个值,是正数还是负数,还是0
+		如果是正数返回1,负数返回-1,是0返回0 -->
+		<script type="text/javascript">
+			function judge(number){
+				if(number>0){//positive number
+					return 1;
+				}
+				else if(number==0){
+					return 0;
+				}
+				else{//negative
+					return -1;
+				}
+			}
+			var num=judge(788);
+			console.log(num);
+			
+		</script>
+
+
+	</body>
+</html>

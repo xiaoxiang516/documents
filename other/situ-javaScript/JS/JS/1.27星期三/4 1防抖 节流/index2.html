@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<input class="name" type="text" />
+		
+		<script> 
+			// function debounce() {
+			// 	var time = null;
+			// 	console.log(555); 
+			// }
+			// document.querySelector('input.name').oninput = debounce();
+			//  // 一个函数的参数是函数,这与array.find(function(currentValue, index, arr),thisValue)
+			//  // 为事件源对象（input）的上的属性oninput添加值，事件触发时自动调用,
+			//  // 好神奇,它竟然知道触发了
+			var timer = null; // 没有计时
+			function aaa(e) { // 频繁触发的事件中少放声明,占内存
+				console.log(this.value);//当前对象的文本值吗,专指文本框的吗
+				console.log(e);//事件源
+			} 
+			document.querySelector('input.name').oninput = function(e) {
+				if(timer) clearTimeout(timer); // 存在等待时间
+				// 事件触发,倒计时（延时）开始;事件连续触发,倒计时重新开始(重置倒计时)
+				timer = setTimeout(() => { // 倒计时为0,打印结果(执行函数)
+					aaa.call(this,e);
+					timer = null; // 函数执行，倒计时变为null  
+				}, 1000); // 执行并判断到时间了吗
+			};
+			
+			// function aaa() { console.log('aaa') }	
+			// document.querySelector('input.name').addEventListener('input', aaa);	
+			
+		</script>
+	</body>
+</html>

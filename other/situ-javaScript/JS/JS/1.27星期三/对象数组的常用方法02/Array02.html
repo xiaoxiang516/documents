@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>every布尔值  filter返回数组,判断,返回</title>
+		<!-- 此页目录： -->
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*  array.every(function(currentValue,index,arr), thisValue)
+			01.array
+			参数：currentValue必须。,其余,都为可选
+			返回值：	boolean.如果所有元素都通过检测返回 true,否则返回 false */
+			//数组名代表全体数组元素(所有变量),函数名代表函数的定义形式
+			var ages = [20, 21, 22, 23, 24, 18, 19, 33];
+
+			function fun1(a) { //若名为fun则调用后面的函数去了
+				return a > 15;
+			}
+			var b = ages.every(fun1); // 数组的每个元素(数组名代表全体一次性调用)都调用了fun方法进行判断
+			console.log(b, '------every-------'); //true
+
+			arr = [12, 34, 56, 20, 78, 1, 90];
+			function f1(item) {
+				return item >= 90;
+			}
+			console.log(arr.some(f1), '---------some----------'); //true
+			/* some 与或非 */
+			new_arr = arr.sort(); //arr改变
+			console.log(arr); //(7)[1, 12, 20, 34, 56, 78, 90]
+			console.log(new_arr); //(7) [1, 12, 20, 34, 56, 78, 90]
+			console.log('');
+
+
+			/* array.filter(function(currentValue,index,arr), thisValue)
+			00.array
+			01.参数：
+			currentValue	必须。当前元素的值
+			index	可选。当前元素的索引值
+			arr	可选。当前元素属于的数组对象
+			返回值：类型:数组. 有符合条件的都装入数组,没有,就是空数组*/
+			arr = [12, 23, 34, 56, 78, 89, 90]; //重新赋值
+			function fun(num) {
+				return num > 60;
+			}
+			console.log(arr.filter(fun), "----------filter------01"); //筛选所有大于60的数据
+			console.log(arr.find(fun), "------find--------" + "\t", arr.findIndex(fun)); //返回符合条件的第一个元素值,索引值
+
+
+
+			/* array.forEach(function(currentValue, index, arr), thisValue) 
+			调用数组的每个元素,并将元素传递给回调函数
+			00.array:改变原数组
+			01.参数：
+			currentValue	必需。当前元素
+			index	可选。当前元素的索引值。
+			arr	可选。当前元素所属的数组对象。
+			02.返回值：undefined
+			没有返回值,本质上等同于 for 循环,对每一项执行 function 函数。
+			即map是返回一个新数组,原数组不变,forEach 是改变原数组。
+			*/
+			arr = [12, 23, 34, 56];
+			console.log("forEach()");
+			arr.forEach(function(item, index, array) {
+				console.log(array[index]);
+			});
+			console.log('');
+
+
+
+			/* https://www.cnblogs.com/kongxianghai/p/7417210.html
+			https://www.cnblogs.com/jf-67/p/8440758.html
+			
+			Array增加了from函数用来将其他对象转换成数组.可以将两种对象转换成数组。
+			1.部署了Iterator接口的对象,比如：Set,Map,Array。(可迭代的对象)
+			2.类数组对象,什么叫类数组对象,就是一个对象必须有length属性,没有length,转出来的就是空数组。(拥有 length 属性的对象)
+			Array.from(object, mapFunction, thisValue)   浅拷贝的副本实例
+			 00.Array
+			 01.参数：mapFunction数组中每个元素要调用的函数。
+			 02.返回值：如果对象是数组返回 true,否则返回 false
+			 */
+			var str = "你好世界";
+			arr = Array.from(str); // 通过拥有 length 属性的对象返回一个数组
+			console.log(arr, "---------------Array.from------------------------02"); //生成一个新数组
+			/* split()	用分隔符把字符串分割为字符串数组。 */
+			console.log(Array.from('foo'));
+			console.log(Array.from([1, 2, 3], x => x + x)); //mapFunction数组中每个元素要调用的函数。
+			console.log('');
+			var obj = { //类似结构体
+				value: "hello",
+				// length: 2
+			}
+			arr = Array.from(obj.value); //相当于Array.from("hello");
+			console.log(arr);
+			/* 使用箭头语法和映射函数更改元素的值 */
+			arr = [12, 23, 34, 56, 78, 89, 90];
+			arr = Array.from(arr, x => x - 10); //每个元素减去10
+			console.log(arr, "----------------------------------03");
+ 
+		</script>
+	</body>
+</html>

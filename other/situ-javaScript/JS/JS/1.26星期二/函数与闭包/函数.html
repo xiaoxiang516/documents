@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log(fun  ); /* 如果变量在文档中有声明,那么不管何时使用此变量都无妨。打印第二个 */
+			/* function fun(){} */
+			function fun(a) {
+				return a > 15;
+			}
+/*function语句作为函数声明语句,其内容相当于重新对函数赋值,多次声明fun是函数,但在调用fun时调用的是最后赋值的那个*/
+			function fun(t, m) {
+				return t > 15;
+			}
+
+
+			function fun1(a1) {
+				return a1 > 115;
+			}
+			console.log(fun1  );// 打印第二个,注释第二个,就会打印第一个
+
+			function fun1(t1, m1) {
+				return t1 > 115;
+			}
+
+
+
+			function fun2(a2) {
+				return a2 > 225;
+			}
+			function fun2(t2, m2) {
+				return t2 > 225;
+			}
+			console.log(fun2  );// 打印第二个
+		</script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			array.shift()把数组的第一个元素从其中删除,并返回第一个元素的值
+			array.pop()删除数组的最后一个元素并返回删除的元素
+			
+			 00.array:二者都改变
+			 01.参数：二者都无
+			 02.返回值：shift：任何类型（*）	数组原来的第一个元素的值（移除的元素）
+			 pop：返回删除的元素
+			 */
+			arr = [12, 34, 56, 20, 78, 89, 90];
+			console.log(arr.shift(), arr);//从头删除第一个元素12
+			arr.unshift(88, 101); //从后添加元素
+			console.log(arr);
+			// shift是删除第一项(就是下标为0的一项),并且返回删除的值
+			// unshift是在数组的前面添加,返回一个新数组的长度
+
+		 
+			/* 
+			array.push(item1, item2, ..., itemX) 向尾端添加元素
+			00.array:改变
+			01.参数:itemX  必需。要添加到数组末尾的一个或更多元素
+			02.返回值:Number	数组新长度*/
+			arr = [12, 34, 56, 78];
+			console.log(arr.push(66), "------push--------", arr); // Number:5  66添加到了数组
+			console.log(" ");
+
+
+			/* 
+			array.shift();返回删除的元素
+			00.array:值改变。         同array.copyWithin(target, start, end)  
+			01.参数：未知
+			02.返回值：数组原来的第一个元素的值（移除的元素）任何类型（*）
+			值类型：任何类型（*）数组元素可以是一个字符串,数字,数组,布尔,或者其他对象类型*/
+
+			var arr = [12, 34, 56, 78];  
+			console.log(arr.shift() , arr, "---------" + arr.length); //打印删除的元素12
+			arr = [];
+			console.log(arr.shift()); //返回arr[0],undefined
+			console.log("");
+
+
+
+			//如果a-b>0 那么a,b就换位置  正序排序   大的(a)在后
+			//a(第一个数值)  b(第二个数值)
+			arr = [12, 34, 56, 20, 78, 9, 90];
+			function s(a, b) {
+				return a - b; //(7) [9, 12, 20, 34, 56, 78, 90]
+				// return b-a;//(7) [90, 78, 56, 34, 20, 12, 9]
+			}
+			arr.sort(s);
+			console.log(arr);
+
+
+
+			/* 判断0
+			Array.isArray(obj)// 判断obj是否是一个数组
+			01参数obj 必需,要判断的对象。
+			02.返回值：布尔值 true  false*/
+			var arr = [12, 34, 56, 78];
+			console.log("判断obj是否是一个数组");
+			console.log(Array.isArray(arr), "---isArray---", Array.isArray("123"), Array.isArray(123));
+			// true------	false------	false
+			console.log("");
+
+
+			/* 将字符串转化为字符串的数组
+			方法用于通过拥有 length 属性的对象或可迭代的对象来返回一个数组。
+			Array.from(object, mapFunction, thisValue)
+			 00.Array
+			 01.参数：
+			 02.返回值：如果对象是数组返回 true,否则返回 false
+			 */
+			var str = "你好世界";
+			arr = Array.from(str); // 通过拥有 length 属性的对象返回一个数组
+			console.log(arr + "---------------------------------------02"); //
+			/* split()	把字符串分割为字符串数组。 */
+
+
+			/* array.fill(value, start, end)
+			 00.array：值改变
+			 01.参数：value必需。填充的值。
+			 start	可选。开始填充位置。
+			 end	可选。停止填充位置 (默认为 array.length)
+			 */
+			var arr = new Array(5);
+			arr.fill(52, 0, 3); //固定元素填充到数组
+			console.log(arr);
+
+			//类似结构体
+			var obj = {
+				value: "hello",
+				// length: 2
+			}
+			arr = Array.from(obj.value);
+			console.log(arr);
+			/* 箭头函数 语法比函数表达式更短,并且不绑定自己的 this,arguments,super 或 new.target。
+			这些函数表达式最适合用于非方法函数,并且它们不能用作构造函数
+            使用箭头语法和映射函数更改元素的值 */
+			arr = [12, 23, 34, 56, 78, 89, 90];
+			arr = Array.from(arr, x => x - 10); //每个元素减去10
+			console.log(arr, "----------------------------------03");
+		</script>
+	</body>
+</html>

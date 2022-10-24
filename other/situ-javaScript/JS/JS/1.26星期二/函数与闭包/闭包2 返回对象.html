@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//闭包-----------返回对象
+
+			function A() {
+				console.log("A函数被调用");
+				return { //返回匿名对象
+					name: "张三",
+					run: function() {
+						console.log("张三正在跑");
+					}
+				};
+			}
+
+
+			/* function A() {
+				console.log("A函数被调用");
+				var obj = {
+					name: "张三",
+					run: function() {
+						console.log("张三正在跑");
+					}
+				};
+				return obj; //返回具名对象
+			} */
+			// 调用函数内部对象的属性保存的函数
+			A().run(); ////步骤1,2可以合并
+
+			console.log("");
+			var aa = A(); //步骤1
+			aa.run(); //obj.run();//步骤1
+		</script>
+	</body>
+</html>

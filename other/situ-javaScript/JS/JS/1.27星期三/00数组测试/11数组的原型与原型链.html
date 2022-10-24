@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		数组创建；2）数组内容增删查、改；3）数组与其他的转换与比较
+		<script type="text/javascript">	
+		    
+		    从变量(或对象)的创建开始(arr = [1,2,3,4])
+			变量var arr=[];变量的构造函数:new Array(),变量的原型:Array.prototype;
+			Array这个构造函数(这个对象)的构造函数new Object()
+			Array的原型:Object.prototype;Object的原型?,Object的
+			
+			Array.isArray();//这个能直接通过Array点来调用，说明该方法是挂在Object.prototype上面的
+			Array.from();//这个能直接通过点来调用，说明该方法是挂在Object.prototype上面的
+			array.indexOf(item,start)//这个能直接通过点来调用，说明该方法是挂在什么上面的呢
+			Object.prototype.
+			
+			
+			
+			常见的数组原型链
+			怎么发明Array函数?(声明函数;构建该函数的prototype属性)
+			function Array(){}
+			Array.prototype=new Object();//Array.prototype={};
+			Array.prototype.push=function(){}
+			Array.prototype.pop=function(){}
+			Array.prototype.slice=function(){}
+			Array.prototype.reduce=function(){}
+			……
+			任何构造函数的prototype初始时用Object(一个对象来创建)
+			
+			
+			数组的原型链 arr=>Array.prototype=>Object.prototype=>null    原型对象的原型对象
+			js规定Object.prototype的原型对象是null
+			以上,06:js架构体系中原型链顶点(最顶端)是Object.prototype(因为所有构造函数都是new Object()得来的)    (其他都与数组类似);
+			 
+			var arr=[];//小蝌蚪
+			预见问题:小蝌蚪找妈妈的问题,知道父亲,母亲是谁,以便判定类型,
+			在Array.prototype上开辟常见属性指向父亲母亲
+			Array.prototype.constructor=Array;//构造函数,母亲
+			Array.prototype.__proto__=Array.prototype;//父亲,前面两个_
+			
+			问题:变量或对象有prototype属性吗,比如;var arr=[];可以写arr.prototype吗,
+			
+	 
+		</script>
+	</body>
+</html>
+<!-- <script type="text/javascript">
+		function fun(a,b){
+			console.log(this);
+			console.log(a);
+			console.log(b);
+		}
+		fun.call(window,100,1000);//Function.prototype.call=function(){}
+		
+		var arr=[];
+		console.log(Object.prototype.toString.call(arr)==='[object Array]');
+		
+		function fun(a,b){
+			var arr=Array.prototype.slice.call(arguments,0);
+		}
+		fun(100,1000);
+				
+</script> -->

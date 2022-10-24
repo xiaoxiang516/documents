@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>NumberObject类型转换</title>
+		<!-- 除了valueOf()返回值是数字对象原来的数值,其余函数返回值为字符串 -->
+		<!-- 数值,字符串和布尔转换的规则 -->
+		<!-- Number() 转换为数字, String() 转换为字符串, Boolean() 转换为布尔值。 -->
+		<!-- 数字转换为字符串的方法 toString toLocalString to-->
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*数字的字符串形式          数字的几进制形式以字符串表示   
+			NumberObject.toString(radix) 
+			01.非NumberObject  抛出TypeError  
+			02.参数: A: radix基数,进制的基数,代表几进制 B无参：默认radix=10  
+			03.返回值:字符串*/
+			var num = 12,
+				arr = [1, 2];
+			console.log(typeof num, typeof new Number(12), num instanceof Number); //显示颜色:蓝色
+			console.log('二进制：', num.toString(2), "三进制：" + num.toString(3)); //显示颜色:灰色
+			console.log(arr instanceof Array)
+			console.log("");
+			/* instanceof 是 Java 的一个二元操作符
+			 它的作用是测试它左边的对象是否是它右边的类的实例,返回 boolean 的数据类型
+			 在 JavaScript 中, typeof 运算符用来判断一个变量的类型,在判断引用类型 
+			 无论引用的是什么类型的对象,
+			 它都返回 "object"。ECMAScript 引入了另一个 Java 运算符 instanceof 来解决这个问题。*/
+			 
+
+			/*取对象存储值obj.valueOf()     对象与引用值 valueOf与toString */
+			/* NumberObject.valueOf()      
+			00.NumberObject：如果是Number行不行
+			01.参数:无参吗
+			03.返回值:函数返回值类型看obj是哪一种   */
+			num = 12;
+			console.log(typeof "1,2,3".valueOf() + "\t", [1, 2, 3].valueOf(), "--------------------------------1");
+			console.log(num.valueOf() + "\t" + typeof num); //此时的num是number不是Obj
+			num = new Number(12); // /此时的num是obj对象
+			console.log(typeof num + "\t" + typeof num.valueOf());
+			console.log("");
+
+			/* 	数字字符串形式, 
+			小数位数     本地环境字符串
+			NumberObject.toLocaleString() 出现千分位符号和小数位数的删减
+			00.NumberObject没变
+			01.NumberObject：非NumberObject, 抛出TypeError 
+			02.参数：没说  
+			03.返回值：使用地区特定的分隔符把生成的字符串  看下面的时间对象   */
+			/* 规定小数位数
+			NumberObject.toFixed(num)      四舍五入  规定小数位数
+			00.NumberObject没变
+			01.NumberObject……02. 参数num必需。规定小数的位数范围[0,20],还是[0,100](浏览器提示)??,
+			否则RangeError
+			02.参数省略,默认零
+			03.返回值：NumberObject 的字符串表示 */
+			num = 123456.789789789;
+			console.log(num.toLocaleString() + "------------" + num + "------------" + typeof num, "---------02"); //123,456.79 num没改变
+			console.log(num.toFixed(6) + "----toFixed----" + num.toFixed(100)); //123456.789790 
+			console.log(num);
+			console.log("");
+			var date = new Date();
+			console.log(date.toString() + "-----------toString--------------");
+			console.log(date.toLocaleString() + "-----------toLocaleString--------------"); //看电脑形式
+			/* 使用地区特定的分隔符把生成的字符串连接起来, 形成一个字符串。 */
+			console.log("");
+
+			var i = 0.1 + 0.2; //浮点型,可以表示小数,但是不能非常精确的表示   浮点型的精度问题
+			console.log(i + "---------------------------------03"); //0.30000000000000004 
+			console.log(i.toFixed(5) + "\t" + typeof i.toFixed(5)); //0.30000     string
+			var num_fix = 13.444;
+			console.log(num_fix.toFixed(2), (13.445).toFixed(2), (13.446).toFixed(2)); //四舍五入
+			console.log(num_fix.toFixed(99)); //浮点型的精度问题 超过100 RangeError
+			console.log("");
+
+			/* 小数 指数形式
+			小数点之前有一位数字,小数点之后有 num 位数字(指数计数法)
+			NumberObject.toExponential(num)   
+			00. NumberObject值不会改变
+				01. 参数: num必需。 规定指数计数法中的小数位数[0, 20], 或更大范围 无参: 使用更可能多的数字
+				02. 返回值: 把对象的值转换为指数计数法 */
+			var exp = num.toExponential(5); //小数点之后有五位
+			console.log(num + "的字符串指数\t" + exp + "\t" + typeof exp); //字符串指数	1.23456789789789e+5
+		</script>
+
+		<!-- 指数计数法toExponential()    123456.789789789;    1.23456789789789e+5
+		在科学工程领域,“ e” 代表自然对数的基数, 约等于2 .718（ Java中的Math.E给出了更精确的double型的值）。 
+		例如1 .39 * e - 43 这样的指数表达式意味着1 .39 * 2.718 - 43。 然而在C、 C++
+		和java中, e代表“ 10 的次幂”。 所以在Java中看到像1 .39e-43 f这样的表达式时, 它真正的含义是1 .39 * 10 - 43。
+ -->
+	</body>
+</html>

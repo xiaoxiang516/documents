@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="">
+			<input type="text"  name="username"/>
+			<!-- name="username"表单提交时作为键值对的键值 地址栏confirm.html?username=123123123-->
+			<button type="reset">重置</button>
+			<button type="submit">提交</button>
+		</form>
+		<script type="text/javascript">
+			var input=document.querySelector("input");
+			input.onselect=function
+			/* 监听input,textarea中的内容被选中(怎样获取被选中的内容) */
+			var form=document.querySelector("form");
+			form.onreset=function(){/*onreset支持的对象是form表单*/
+				var b=confirm("是否需要被重置");/*值类型是布尔值。显示带有一段消息以及确认按钮和取消按钮的对话框*/
+				console.log(b);/*true或false(取消重置，防止误操作)*/
+				/* return b; */
+				return false; /* 返回true或不返回都重置,返回false就不重置 */
+				/* 没有返回是undefined。 */
+			}
+			/* 表单提交进行验证 */
+			form.onsubmit=function(){
+				var text=document.querySelector("input").value;
+				if(text.length>6){
+					return true;/*验证通过*/
+				}else{
+					return false;
+				}
+			}
+			
+			document.body.onunload=function(){/*没效果,可能版本问题*/
+				/* 支持该事件的 HTML 标签：<body>, <frameset> */
+				alert('页面退出');/* 支持该事件的 js 对象： */
+			}
+			
+		</script>
+	</body>
+	
+</html>

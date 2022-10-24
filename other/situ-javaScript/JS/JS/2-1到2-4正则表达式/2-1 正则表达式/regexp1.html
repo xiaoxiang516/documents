@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			var reg=/ab\D/;//  子字符串含有ab还有紧跟的一个\D非数字字符。
+			console.log(reg.test('abfsf5'),reg.test('ab1fsf5')); 
+			console.log('123\n123'); //换行
+			console.log('123\r123','--------------------');  
+			
+			//  /s  空白位   换行\n  \r回车  制表符/t  空格
+			console.log(/\s/.test("12\t12")); 
+			console.log(/\b123\b/.test('123\n123')); 
+			
+			var num=0123;//八进制  8*8+2*8+3=64+19=83
+			var num=0x123af;//十六进制
+			console.log(num,'-------0x123af-------');
+			console.log()
+			
+		</script>
+	</body>
+</html>

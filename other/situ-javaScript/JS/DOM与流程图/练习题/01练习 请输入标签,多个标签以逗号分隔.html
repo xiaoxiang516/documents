@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				border: 1px solid black;
+			}
+			input {
+				width: 400px;
+				padding: 5px 5px;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 在输入框输入值,点击button获取输入框的值,
+		在input之前添加span标签和a标签,把span标签内容替换为输入框的值 -->
+
+		<div class="box">
+			<input type="text" placeholder="请输入标签,多个标签以逗号分隔" />
+		</div>
+		<button type="button">添加标签</button>
+		<script type="text/javascript">
+			var box = document.querySelector(".box"); 
+			var input = document.querySelector("input");
+			var btn = document.querySelector("button");
+			btn.onclick = function() {
+				var input_value = input.value;
+				var span = document.createElement("span");
+				/* span.innerText = input_value + "<span>x</span>"; */
+				span.innerHTML= input_value + "<a>x</a>";
+				span.style.backgroundColor = "red";
+				span.style.margin = "5px";
+				box.insertBefore(span, input);
+				span.onclick=function(){
+					span.remove();
+				}
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				width: 200px;
+				height:200px;
+				border: 1px solid red;
+			}
+			.div2 {
+				width: 100px;
+				height:100px;
+				border: 1px solid red;
+			}
+			.div3 {
+				width: 50px;
+				height:50px;
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div2">
+				<div class="div3"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var div1=document.querySelector(".div1");
+			var div2=document.querySelector(".div2");
+			var div3=document.querySelector(".div3");
+			/* div1.addEventListener('click',function(){
+				console.log('div1被点击了');
+			}); */   /* addEventListener第三个参数默认为false,标志此事件在冒泡阶段执行 */
+			div1.addEventListener('click',function(){
+				console.log('div1被点击了');
+			},true);
+			div2.addEventListener('click',function(){
+				console.log('div2被点击了');
+			});
+			
+			div3.addEventListener('click',function(e){
+				console.log('div3被点击了');
+				e.stopPropagation();/*不再派发事件，阻止冒泡*/
+			});
+			 // 事件冒泡:先触发当前子组件的事件,然后再触发父级组件的事件
+			/* 当触发了子标签的某个事件,父级标签的相同事件也会被触发 */
+			
+			
+			div1.addEventListener('click',function(e){ 
+				console.log('div1被点击了');
+				console.log(e.bubbles);/*true 事件是不是冒泡事件*/
+				console.log(e.cancelable);/* true */
+				console.log(e.target);<!-- 那个标签发生事件<div class="div1"></div> -->
+				
+			});
+			
+		</script>
+	</body>
+</html>

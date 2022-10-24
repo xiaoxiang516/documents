@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//函数的返回值
+			//获得两个数的最大值
+			function max(a, b) {
+				var max = a >= b ? a : b;
+				//正常代码运行过程中尽量不要出现打印,包括alert(),console()
+				console.log(max);
+				//当结束运行出来的结果有别的代码需要调用 时,使用return将结果返回
+				//在哪里调用就返回哪里
+				return max;
+			}
+			
+			var m=max(12,23);//调用  //在哪里调用就返回哪里
+			//调用了以上方法,给出了一个结果max
+			
+			console.log("max函数的返回的结果是"+m);
+			// 一个函数只能返回一个对象
+			// 一个函数执行了return 语句后,之后的代码就不会运行了
+			
+			// 没有返回值的函数
+			function fun(a){
+				if(a>0){
+					console.log("大于零")
+					return "大于零";
+				}
+				console.log("打印内容测试");
+				
+			}
+			
+			var r=fun(-1);
+			console.log(r);
+			// 打印内容测试 ,undefined  
+			 // var r=fun(-1);  面向过程:先调用fun(-1)然后执行console.log("打印内容测试");
+			 // 由于没有执行return所以var r=  相当于没赋值,所以输出undefined
+		   
+			// 没有返回和返回null是不同的
+			
+			
+			function fun1(){
+				console.log("你好");
+				var r=document.getElementById("div1");//null
+				return r;/*null;return该函数之后的代码就不运行了*/
+				console.log('潇湘');
+				return i;
+			}
+			r=fun1();
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 4.打印出500内所有的完数(完数,所有因数之和等于自身的数)1+2+3=6(完数) -->
+		
+		<!-- 验证6是完数 -->
+		<script type="text/javascript">
+			var arr=[],sum=0;
+			var num=6;
+			for(var num=1;num<500;num++){//反复输入500次
+			for(var i=1;i<num;i++){// num/2也行,更快
+			    if(num%i==0){
+					sum+=i;
+				}
+			}
+			if(sum==num){
+				console.log(num+"是完数");
+			}
+			sum=0;
+			}	
+			
+			//扩展 打印他们的因子分别是哪些？？？
+		</script>
+	</body>
+</html>

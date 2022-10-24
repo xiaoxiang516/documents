@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+		8.实现一个函数,向元素尾部添加一个或多个元素,但是不更改原数组内容,返回新数组
+		push([1,2],2,3,4)-->原数组还是[1,2],返回新数组[1,2,2,3,4]
+	   
+	   不带参数地调用它：arr.slice() 会创建一个 arr 的副本。其通常用于获取副本,以进行不影响原始数组的进一步转换。
+		<!-- 过程：01.将添加的
+        -->		
+		<script type="text/javascript">
+			function push(arr, num1, num2, num3) {
+				var new_arr = [],
+					index = 1;
+				new_arr.push(num1, num2, num3); //添加的多个元素放入一个数组 new_arr改变
+				for (var i = 0; i < new_arr.length; i++) {
+					arr.splice(arr.length - index, 0, new_arr[i]); //数组末尾往后延伸,删除0个,一次添加多个元素
+					index--;
+				}
+
+				return arr;
+			}
+			var result = push([1, 2, 3, 6, 9], 2, 3, 4);
+			console.log(result);
+		</script>
+	</body>
+</html>

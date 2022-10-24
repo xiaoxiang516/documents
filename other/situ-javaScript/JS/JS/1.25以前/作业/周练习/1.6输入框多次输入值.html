@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 6.通过浏览器的输入框输入多次数值,点击记录按钮,
+		将数值保存起来,点击求和按钮,打印出所有输入数值之和 -->
+		<input type="text" id="num" />
+		<button type="button" onclick="record()">记录数据</button>
+		<button type="button" onclick="sum1()">求和</button>
+		<script type="text/javascript">
+			var arr = [];
+			var a = 0,sum = 0;
+			function record() {
+				arr[a] = document.getElementById("num").value;
+				a++;
+			}
+			console.log(arr);
+			function sum1() {
+				for (var i = 0; i < arr.length; i++)
+					sum += parseFloat(arr[i]);
+				console.log("sum:"+sum);
+			}
+			 
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>检索字符串  indexOf</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*与数组类似 字符串位置 0 到 stringObject.length - 1,
+			检索的字符串值
+			stringObject.indexOf(searchvalue,fromindex) 搜索值 (String,整数Number)
+			00.stringObject：可以是其他吗
+			01.参数：searchvalue 必需。字符串值。fromindex	可选。整数值。开始检索的位置。
+			无,则将从字符串的首字符开始检索。
+			
+			02.返回值：整数值-1(检索不到)或其他*/
+			str = "123456 3456";
+			console.log(str.indexOf("4") , "----indexOf-----" ,str.indexOf("4", 9)); //1,从位置二开始出现整个字符串"234"
+			console.log(str.indexOf("234") , "-----indexOf----" , str.indexOf("245")); //-1代表检索不到
+
+
+			/* stringObject.lastIndexOf(searchvalue,fromindex)
+			 从右到左查找双引号中的内容在字符串中第一次出现的位置,位置依然按照从左往右数 */
+			str = "abcdefabcdef";
+			console.log(str.indexOf("a"), "--------------indexOf--------------"); //0
+			console.log(str.lastIndexOf("a")); //6
+
+
+			// indexOf,lastIndexOf只是内容匹配方向不同,位置/下标都是从左往右数
+			str = "html.txt.html" //问这是什么类型的文件
+			console.log(str.indexOf(".")); //返回值是4
+			console.log(str.lastIndexOf(".")); //8
+			console.log([12, 34, 56, 78].includes(12, 0), '------includes------'); //查找12,从位置/下标0开始
+			console.log([12, 34, 56, 78].includes(78, -1));
+			console.log('');
+			
+			document.write("你好啊".italics() , "------italics------<br/>"); //斜体
+			document.write("你好啊".link("https://www.baidu.com")); //给你好啊添加了超链接
+
+			/* stringObject.localeCompare(target)  规定该函数采用底层操作系统提供的排序规则 */
+			console.log("你好".localeCompare("世界") ,"-----localeCompare-----" , "你".localeCompare("你") );
+
+
+			console.log("423123.123".replace("12", "A")); //结果：423A3.123 replace只替换字符串中遇到的第一个"12"
+			s = "123123.123".replace(".", "$"); //,结果：123123$123          在正则表达式中点.代表任意字符
+			console.log(s);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 2.打印出乘法口诀表 -->
+		<!-- 乘数与被乘数 Multiplier and multiplicand
+		 积 [jī]    n. product   vi. accumulate-->
+		
+		 
+		
+		<!-- 方法一：
+		<script type="text/javascript">
+			for (var i = 1; i <= 9; i++) {
+				for (var j = 1; j <=i; j++) {
+				// multiplication.Multiplier=j;
+			    console.log(j+"*"+i+"="+i*j);
+				
+				}
+				console.log("\n");
+			}
+		</script> -->
+		<!-- 方法二 存储对象的数组-->
+		<script type="text/javascript">
+			
+			
+			var multiplication =[];
+			for(var i=0;i<6;i++){
+				multiplication.Multiplier[i]=i;
+			}
+			
+		console.log(multiplication.Multiplier);
+		</script>
+		
+	</body>
+</html>
+<!-- 	var multiplication=[{},{},];
+			
+			for (var i = 1; i <= 9; i++) {
+				for (var j = 1; j <=i; j++) {
+				multiplication.Multiplier=j;
+				multiplication.multiplicand=i;
+				multiplication=i*j;
+			    console.log(multiplication.Multiplier+"*"+multiplication.multiplicand+"="+multiplication);
+				
+				}
+				
+			} -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 3/(送分题)通过Math.random()生成一个随机数,
+		在页面的输入框中输入一个数字,点击按钮,
+		打印出输入的数字和随机数的比较结果 -->
+		<input type="text" id="num" />
+		<button type="button" onclick="compare()">比较两个数</button>
+		<script type="text/javascript">
+			// var compare=function(){}
+			function compare() {
+				var num = document.getElementById("num").value;
+				var num1 = parseInt(num);
+				if(num1>Math.random()){
+					console.log(num1+"比"+Math.random()+"大");
+				}
+				// console.log(num1);
+				// console.log(Math.random());
+			}
+		</script>
+	</body>
+</html>

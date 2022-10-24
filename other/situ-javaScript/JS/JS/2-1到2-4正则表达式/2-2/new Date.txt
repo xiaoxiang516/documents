@@ -1,0 +1,46 @@
+NEW DATE()之参数传递
+JavaScript下，new Date([params]),参数传递有以下五种方式：
+
+1、new Date("month dd,yyyy hh:mm:ss"); 
+
+2、new Date("month dd,yyyy"); 
+
+3、new Date(yyyy,mth,dd,hh,mm,ss); 注意：这种方式下，必须传递整型；
+
+4、new Date(yyyy,mth,dd); 
+
+5、new Date(ms); 注意：ms:是需要创建的时间和 GMT时间1970年1月1日之间相差的毫秒数；当前时间与GMT1970.1.1之间的毫秒数：var mills = new Date().getTime();
+
+各种变量代表的含义是：
+
+　　month:用英文 表示月份名称，从January到December ,缩写也行（Jan....Dec）;
+
+　　mth:用整数表示月份，从0（１月）到１１（１２月）
+
+　　dd:表示一个 月中的第几天，从1到31
+
+　　yyyy:四位数表示的年份
+
+　　hh:小时数，从0（午夜）到23（晚11点）
+
+　　mm: 分钟数，从0到59的整数
+
+　　ss:秒数，从0到59的整数
+
+　　ms:毫秒数，为大于等于0的整数
+
+举个栗子：
+
+　　new Date("Jun 2,2017 12:00:00"); //Fri Jun 02 2017 12:00:00 GMT+0800 (中国标准时间)
+
+　　new Date("Jun 2,2017"); //Fri Jun 02 2017 00:00:00 GMT+0800 (中国标准时间)
+
+　　new Date(2017,5,2,12,0,0); //Fri Jun 02 2017 12:00:00 GMT+0800 (中国标准时间)
+
+　　new Date(2017,5,2); //Fri Jun 02 2017 00:00:00 GMT+0800 (中国标准时间)
+
+　　new Date(1496376000000); //Fri Jun 02 2017 12:00:00 GMT+0800 (中国标准时间)
+
+　　以上输出的都是2017年6月2号的时间
+
+分类: js, 总结

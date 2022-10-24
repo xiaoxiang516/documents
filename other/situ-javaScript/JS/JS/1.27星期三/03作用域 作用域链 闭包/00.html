@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--多少字节表示一个字符
+		 8859-1//少 8位 1字节  表示一个字符  8个二进制
+		 
+		utf-8 //16 表示一个字符     16二进制 -->
+
+
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fun(n, o) {
+				console.log(o);
+				return {
+					fun: function(m) {
+						return fun(m, n);
+					}
+				};
+			}
+			console.log("0---------");
+			console.log(fun); //f为function的缩写 打印定义形式
+
+			console.log("1---------");
+			console.log(fun());
+			
+			console.log("1-1---------");
+			console.log(fun().fun);
+			
+			console.log("1-2---------");
+			console.log(fun().fun().fun);
+			
+			
+
+			console.log("2---------");
+			console.log(fun().fun());
+
+			console.log("3---------");
+			console.log(fun().fun().fun());
+			
+			console.log("4---------");
+			console.log(fun().fun().fun().fun().fun().fun());
+		</script>
+	</body>
+</html>

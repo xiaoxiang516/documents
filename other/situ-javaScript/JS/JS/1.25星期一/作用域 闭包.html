@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function out() { // 闭包:发生在函数的嵌套上
+				var a = 0;
+				function inf() {//定义返回值inf
+					a++;
+					console.log(a,'-----');
+				}
+				return inf;
+			}
+			//数组名代表数组;函数名代表函数
+			var obj = out();/* obj变成函数inf */
+			obj();/* 函数inf调用 */
+			obj();
+			obj();
+			
+			console.log("-----------");
+			
+			function fun1(a,b){
+				console.log(a+b);
+				function fun2(c){
+					console.log(a+c);
+				}
+				return fun2;
+			}
+			fun1(2,3); //调用fun1再调用fun2,两步调用
+			// 先调用fun1(2,3),然后return fun2 5给 fun2(c),然后console.log(a+c); 得到7
+		</script>
+	</body>
+</html>

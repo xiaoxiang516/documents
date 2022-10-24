@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.div1{
+				border: 1px solid red;
+				position: relative;
+				left: 200px;
+				width: 1200px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 问题：样式属性设置问题：在js与css -->
+		<div class="div1">div1</div>
+		<script type="text/javascript">
+			var div1=document.querySelector('.div1');
+			console.log(div1.style.left);//空字符串
+			console.log(typeof div1.style.left);//string
+			
+			// div1.style.left=20+'px';
+			console.log(div1.style.left);//覆盖css中设置的left: 200px;
+			
+			
+			/* css中设定的定位样式left的值在js中不能获取到;js中获取到的div1.style.left
+			默认初始值为空字符串,在js中设置left的值会覆盖css中设定的left值 */
+		</script>
+	</body>
+</html>

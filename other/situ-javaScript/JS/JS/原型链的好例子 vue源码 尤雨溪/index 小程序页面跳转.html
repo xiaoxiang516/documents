@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script>
+			看内存变化
+			一.小程序的页面Page跳转:
+			概述:
+				小程序将所有的页面分为两大类: tabBar 页面、非tabTar页面,小程在内存中维护了,
+				一个页面栈(页面访问历史记录的数组)。我们可以
+				使用getCurrentPages()函数随时拿到这个页面栈，但是要注意
+				拿到以后只能用不要改
+			1. 使用navigator标签
+			2. 以以编码(代码)的形式跳转
+			
+			//01.适合跳转到非tabBar页面，会向访问记录数组中push一个新的记录(push方 式的跳转)
+			<navigator open-type="navigate"></navigator>
+			wx.navigateTo()
+			
+			02.适合跳转到非tabBar页面，会先从访问访录数组中删除最后一条记录，再将跳转的
+			新页面记录下来，替换式的跳转(redirect方式的跳转)
+			<navigator open-type="redirect"></navigator>
+			wx.redirectTo()
+			
+			03.跳转到tabBar页面必须采用这种跳转方式，会把页面栈中所有的非tabBar页面关闭清除
+			<navigator open-type="switchTab"></navigator>
+			wx.switchTab()
+			04.跳转到任意页面，且将页面栈清空，关闭销毁所有页面并打开指定的一个页面
+			<navigator open-type="reLaunch"></navigator>
+			wx.reLaunch()
+			
+			05.后退
+			<navigator open-type="navigateBack"></navigator>
+			wx.navigateBack()
+			
+			二A页面(订单确认页面order_ confirm)
+A->B_ 不传任何东西，跳过去就行(navigate跳转， 可以后退回来)
+B->AI传回在B页面用户操作选中的地址信息(一个地址的详细信息，不仅仅是id)，回去的方式是
+nav i gat eBack方式跳转
+B页面(地址列表页面address)
+B->C如果是修改是要传当前要修改的地址信息的;跳转的方式navigateTo
+C->B传递新增或修改好后的最新的值;跳转的方式navigateBack
+C页面(地址编辑页面，新增/修改address_ edit)
+
+		</script>
+	</body>
+</html>

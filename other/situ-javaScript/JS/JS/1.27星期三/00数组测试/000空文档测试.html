@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log(this);
+			var arr = [1,2,3];
+			Array.prototype.copyPush = function() {
+				console.log(this);
+				for(var i = 0; i<arguments.length; i++){
+					this[this.length] = arguments[i];
+				}
+				console.log(this,'aaa');
+			}
+			arr.copyPush('a','b');
+			console.log(arr)
+			console.log(this);//单独打印this
+		</script>
+
+	</body>
+</html>

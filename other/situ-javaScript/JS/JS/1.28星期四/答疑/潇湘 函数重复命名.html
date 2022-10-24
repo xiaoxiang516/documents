@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>测试</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log(fun); // 打印第二个
+			function fun(a) {
+				return a > 15;
+			}
+
+			function fun(t, m) {
+				return t > 15;
+			}
+
+
+
+			function fun1(a1) {
+				return a1 > 115;
+			}
+			console.log(fun1); // 打印第二个,注释第二个,就会打印第一个
+			function fun1(t1, m1) {
+				return t1 > 115;
+			}
+
+
+			function fun2(a2) {
+				return a2 > 225;
+			}
+
+			function fun2(t2, m2) {
+				return t2 > 225;
+			}
+			console.log(fun2); // 打印第二个
+
+
+			console.log(a);
+			var a = 14;//声明前置,但赋值没有前置,所以上一步没有打印值14
+		
+			/* console.log(b);//没有声明 ,报错
+			b = 14;//不算变量b的什么 (1)*/
+			c = 14; 
+			console.log(c);//这个不报错      (2)
+			
+			
+		</script>
+	</body>
+</html>
