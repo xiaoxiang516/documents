@@ -1,7 +1,9 @@
 ### 实验 搭建typescript环境
 
-### [demo-推荐看](https://www.w3schools.com/typescript/index.php)
+### [Getting Started](https://www.w3schools.com/typescript/index.php)
 人物 安德斯·海尔斯伯格（Anders Hejlsberg）
+
+
 [](https://www.typescriptlang.org/zh/docs/)
 [](https://www.typescriptlang.org/)
 
