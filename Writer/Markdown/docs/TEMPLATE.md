@@ -6,13 +6,34 @@ markdown中支持html
 - [图片](#图片)
 - [表格]()
 - [注释]()
-- [html]()
+- [html-md](#html-md)
 - []()
 - []()
 - []()
 
 
+### html-md
+<!-- markdown中使用样式 -->
+<html>
+  <style>
+    .red {
+      color: red;
+    }
+  </style>
+  <body>
+    <p class="red">red</p>
+    <p class="green">green</p>
+  </body>
+</html>
 
+<style>
+  .green {
+    color: green;
+  }
+</style>
+<code class="red">
+  markdown
+</code>
 
 ## 图片
 **md文件在vscode中预览**

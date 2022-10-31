@@ -2,7 +2,14 @@
 
 绪论
 
+[VScode跳到仓库地址]()
+git remote -v
+origin  https://***/.git (fetch)
+origin  https://***/..git (push) 
+然后按住ctrl键，点击跳转
 
+[webstorm跳转仓库地址]()
+![](./docs/images/webstorm-repo.png)
 
 ### install
 [Windows: HBuilderX Git使用教程](https://ask.dcloud.net.cn/article/35247)

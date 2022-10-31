@@ -1,4 +1,8 @@
 
+### 
+https://www.w3schools.com/js/js_object_definition.asp
+``
+**In JavaScript, objects are king. If you understand objects, you understand JavaScript.**
 
 ### [基础训练教程阅读 五颗星](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
@@ -10,17 +14,23 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [javascript代码注释的规范](https://jsdoc.app/index.html)
 [jsdoc](https://jsdoc.app/about-getting-started.html)
 
+<style>
+  .red {
+    color: red;
+  }
+</style>
+<code class="red">
 - http
 - tcp
 - Ajax
 - Axios
 - Promise
-
 - Html
 - CSS
 - windows
-
 - postman
+</code>
+
 
 
 [&& 与 ||](https://zhidao.baidu.com/question/118995252.html)
