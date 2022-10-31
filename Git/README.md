@@ -5,7 +5,7 @@
 [VScode跳到仓库地址]()
 git remote -v
 origin  https://***/.git (fetch)
-origin  https://***/..git (push) 
+origin  https://***/..git (push)
 然后按住ctrl键，点击跳转
 
 [webstorm跳转仓库地址]()
