@@ -1,6 +1,13 @@
 ### 首页
 
+补充工作中遇到的业务、产品、前端、后端、测试、运维的内容，拥有管理者的思想
+
 ### 搜索平台
+
+Front-end JS framework
+前端JS框架有: vue.js、react.js、Angular.js、Bootstrap、Jquery、Zepto等；
+前端UI框架有：QUICK UI、iviewUI、Layui、elementUI、Mint UI、WeUI、MUI等等。
+[![w3schools](./docs/images/w3schools.png)](https://www.w3schools.com/)
 
 ---
 
@@ -24,6 +31,7 @@
 [微信读书](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 [月萌网](https://www.moonapi.com/news/books/id/172.html)
 https://www.moonapi.com/news/33492.html
+[百度云-百度网盘]
 
 [](https://www.moonapi.com/news/30053.html)
 [geekdaxue](http://geekdaxue.co/)

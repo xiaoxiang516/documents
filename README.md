@@ -21,9 +21,4 @@
 
 ---
 
-Front-end JS framework
-前端JS框架有: vue.js、react.js、Angular.js、Bootstrap、Jquery、Zepto等；
-前端UI框架有：QUICK UI、iviewUI、Layui、elementUI、Mint UI、WeUI、MUI等等。
-[![w3schools](./docs/images/w3schools.png)](https://www.w3schools.com/)
-
 
