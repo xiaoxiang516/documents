@@ -5,17 +5,6 @@
 分支权限
 安装依赖权限
 
-npm get config registry
-npm config set registry https://registry.npm.taobao.org
-npm config set registry https://npm.countrygarden.com.cn/
-1、查看一下当前源
-yarn config get registry
-2、切换为淘宝源
-yarn config set registry https://registry.npm.taobao.org
-3、或者切换为自带的
-yarn config set registry https://registry.yarnpkg.com
-
-
 yarn的安装及使用教程
 
 目录

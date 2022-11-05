@@ -1,1 +1,0 @@
-[pnpm](https://www.pnpm.cn/)

@@ -1,3 +1,20 @@
+
+
+常用命令
+
+npm get config registry
+npm config set registry https://registry.npm.taobao.org
+npm config set registry https://npm.countrygarden.com.cn/
+1、查看一下当前源
+yarn config get registry
+2、切换为淘宝源
+yarn config set registry https://registry.npm.taobao.org
+3、或者切换为自带的
+yarn config set registry https://registry.yarnpkg.com
+
+
+### npm
+
 [docs-npmjs](https://docs.npmjs.com/)
 Documentation for the npm registry, website, and command-line interface
 Managing your profile settings
@@ -5,22 +22,12 @@ Managing your profile settings
 
 [npmjs](https://www.npmjs.cn/)
 
+### yarn
+[https://www.yarnpkg.cn/](https://www.yarnpkg.cn/)
 
+[https://yarn.bootcss.com/](https://yarn.bootcss.com/)
 
-### 实验 搭建环境
-- 安装卸载更新npm
-- 安装卸载更新yarn
+- [yarn add](https://www.yarnpkg.cn/cli/add)
 
+- [yarn install](https://www.yarnpkg.cn/cli/install)
 
-例子： 结合文件build-sit.sh,npm build-uat.sh
-### 开发命令
-1. 运行 `npm install pnpm -g` 全局安装pnpm
-2. 运行 `pnpm install` 安装依赖包
-3. 运行 `pnpm run start:inner` 启动 甲方端 dev 服务器 或 运行 `pnpm run start:outer` 启动 供应方端 dev 服务器
-4. 运行 `pnpm run build` 编译发布包
-5. 全局依赖
--  `pnpm install <package name> (-S | -D) -W`
--  例：`pnpm install vue -S -W`
-6. 局部依赖
--  `pnpm install <package name> -r --filter <项目名>`
--  例：`pnpm install @gys/components -r --filter gys-inner`

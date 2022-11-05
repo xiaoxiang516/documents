@@ -1,4 +1,5 @@
-pnpm
+[pnpm](https://www.pnpm.cn/)
+
 # 项目名称
 
 ### 项目的划分
@@ -20,6 +21,7 @@ packages
 - pnpm 版本 `v6.32.8`
 
 ### 开发命令
+例子： 结合文件build-sit.sh,npm build-uat.sh
 
 1. 运行 `npm install pnpm -g` 全局安装pnpm
 2. 运行 `pnpm install` 安装依赖包
@@ -31,7 +33,6 @@ packages
 6. 局部依赖
 -  `pnpm install <package name> -r --filter <项目名>`
 -  例：`pnpm install @gys/components -r --filter gys-inner`
-
 
 
 ## cnpm 配置淘宝镜像 cnpm
