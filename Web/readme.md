@@ -4,7 +4,7 @@ GUI
 图形用户界面（Graphical User Interface，简称 GUI，又称图形用户接口）是指采用图形方式显示的计算机操作用户界面
 
 
-HTTP 400 错误
+[HTTP 400 错误](https://www.runoob.com/w3cnote/http-400.html)
 分类 编程技术
 400 是 HTTP 的状态码，主要有两种形式：
 
@@ -18,3 +18,5 @@ HTTP 400 错误
 解决方案：
 1、对照字段名称，类型保证一致性
 2、使用 stringify 将前端传递的对象转化为字符串：
+
+

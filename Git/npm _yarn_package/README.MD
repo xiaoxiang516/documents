@@ -46,3 +46,21 @@ Managing your profile settings
 
 - [yarn install](https://www.yarnpkg.cn/cli/install)
 
+### EPERM: operation not permitted, 
+rename 'D:/otherSystem/gys-frontend/packages/gys-outer/node_modules/.vite/processing' -> 'D:/otherSystem/gys-frontend/packages/gys-outer/node_modules/.vite/deps'
+
+npm EPERM: operation not permitted, rename解决
+此问题并非权限问题！
+
+执行如下3条命令解决：
+
+1.清理npm缓存
+npm cache clean --force
+
+2.升级npm版本
+npm install -g npm@latest --force
+
+3.再次清理npm缓存
+npm cache clean --force
+　　
+然后再次运行npm install 即可。

@@ -7,8 +7,6 @@ https://www.w3schools.com/js/js_object_definition.asp
 ### [基础训练教程阅读 五颗星](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-
-
 ### [能动手](https://www.w3schools.com/js/default.asp)
 
 [javascript代码注释的规范](https://jsdoc.app/index.html)
@@ -57,9 +55,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 
 
-
-
-
+###async/await对比Promise优缺点分析
+await的缺点
 
 
 
