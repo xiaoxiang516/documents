@@ -1,11 +1,14 @@
 ### 首页
 
+前端学习大纲
+
 书本的封面页制作
 
 目录设计
 注释设计
 篇章设计
 
+课程设计
 
 补充工作中遇到的业务、产品、前端、后端、测试、运维的内容，拥有管理者的思想
 
@@ -31,6 +34,17 @@ Front-end JS framework
 - [geeksforgeeks](https://www.geeksforgeeks.org/html/)
 - [blog.51cto](https://blog.51cto.com/u_15490526/5291263)
 - [geekbang](https://s.geekbang.org/)
+- [oschina](https://www.oschina.net/blog)
+
+- [阿里云 开发者社区](https://developer.aliyun.com/?spm=a2c6h.12873639.article-detail.1.6d803087QKFNLV)
+- [腾讯云 开发者社区](https://cloud.tencent.com/developer/column)
+- [http://spring4all.com/](http://spring4all.com/)
+
+有哪些好的前端社区？
+我是个美术生，也会写些html5、css3、js，正在看jQuery。想问下一下有哪些前端社可以找到提高前端代码的质量与效率有帮助的资源。
+
+常见的技术社区，都会有【大前端】学习资源和社区讨论，推荐spring4all、博客园、开源中国、思否、CSDN、V2ex、腾讯云、阿里云、spring4all、掘金、ITPUB，总有合适你的学习氛围。
+
 ---
 
 ### 搜书
