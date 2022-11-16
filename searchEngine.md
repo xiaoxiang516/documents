@@ -18,23 +18,25 @@ Word到哪设计书籍封套效果的封面
 
 ### 搜索平台
 
-Front-end JS framework
+JS: Front-end JS framework
 前端JS框架有: vue.js、react.js、Angular.js、Bootstrap、Jquery、Zepto等；
 前端UI框架有：QUICK UI、iviewUI、Layui、elementUI、Mint UI、WeUI、MUI等等。
 [![w3schools](./docs/images/w3schools.png)](https://www.w3schools.com/)
+[developer.mozilla](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
+
+TS
+
 
 ---
 
 <!-- - [![](./docs/images/zhihu.png){:height="100px" width="400px"}](https://www.zhihu.com/)
 - [![](./docs/images/zhihu.png =100x100)](https://www.zhihu.com/) -->
  <div align="center"> <img src="./docs/images/zhihu.png" width="300" height="150" /> </div>
- 
-- [http://www.jsons.cn/urlencode](http://www.jsons.cn/urlencode)
 
-- [![](./docs/images/jianshu.png)](https://www.jianshu.com/)
-- [CSDN](https://www.csdn.net/)
-- [juejin](https://juejin.cn/)
 - [segmentfault](https://segmentfault.com/)
+- [juejin](https://juejin.cn/)
+- [CSDN](https://www.csdn.net/)
+- [![](./docs/images/jianshu.png)](https://www.jianshu.com/)
 
 - [infoq](https://www.infoq.cn/)
 - [geeksforgeeks](https://www.geeksforgeeks.org/html/)
@@ -46,6 +48,9 @@ Front-end JS framework
 - [腾讯云 开发者社区](https://cloud.tencent.com/developer/column)
 - [http://spring4all.com/](http://spring4all.com/)
 
+读书
+[小白盘](https://www.xiaobaipan.com/)
+[微信读书](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 
 商业学习
 [imooc 慕课](https://www.imooc.com/)
@@ -59,8 +64,6 @@ Front-end JS framework
 ---
 
 ### 搜书
-[小白盘](https://www.xiaobaipan.com/)
-[微信读书](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 [月萌网](https://www.moonapi.com/news/books/id/172.html)
 https://www.moonapi.com/news/33492.html
 [百度云-百度网盘]
