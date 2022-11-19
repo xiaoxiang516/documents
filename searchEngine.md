@@ -22,8 +22,10 @@ JS: Front-end JS framework
 前端JS框架有: vue.js、react.js、Angular.js、Bootstrap、Jquery、Zepto等；
 前端UI框架有：QUICK UI、iviewUI、Layui、elementUI、Mint UI、WeUI、MUI等等。
 [![w3schools](./docs/images/w3schools.png)](https://www.w3schools.com/)
-[developer.mozilla](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
-
+[w3schools-javascript](https://www.w3schools.com/js/default.asp)
+[w3schools-js_object_definition](https://www.w3schools.com/js/js_object_definition.asp)
+[w3schools-typescript](https://www.w3schools.com/typescript/index.php)
+[mozilla-JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 TS
 
 
@@ -44,8 +46,15 @@ TS
 - [geekbang](https://s.geekbang.org/)
 - [oschina](https://www.oschina.net/blog)
 
+- [华为云](https://huaweicloud.csdn.net/)
+- [阿里云镜像](https://developer.aliyun.com/mirror/)
 - [阿里云 开发者社区](https://developer.aliyun.com/?spm=a2c6h.12873639.article-detail.1.6d803087QKFNLV)
+[通过Docker Compose部署和管理容器](https://developer.aliyun.com/adc/scenario/4e2e9b022d364acaa18aad01fcd750d8?spm=a2c6h.14164896.0.0.6fcaf5474u6ztp)
+登录名：aliyun9937798263
+手机号：17852831575
+完成实名认证方可
 - [腾讯云 开发者社区](https://cloud.tencent.com/developer/column)
+- [](https://cloud.tencent.com/developer/article/1633272#:~:text=%E8%BF%90%E8%A1%8C%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%91%BD%E4%BB%A4%EF%BC%8C%E4%BB%8E%E8%87%AA%E5%AE%9A%E4%B9%89%E9%95%9C%E5%83%8F%E4%B8%AD%E5%88%9B%E5%BB%BA%E5%92%8C%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8%EF%BC%8C%E5%B9%B6%E8%BD%AC%E5%8F%91%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%EF%BC%8C%E4%BB%8E%E4%B8%BB%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%845000%E5%88%B0%E5%AE%B9%E5%99%A8%E5%86%85%E9%83%A880%E7%AB%AF%E5%8F%A3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F%E3%80%82%20docker%20run%20-p,5000%3A80%20--name%20exampleApp5000%20yoyomooc%20%2Fexampleapp)
 - [http://spring4all.com/](http://spring4all.com/)
 
 读书
