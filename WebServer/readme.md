@@ -1,5 +1,16 @@
 **希望2022年结束能学会搭建服务器**
 
+[eggjs](https://www.eggjs.org/zh-CN/intro/quickstart)
+
+https://www.eggjs.org/zh-CN
+
+```bash
+mkdir egg-example && cd egg-example
+```
+
+```cmd
+mkdir src/services
+```
 
 
 

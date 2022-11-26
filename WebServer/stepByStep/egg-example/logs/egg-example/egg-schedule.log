@@ -1,0 +1,48 @@
+2022-11-19 15:19:15,952 INFO 24856 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 47444050ms at 2022-11-20 04:30:00.002
+2022-11-19 15:19:15,953 INFO 24856 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 31244047ms at 2022-11-20 00:00:00.000
+2022-11-19 15:19:15,953 INFO 24856 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 31245047ms at 2022-11-20 00:00:01.000
+2022-11-19 15:19:15,484 INFO 20612 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:19:15,484 INFO 20612 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:19:15,484 INFO 20612 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:24:00,383 INFO 500 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 47159619ms at 2022-11-20 04:30:00.002
+2022-11-19 15:24:00,384 INFO 500 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 30959616ms at 2022-11-20 00:00:00.000
+2022-11-19 15:24:00,384 INFO 500 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30960616ms at 2022-11-20 00:00:01.000
+2022-11-19 15:24:00,229 INFO 23712 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:24:00,229 INFO 23712 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:24:00,229 INFO 23712 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:30:45,346 INFO 22812 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:30:45,346 INFO 22812 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:30:45,347 INFO 22812 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:30:50,558 INFO 23832 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:30:50,558 INFO 23832 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:30:50,558 INFO 23832 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:31:05,983 INFO 10128 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46734019ms at 2022-11-20 04:30:00.002
+2022-11-19 15:31:05,983 INFO 10128 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 30534017ms at 2022-11-20 00:00:00.000
+2022-11-19 15:31:05,984 INFO 10128 [Timer] D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30535017ms at 2022-11-20 00:00:01.001
+2022-11-19 15:31:05,842 INFO 24312 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:31:05,842 INFO 24312 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:31:05,842 INFO 24312 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:32:22,799 INFO 1816 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:32:22,799 INFO 1816 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:32:22,799 INFO 1816 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:32:30,763 INFO 10692 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:32:30,763 INFO 10692 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:32:30,763 INFO 10692 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:32:59,291 INFO 23088 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:32:59,291 INFO 23088 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:32:59,291 INFO 23088 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:33:00,862 INFO 16256 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:33:00,862 INFO 16256 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:33:00,862 INFO 16256 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:33:14,506 INFO 9376 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:33:14,506 INFO 9376 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:33:14,506 INFO 9376 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:33:16,692 INFO 13568 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:33:16,692 INFO 13568 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:33:16,693 INFO 13568 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:33:28,829 INFO 27528 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:33:28,829 INFO 27528 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:33:28,829 INFO 27528 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2022-11-19 15:33:30,735 INFO 13804 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2022-11-19 15:33:30,735 INFO 13804 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2022-11-19 15:33:30,735 INFO 13804 [egg-schedule]: register schedule D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

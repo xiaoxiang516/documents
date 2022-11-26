@@ -1,59 +1,18 @@
-亮点： 面试官希望看到的简历是什么，而不是你想写什么
-[谁在招人？ 阮一峰](https://github.com/ruanyf/weekly/issues/1747)
-
-[面试官问系列 ](https://www.lxchuan12.cn/js-extend/)
-
-[牛客网](https://www.nowcoder.com/interview/ai/cover?jobTagId=644)
-[力扣](https://leetcode.cn/)
 
 
+[web前端面试 - 面试官系列](https://vue3js.cn/interview/)
 
-[我在阿里招前端，我该怎么帮你？](https://blog.51cto.com/u_15490526/5291263)
-前端职业样例要求：
-YjJjcd
-广州爱范儿科技股份有限公司
-简介
-广州爱范儿科技股份有限公司是一家具有突出产品能力的创新驱动型消费传媒公司，我们提供专业、具有协同效应的整合性服务，促进各类合作伙伴的数字转型及消费业务增长。
+若川知乎问答：2年前端经验，做的项目没什么技术含量，怎么办？
 
-爱范儿依托公司在互联网与消费产业生态的深刻理解与优势，致力于用科学、系统、国际化的方法论服务创新企业。
+前端面试
+ [若川 面试官问系列 ](https://www.lxchuan12.cn/js-extend/)
+[前端面试常考问题整理，按模块知识点分类：](https://blog.poetries.top/FE-Interview-Questions/)
+[前端开发面试题:](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
+[web前端面试宝典：](https://github.com/h5bp/Front-end-Developer-Interview-Questions/)
+[掘金前端面试题合集：](https://github.com/shfshanyue/blog/blob/master/post/juejin-interview.md)
+[前端面试图谱：](https://yuchengkai.cn/docs/zh/)
+[GitHub 上 100K+ Star 的前端面试开源项目汇总](https://github.com/biaochenxuying/blog/issues/47)
 
-爱范儿重点关注消费升级、内容产业、媒体、电商等趋势领域，集聚了从零售环境洞察、消费者行为研究、企业战略咨询、数字互动传播、品牌设计、技术开发等领域的专业人才，一起为追求卓越的企业提供整体而专业的高价值服务，实现自我完善与超越。
-
-
-前端开发工程师
-职位描述：
-
-岗位职责：
-1、参数项目设计文档编写、功能开发；
-2、参与开发前端框架工具类库组件，提升项目开发效率；
-3、参与项目重难点问题技术攻关；
-4、参与前端新技术研究及转化、实施。
-
-岗位要求：
-1、本科及以上学历，计算机、信息管理等专业， 1 年以上前端开发经验；
-2、扎实的计算机理论基础，熟悉 HTTP 协议和 web 开发流程，能独立实现较复杂的功能；
-3、熟悉主流 MVVM 框架（Vue/React/微信小程序），并有实际的项目经验；
-4、注重用户体验、有良好的软件开发习惯；
-5、态度认真负责、积极好学。
-
-加分项：
-1、有后端或数据库开发经验优先考虑；
-2、了解 serverless 或有相关经验的优先考虑；
-3、有小程序或微信公众号开发经验优先考虑；
-
-高级前端开发工程师
-职位描述：
-岗位职责：
-1、参与平台日常开发，参与程序设计审查、代码审查等工作；
-2、编写程序设计、API 等相关技术文档；
-3、设计、开发前端框架工具类库组件；
-4、研究并实施 Web 开发相关的前沿技术。
-
-岗位要求：
-1、本科及以上学历，3 年以上前端开发经验（能力强者可适当放宽）；
-2、熟悉前端开发、测试工具，熟悉 HTTP 协议，深刻理解网站开发流程；
-3、熟悉前端主流框架（React/Vue/微信小程序），有实际的项目经验；
-4、注重界面用户体验、交互设计、网站性能，有创新精神；
-5、有良好的沟通能力和团队协作精神，能承受一定的工作压力；
-6、掌握任一后端语言及数据库者优先；
-7、有开发小组管理经验者优先。
+ [谁在招人？ 阮一峰](https://github.com/ruanyf/weekly/issues/1747)
+ [牛客网](https://www.nowcoder.com/interview/ai/cover?jobTagId=644)
+ [力扣](https://leetcode.cn/)

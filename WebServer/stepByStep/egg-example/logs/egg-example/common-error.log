@@ -1,0 +1,38 @@
+2022-11-19 15:24:41,759 ERROR 23712 [-/127.0.0.1/-/4ms GET /news] nodejs.AssertionError: Can't find ViewEngine "nunjucks"
+    at ContextView.[contextView#getViewEngine] (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-view\lib\context_view.js:88:5)
+    at ContextView.[contextView#render] (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-view\lib\context_view.js:69:39)
+    at async NewsController.list (D:\Gitee\documents\WebServer\stepByStep\egg-example\app\controller\news.js:12:5)
+    at async D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\koa-bodyparser\index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 23712
+hostname: BDR23M70BKCPR
+
+2022-11-19 15:27:20,748 ERROR 23712 [-/127.0.0.1/-/1ms GET /news] nodejs.AssertionError: Can't find ViewEngine "nunjucks"
+    at ContextView.[contextView#getViewEngine] (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-view\lib\context_view.js:88:5)
+    at ContextView.[contextView#render] (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-view\lib\context_view.js:69:39)
+    at async NewsController.list (D:\Gitee\documents\WebServer\stepByStep\egg-example\app\controller\news.js:12:5)
+    at async D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\Gitee\documents\WebServer\stepByStep\egg-example\node_modules\koa-bodyparser\index.js:95:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 23712
+hostname: BDR23M70BKCPR
+

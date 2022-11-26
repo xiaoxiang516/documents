@@ -6,6 +6,11 @@
 npm get config registry
 npm config set registry https://registry.npm.taobao.org
 npm config set registry https://npm.countrygarden.com.cn/
+npm config  set registry  https://registry.npmmirror.com
+
+Npm阿里云地址：http://www.npmmirror.com
+
+
 淘宝镜像源（单次安装）：npm install --registry=https://registry.npmmirror.com     
 碧桂园内网源（单次安装）：npm install --registry=https://npm.countrygarden.com.cn/
 
