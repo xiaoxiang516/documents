@@ -1,7 +1,20 @@
+[gitmind](https://gitmind.cn/app/docs)
+[https://docs.qq.com/mind/DWElSVUZSRmlRY0hY?&u=5b006e3e2e73409eb396da686500515a](https://docs.qq.com/mind/DWElSVUZSRmlRY0hY?&u=5b006e3e2e73409eb396da686500515a)
 
 
 
+git log --pretty=format:"%ai , %an: %s" --since="100 day ago" >> ~/Desktop/commit.log
+git log --pretty=format:"%ai , %an: %s" --since="10 day ago" | grep "提交者的名字" >> ~/Desktop/commit.log
+git log --pretty=format:"%ai , %an: %s" --since="10 day ago" | grep "zhuqizhong" >> ~/Desktop/commit-zhuqizhong.csv
+(表格自适应内容)
 
+1.1、在项目根目录下执行命令，导出 git 提交记录到桌面
+进入项目目录：然后右击选择git bash here     然后在git中执行命令：
+git log --pretty=format:"%ai , %an: %s" --since=“100 day ago” >> ~/Desktop/commit.log
+1.2 、如果想导出某些提交者的提交记录，可以用 grep过滤，比如我想导出「ianly」这个人在项目中的提交记录：
+git log --pretty=format:"%ai , %an: %s" --since=“126 day ago” | grep “ianly” >> ~/Desktop/commit-ianly.log
+1.3、导出成 Excel 文件：
+git log --date=iso --pretty=format:’"%h","%an","%ad","%s"’ >> ~/Desktop/commit.csv
 
 
 git只提交部分修改的文件（提交指定文件）
@@ -26,7 +39,7 @@ git只提交部分修改的文件（提交指定文件）
 原文链接：https://blog.csdn.net/qq_43762191/article/details/126679760
 
 
-
+                                                                                                                                                                                                                                            
 
 
 
