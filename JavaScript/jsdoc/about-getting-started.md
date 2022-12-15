@@ -1,1 +1,0 @@
-[jsdoc](https://jsdoc.app/about-getting-started.html)

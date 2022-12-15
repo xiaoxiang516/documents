@@ -5,7 +5,7 @@
 
 git log --pretty=format:"%ai , %an: %s" --since="100 day ago" >> ~/Desktop/commit.log
 git log --pretty=format:"%ai , %an: %s" --since="10 day ago" | grep "提交者的名字" >> ~/Desktop/commit.log
-git log --pretty=format:"%ai , %an: %s" --since="10 day ago" | grep "zhuqizhong" >> ~/Desktop/commit-zhuqizhong.csv
+git log --pretty=format:"%ai , %an: %s" --since="12 day ago" | grep "zhuqizhong" >> ~/Desktop/commit-zhuqizhong01.csv
 (表格自适应内容)
 
 1.1、在项目根目录下执行命令，导出 git 提交记录到桌面

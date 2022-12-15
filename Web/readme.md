@@ -20,3 +20,5 @@ GUI
 2、使用 stringify 将前端传递的对象转化为字符串：
 
 
+
+[Chrome Performance 页面性能分析指南](https://segmentfault.com/a/1190000023272526?sort=votes)
