@@ -1,3 +1,4 @@
+好高骛远，连怎么创建vue项目都给忘记了
 [尤雨溪官网](https://evanyou.me/)
 
 “程序员最讲究的就是作品，光说没用，代码要拿出来溜溜！所以现在程序员都得有自己的GitHub。”
@@ -9,16 +10,13 @@
 
 [](https://vuejs.bootcss.com/guide/)
 
-渐进式 JavaScript 框架
 
-3.x
 
-2.x
+vue init webpack project
+vue create project
 
-1.0
+怎么切换vue版本
 
-0.12
-
-0.11
+历史
 
 inject的数据什么时候能拿到

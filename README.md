@@ -20,7 +20,8 @@
 我是否能成为自己生命中英雄，还是说现在的处境只能由他人来改变，未来的岁月将会是说明
 
 --- 
-
+[https://learn.microsoft.com/zh-cn/microsoft-edge/developer/](https://learn.microsoft.com/zh-cn/microsoft-edge/developer/)
+[https://developers.google.com/web/tools/chrome-devtools/network/](https://developers.google.com/web/tools/chrome-devtools/network/)
 **阮一峰 45 岁以后的人生**
 
 **人的生理和智能的最高峰是 20 岁～30 岁这个年龄段。过了 30 岁，身体就慢慢走下坡路了，思维也不如以前活跃了。年轻的时候，长年累月的加班或许还可以承受，等进入中年，再这样拼，你的身体吃得消吗？加班好比折旧，加班越凶，折旧越快。`我见过很多程序员刚过 30 岁，但看上去好像 40 岁`，长期的缺乏运动和工作压力，使得他们的身体有着各种疾病，实际上已经不能承担高强度的工作，或者 deadline（截止期）的赶工压力了。**
@@ -52,3 +53,12 @@ Web3.0
 
 如何通过浏览器的network面板批量下载文件？
 会代码就写爬虫，不会的话用我下面的方法
+提出问题
+
+javascript
+
+
+typescript
+
+
+ 

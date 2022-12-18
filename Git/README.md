@@ -3,7 +3,7 @@
 
 
 
-git log --pretty=format:"%ai , %an: %s" --since="100 day ago" >> ~/Desktop/commit.log
+git log --pretty=format:"%ai , %an: %s" --since="16 day ago" >> ~/Desktop/commit.log
 git log --pretty=format:"%ai , %an: %s" --since="10 day ago" | grep "提交者的名字" >> ~/Desktop/commit.log
 git log --pretty=format:"%ai , %an: %s" --since="12 day ago" | grep "zhuqizhong" >> ~/Desktop/commit-zhuqizhong01.csv
 (表格自适应内容)
