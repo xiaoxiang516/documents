@@ -2,12 +2,15 @@
 [node版本切换](../../NodeJs/nvm/nvm-node.md)
 
 常用命令
-
 npm get config registry
 npm config set registry https://registry.npm.taobao.org
 npm config set registry https://npm.countrygarden.com.cn/
+npm config  set registry  https://registry.npmmirror.com
+
+
 淘宝镜像源（单次安装）：npm install --registry=https://registry.npmmirror.com     
 碧桂园内网源（单次安装）：npm install --registry=https://npm.countrygarden.com.cn/
+Npm阿里云地址：http://www.npmmirror.com
 
 1、查看一下当前源
 yarn config get registry
@@ -15,6 +18,9 @@ yarn config get registry
 yarn config set registry https://registry.npm.taobao.org
 3、或者切换为自带的
 yarn config set registry https://registry.yarnpkg.com
+
+yarn config set registry https://npm.countrygarden.com.cn/
+
 
 ### 工作
 首先：npm安装yarn
@@ -25,11 +31,26 @@ yarn设置镜像为碧桂园镜像，然后直接
 淘宝镜像源（单次安装）：npm install --registry=https://registry.npmmirror.com     
 碧桂园内网源（单次安装）：npm install --registry=https://npm.countrygarden.com.cn/
 
+### npm yarn 安装指定包
 npm install --save md5
 
+package.json
+^管后面两位，取最大最新版本
+```json
+{
+	"axios": "^0.26.0",
+	"bgy-staff-pick": "^0.1.1",
+}
+```
+^管最后一位，取最大最新版本
+```json
+{
+	"@vue/cli-plugin-babel": "~5.0.0",
+	"@vue/cli-plugin-eslint": "~5.0.0",
+}
+```
 
 ### npm
-
 [docs-npmjs](https://docs.npmjs.com/)
 Documentation for the npm registry, website, and command-line interface
 Managing your profile settings
@@ -38,6 +59,7 @@ Managing your profile settings
 [npmjs](https://www.npmjs.cn/)
 
 ### yarn
+
 [https://www.yarnpkg.cn/](https://www.yarnpkg.cn/)
 
 [https://yarn.bootcss.com/](https://yarn.bootcss.com/)
@@ -46,3 +68,67 @@ Managing your profile settings
 
 - [yarn install](https://www.yarnpkg.cn/cli/install)
 
+### EPERM: operation not permitted, 
+rename 'D:/otherSystem/gys-frontend/packages/gys-outer/node_modules/.vite/processing' -> 'D:/otherSystem/gys-frontend/packages/gys-outer/node_modules/.vite/deps'
+
+npm EPERM: operation not permitted, rename解决
+此问题并非权限问题！
+
+执行如下3条命令解决：
+
+1.清理npm缓存
+npm cache clean --force
+
+2.升级npm版本
+npm install -g npm@latest --force
+
+3.再次清理npm缓存
+npm cache clean --force
+　　
+然后再次运行npm install 即可。
+
+
+## 问题：
+npm缓存的产生？
+
+
+
+
+
+node-sass
+
+gyp ERR! find VS msvs_version not set from command line or npm config
+gyp ERR! find VS VCINSTALLDIR not set, not running in VS Command Prompt
+gyp ERR! find VS checking VS2019 (16.11.31911.196) found at:
+gyp ERR! find VS "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional"
+gyp ERR! find VS - found "Visual Studio C++ core features"
+gyp ERR! find VS - missing any VC++ toolset
+gyp ERR! find VS could not find a version of Visual Studio 2017 or newer to use
+gyp ERR! find VS looking for Visual Studio 2015
+gyp ERR! find VS - not found
+gyp ERR! find VS not looking for VS2013 as it is only supported up to Node.js 8
+gyp ERR! find VS
+gyp ERR! find VS **************************************************************
+gyp ERR! find VS You need to install the latest version of Visual Studio
+gyp ERR! find VS including the "Desktop development with C++" workload.
+gyp ERR! find VS For more information consult the documentation at:
+gyp ERR! find VS https://github.com/nodejs/node-gyp#on-windows
+gyp ERR! find VS **************************************************************
+gyp ERR! find VS
+gyp ERR! configure error
+gyp ERR! stack Error: Could not find any Visual Studio installation to use
+gyp ERR! stack     at VisualStudioFinder.fail (D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\find-visualstudio.js:122:47)
+gyp ERR! stack     at D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\find-visualstudio.js:75:16
+gyp ERR! stack     at VisualStudioFinder.findVisualStudio2013 (D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\find-visualstudio.js:363:14)
+gyp ERR! stack     at D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\find-visualstudio.js:71:14
+gyp ERR! stack     at D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\find-visualstudio.js:384:16
+gyp ERR! stack     at D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\util.js:54:7
+gyp ERR! stack     at D:\group-integrationiplatform-frontend\node_modules\node-gyp\lib\util.js:33:16
+gyp ERR! stack     at ChildProcess.exithandler (node:child_process:404:5)
+gyp ERR! stack     at ChildProcess.emit (node:events:390:28)
+gyp ERR! stack     at maybeClose (node:internal/child_process:1064:16)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)
+gyp ERR! System Windows_NT 10.0.19044
+gyp ERR! command "D:\\Program\\nodejs\\node.exe" "D:\\group-integrationiplatform-frontend\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
+gyp ERR! cwd D:\group-integrationiplatform-frontend\node_modules\node-sass
+gyp ERR! node -v v16.13.2

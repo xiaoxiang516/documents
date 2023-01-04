@@ -1,4 +1,6 @@
 
+- 如果md可以保留粘贴的文本格式就好了
+
 [![](./docs/images/daring-fireball.png)](https://daringfireball.net/projects/markdown/)
 ---
 ## Markdown 

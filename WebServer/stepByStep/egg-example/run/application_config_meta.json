@@ -1,0 +1,290 @@
+{
+  "keys": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\config\\config.default.js",
+  "view": {
+    "defaultViewEngine": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\config\\config.default.js",
+    "mapping": {
+      ".tpl": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\config\\config.default.js"
+    },
+    "root": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "news": {
+    "pageSize": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\config\\config.default.js",
+    "serverUrl": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "supportedRequests": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "ipExceptionList": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultParamCharset": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "allowArrayField": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js",
+      "disable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "env": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "name": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "version": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "description": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "main": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "dev": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "dependencies": {
+      "egg": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "timing": {
+      "slowBootActionMinDuration": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "cacheControl": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "env": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "level": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "enablePerformanceTimer": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    },
+    "useHttpClientNext": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "meta": {
+    "enable": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "logging": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "port": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\Gitee\\documents\\WebServer\\stepByStep\\egg-example\\node_modules\\egg\\config\\config.default.js"
+}
