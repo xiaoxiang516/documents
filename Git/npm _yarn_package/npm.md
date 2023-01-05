@@ -1,7 +1,11 @@
-npm查看配置信息
+npm 版本安装与node匹配
+一，node与npm版本对应关系
+官网链接：https://nodejs.org/zh-cn/download/releases/
 
 
-npm config ls
+npm install -g yarn
+
+npm查看配置信息: npm config ls
 
 C:\Users\zhuqizhong>where npm
 D:\Program\nodejs\npm

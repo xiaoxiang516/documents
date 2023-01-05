@@ -1,3 +1,6 @@
+
+
+
 [gitmind](https://gitmind.cn/app/docs)
 [https://docs.qq.com/mind/DWElSVUZSRmlRY0hY?&u=5b006e3e2e73409eb396da686500515a](https://docs.qq.com/mind/DWElSVUZSRmlRY0hY?&u=5b006e3e2e73409eb396da686500515a)
 
@@ -22,17 +25,11 @@ git只提交部分修改的文件（提交指定文件）
 
 git只提交部分修改的文件（提交指定文件）
 1/ git status -s 查看仓库状态
-
 2/ git add src/components/文件名 添加需要提交的文件名（加路径–参考git status 打印出来的文件路径）
-
 3/ git stash -u -k 忽略其他文件，把现修改的隐藏起来，这样提交的时候就不会提交未被add的文件
-
 4/ git commit -m “哪里做了修改可写入…”
-
 5/ git pull 拉取合并
-
 6/ git push 推送到远程仓库
-
 7/ git stash pop 恢复之前忽略的文件（非常重要的一步）
 ————————————————
 版权声明：本文为CSDN博主「看，未来」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
