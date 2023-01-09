@@ -128,3 +128,9 @@ gyp ERR! System Windows_NT 10.0.19044
 gyp ERR! command "D:\\Program\\nodejs\\node.exe" "D:\\group-integrationiplatform-frontend\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
 gyp ERR! cwd D:\group-integrationiplatform-frontend\node_modules\node-sass
 gyp ERR! node -v v16.13.2
+
+
+
+error An unexpected error occurred: "EEXIST: file already exists, mkdir 'C:\\Program Files\\nodejs'".
+
+Error: Cannot find module 'semver/functions/satisfies' Require stack:
