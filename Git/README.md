@@ -133,3 +133,17 @@ push commits to the origin remote
 [webstorm跳转仓库地址]()
 ![](./docs/images/webstorm-repo.png)
 [Windows: HBuilderX Git使用教程](https://ask.dcloud.net.cn/article/35247)
+
+
+
+Development Tools
+Eclipse
+IDE
+Visual Studio
+短语
+1.
+开发工具 Development ToolsEclipseIDEVisual Studio
+2.
+软件开发工具包 software development kitSDKQt SDKAndroid SDK
+3.
+开发工具包 JDKSDKQt SDK

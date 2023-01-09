@@ -1,11 +1,17 @@
-### es6
-## 阮一峰书籍见压缩包
+JavaScript解析 上下文栈
+作用域，原型链，继承
+
+### [262.ecma-international.org/6.0](https://262.ecma-international.org/6.0)
+
+*`Draft(草案) ECMA-262 / October 20, 2022`*
+[ECMA-262, 13th edition, June 2022 ECMAScript® 2022 Language Specification](https://262.ecma-international.org/13.0/)
+
+## [阮一峰书籍见压缩包](https://es6.ruanyifeng.com/#docs/intro)
 [es6](https://262.ecma-international.org/6.0/)
 [阮一峰 ECMAScript 6 (ES6) 标准入门教程 第三版](https://www.bookstack.cn/read/es6-3rd/sidebar.md)
 [ES6 入门教程](https://es6.ruanyifeng.com/#docs/module)
 
-*`Draft(草案) ECMA-262 / October 20, 2022`*
-[ECMA-262, 13th edition, June 2022 ECMAScript® 2022 Language Specification](https://262.ecma-international.org/13.0/)
+
 
 [ECMAScript® 2023 Language Specification(语言规范)](https://tc39.es/ecma262/multipage/#sec-intro)
 

@@ -7,20 +7,16 @@ npm config set registry https://registry.npm.taobao.org
 npm config set registry https://npm.countrygarden.com.cn/
 npm config  set registry  https://registry.npmmirror.com
 
+yarn config get registry #查看一下当前源
+yarn config set registry https://registry.npm.taobao.org #切换为淘宝源
+yarn config set registry https://registry.yarnpkg.com #或者切换为自带的
+
+yarn config set registry https://npm.countrygarden.com.cn/
+
 
 淘宝镜像源（单次安装）：npm install --registry=https://registry.npmmirror.com     
 碧桂园内网源（单次安装）：npm install --registry=https://npm.countrygarden.com.cn/
 Npm阿里云地址：http://www.npmmirror.com
-
-1、查看一下当前源
-yarn config get registry
-2、切换为淘宝源
-yarn config set registry https://registry.npm.taobao.org
-3、或者切换为自带的
-yarn config set registry https://registry.yarnpkg.com
-
-yarn config set registry https://npm.countrygarden.com.cn/
-
 
 ### 工作
 首先：npm安装yarn

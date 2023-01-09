@@ -20,3 +20,27 @@ vue create project
 历史
 
 inject的数据什么时候能拿到
+```html
+<!--当 waitConfirmVisible为真时调用waitConfirm组件内部的方法，可是此时组件还没渲染完成 -->
+<template>
+	<waitConfirm
+	  v-if="waitConfirmVisible"
+	  ref="sealFile"
+	  :schema="formObj.schemas[0]"
+	  v-model:formData="formObj.formData"
+	  :modeType="modeType"
+	  :isK2Cmpt="props.isK2Cmpt"
+	>
+	</waitConfirm>
+</template>
+
+<script>
+	ZlType: {
+	  'event:change': () => {
+		nextTick(() => {
+		  sealFile.value?.changeTemplate()
+		})
+	  }
+	},
+</script>
+```
