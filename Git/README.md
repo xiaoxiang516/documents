@@ -1,5 +1,5 @@
 
-
+git stash apply stash@{2}
 
 [gitmind](https://gitmind.cn/app/docs)
 [https://docs.qq.com/mind/DWElSVUZSRmlRY0hY?&u=5b006e3e2e73409eb396da686500515a](https://docs.qq.com/mind/DWElSVUZSRmlRY0hY?&u=5b006e3e2e73409eb396da686500515a)
@@ -34,10 +34,7 @@ git只提交部分修改的文件（提交指定文件）
 ————————————————
 版权声明：本文为CSDN博主「看，未来」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_43762191/article/details/126679760
-
-
-                                                                                                                                                                                                                                            
-
+ 
 
 
 
