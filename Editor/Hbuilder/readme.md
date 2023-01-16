@@ -2,3 +2,5 @@
 HBuilder: **Ctrl + Shift +R**
 vsCode: 向上/向下复制一行：Shift + Alt + Up/Down（即上下键）
 webstorm: ctrl d
+
+ctrl alt左键一下选中，全部删除

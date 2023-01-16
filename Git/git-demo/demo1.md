@@ -78,7 +78,3 @@ unity也支持忽略以.开头的文件的
 
 新建.gitkeep文件
 在空文件夹下新建.gitkeep文件，是空文件，这样就能提交git仓库了
-————————————————
-版权声明：本文为CSDN博主「 codingriver 」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/codingriver/article/details/83414795
-

@@ -1,3 +1,12 @@
+Git的安装教程
+
+阮一峰
+**git-scm的意思是：git是一种源码管理系统（source code management，缩写为SCM）。**
+它对当前文件提供版本管理功能，核心思想是对当前文件建立一个对象数据库（object database），将历史版本信息存放在这个数据库中。
+
+[官网](https://www.bookstack.cn/read/git-tutorial/docs-basic.md#Git)
+
+
 
 git stash apply stash@{2}
 
@@ -35,15 +44,7 @@ git只提交部分修改的文件（提交指定文件）
 版权声明：本文为CSDN博主「看，未来」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_43762191/article/details/126679760
  
-
-
-
-
-绪论
-
-
-对话形式（讨论式写作），访谈式写作（问答式写作）
-
+ 
 
 提示: 由于 Git 不支持空文件夾，创建文件夹后会生成空的 .keep 文件
 - [w3schools-git](https://www.w3schools.com/git/git_getstarted.asp?remote=github)
@@ -141,3 +142,9 @@ Visual Studio
 软件开发工具包 software development kitSDKQt SDKAndroid SDK
 3.
 开发工具包 JDKSDKQt SDK
+
+
+绪论
+
+
+对话形式（讨论式写作），访谈式写作（问答式写作）
