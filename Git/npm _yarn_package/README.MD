@@ -84,6 +84,40 @@ npm cache clean --force
 然后再次运行npm install 即可。
 
 
+npm install jquery@3.0.0 --save
+1
+在package.json中可以看到：
+
+"jquery": "^3.0.0
+1、全局安装
+
+npm install xxx -g  //模块将被下载安装到【全局目录】中
+2、本地安装
+
+npm install xxx //则是将模块下载到当前命令行所在目录
+3、信息写入
+
+npm install xxx --save   // 简写：npm install xxx -S
+npm install xxx --save-dev  // 简写：npm install xxx -D
+//安装的同时，将信息写入package.json中项目路径中
+--save 将依赖包名称添加到 package.json 文件 dependencies 下
+--save-dev 则添加到 package.json 文件 devDependencies 下
+--save 是你发布之后还依赖的东西
+--save-dev 是你开发时候依赖的东西
+————————————————
+版权声明：本文为CSDN博主「雪梅零落」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/xuaner8786/article/details/81630445/
+
+
+
+
+
+
+
+
+
+
+
 ## 问题：
 npm缓存的产生？
 

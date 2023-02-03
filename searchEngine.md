@@ -1,15 +1,22 @@
-### 首页
-
-前端学习大纲
+researcher
+书的结构
+《Vue.js设计》
+封面，背面
+前序，后序
 
 书本的封面页制作
 Word到哪设计书籍封套效果的封面
 
-目录设计
-注释设计
-篇章设计
+目录，注释，总结
+篇章设计，课程设计
+如果只学JavaScript,那么需要看看通论书籍
+- 操作系统
+- 
 
-课程设计
+### 首页
+
+前端学习大纲
+
 
 宋诗选注
 当内在自足的人遇到一起，一个圆碰到另一个圆。
@@ -36,7 +43,7 @@ JS: Front-end JS framework
 
 TS
 
-
+[图灵社区](https://www.ituring.com.cn/)
 ---
 
 <!-- - [![](./docs/images/zhihu.png){:height="100px" width="400px"}](https://www.zhihu.com/)
