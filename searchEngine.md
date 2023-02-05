@@ -43,7 +43,6 @@ JS: Front-end JS framework
 
 TS
 
-[图灵社区](https://www.ituring.com.cn/)
 ---
 
 <!-- - [![](./docs/images/zhihu.png){:height="100px" width="400px"}](https://www.zhihu.com/)
