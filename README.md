@@ -1,9 +1,69 @@
-## 一间自己的房间
+### 生活规律
+晨
+刷牙
+晨跑
+午餐
+JavaScript回顾
+开始工作
 
+
+在线笔记本
+
+清除垃圾，需要整理，人就是一台高级电脑。
+首先要快速定位垃圾在哪里
+要快速收集、聚合垃圾
+
+C:\Users\zhuqizhong\Documents\Tencent Files\1920702314
+
+## [一间自己的房间](https://xiaoxiang516.github.io/)
 # [webdesignmuseum](https://www.webdesignmuseum.org/)
 https://www.webdesignmuseum.org/web-design-history/timeline-1990-1994
 http://grid-layout.com/grid-basics.html
 ---
+
+个人网站更改计划
+个人网站改造
+https://aimingoo.github.io/
+http://www.ruanyifeng.com/home.html
+https://www.zhangxinxu.com/wordpress/
+[](https://github.com/Feiyizhan/Feiyizhan.github.io)
+云游君
+希望能成为一个有趣的人 Blog: yunyoujun.cn
+[](https://www.yunyoujun.cn/about)
+
+学习与工作时间，探究时间
+放松时间
+documents\ECMA-262\typescript\w3schools-ts.docx
+目标
+回去补简历,简历更新,假如被辞职
+
+计划：**行成于思毁于随**的意思是要有计划，要想清楚自己要做什么，想清楚的意思是至少要明白自己要做哪几步
+01. [教育家](https://weread.qq.com/web/shelf/archive/1672203276)
+ 心灵上的教育工作者,成为一名教育者
+ 阅读写作翻译
+ 阅读、背诵
+02. 27岁之前能翻译《楚辞》
+**以《楚辞》为中心，不能得长生则不学**
+楚辞音韵
+
+03. 翻译《JavaScript高级程序设计第四版》 程序员
+ 1. 英语读音，有声读
+ 2. 
+
+javascript搞懂函数（包括promise与异步函数（async/await））很多问题迎刃而解,而不是对象。
+虽然函数也是对象，对了，先搞清楚函数也是对象，他的自有属性和方法。
+计算机专业 研究生与博士
+代码精读与略读
+
+周三 周六打扫卫生，清洁衣服卧室， 其余时间锻炼
+
+
+网站构建工具 http://www.ruanyifeng.com/blog/2015/03/build-website-with-make.html
+网站开发正变得越来越专业，涉及到各种各样的工具和流程，迫切需要构建自动化。
+
+所谓"构建自动化"，就是指使用构建工具，自动实现"从源码到网页"的开发流程。这有利于提高开发效率、改善代码质量。
+
+
 
 [时间管理的七句话](https://www.ruanyifeng.com/blog/2016/05/time-management.html)
 "进程切换非常昂贵，避免多任务，保持单进程。"

@@ -1,10 +1,11 @@
-JavaScript解析 上下文栈
-作用域，原型链，继承
 
 ### [262.ecma-international.org/6.0](https://262.ecma-international.org/6.0)
 
 *`Draft(草案) ECMA-262 / October 20, 2022`*
 [ECMA-262, 13th edition, June 2022 ECMAScript® 2022 Language Specification](https://262.ecma-international.org/13.0/)
+[ECMAScript® 2023 Language Specification(语言规范)](https://tc39.es/ecma262/multipage/#sec-intro)
+[](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+
 
 ## [阮一峰书籍见压缩包](https://es6.ruanyifeng.com/#docs/intro)
 [es6](https://262.ecma-international.org/6.0/)
@@ -13,13 +14,14 @@ JavaScript解析 上下文栈
 
 
 
-[ECMAScript® 2023 Language Specification(语言规范)](https://tc39.es/ecma262/multipage/#sec-intro)
 
-[](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
 
 [JavaScript 二十年](https://cn.history.js.org/index.html)
 [es6-ruanyifeng](https://es6.ruanyifeng.com/)
 [聊一聊进行中的TC39提案（stage1/2/3）](https://zhuanlan.zhihu.com/p/381256585)
+
+JavaScript解析 上下文栈
+作用域，原型链，继承
 
 
 

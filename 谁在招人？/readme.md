@@ -124,6 +124,7 @@ winter(程劭非) 阿里巴巴高级技术专家，著名JavaScript专家。曾�
 知乎：https://www.zhihu.com/people/winter-25/asks
 博客：https://www.cnblogs.com/winter-cn/
 Github：https://github.com/wintercn
+
 廖雪峰 知名博主，著有号称史上最浅显易懂的Git教程，口碑不错的《JS教程》
 个人网站：https://www.liaoxuefeng.com/
 微博：https://weibo.com/liaoxuefeng?is_all=1
@@ -141,6 +142,7 @@ Github：https://github.com/zhangxinxu
 个人网站：https://jiongks.name/
 微博：https://weibo.com/mx006?is_all=1
 Github：https://github.com/jinjiang/
+(此人的网址观感极差，不知是何审美)
 
 月影(吴亮) 奇虎360高级技术经理，360前端团队奇舞团负责人
 微博：https://weibo.com/silverna?is_all=1
