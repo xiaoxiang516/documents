@@ -1,11 +1,39 @@
+## ![Windows关闭指定端口命令](README_files/1.jpg)
+netstat -ano|findstr 9527
+taskkill /PID 22876 /F
+ TCP    0.0.0.0:9528           0.0.0.0:0              **LISTENING**       23516
+
+
 Git的安装教程
+git bash 与git命令行
+
+[阮一峰git教程](https://www.bookstack.cn/read/git-tutorial/docs-basic.md#Git)
+
+[node版本切换](../../NodeJs/nvm/nvm-node.md)
+
+常用命令
+npm get config registry
+npm config set registry https://registry.npm.taobao.org
+npm config set registry https://npm.countrygarden.com.cn/
+npm config  set registry  https://registry.npmmirror.com
+
+yarn config get registry #查看一下当前源
+yarn config set registry https://registry.npm.taobao.org #切换为淘宝源
+yarn config set registry https://registry.yarnpkg.com #或者切换为自带的
+
+yarn config set registry https://npm.countrygarden.com.cn/
+
+
+淘宝镜像源（单次安装）：npm install --registry=https://registry.npmmirror.com     
+碧桂园内网源（单次安装）：npm install --registry=https://npm.countrygarden.com.cn/
+Npm阿里云地址：http://www.npmmirror.com
+
+**：更换镜像会导致重新npm login
+
 
 阮一峰
 **git-scm的意思是：git是一种源码管理系统（source code management，缩写为SCM）。**
 它对当前文件提供版本管理功能，核心思想是对当前文件建立一个对象数据库（object database），将历史版本信息存放在这个数据库中。
-
-[官网](https://www.bookstack.cn/read/git-tutorial/docs-basic.md#Git)
-
 
 
 git stash apply stash@{2}
@@ -41,8 +69,7 @@ git只提交部分修改的文件（提交指定文件）
 6/ git push 推送到远程仓库
 7/ git stash pop 恢复之前忽略的文件（非常重要的一步）
 ————————————————
-版权声明：本文为CSDN博主「看，未来」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/qq_43762191/article/details/126679760
+
  
  
 
@@ -148,3 +175,15 @@ Visual Studio
 
 
 对话形式（讨论式写作），访谈式写作（问答式写作）
+
+
+## Unlink of file ‘xx‘ failed. Should I try again? (y/n) 解决办法
+
+原因：一般遇到这个错输入y/n都不能解决问题，出现这个问题的原因可能是其他程序正在操作git目录下面的文件，导致git无法关联该文件。
+
+比如用dos命令窗或者git bash打开当前分支的文件，不关闭的情况下再切换到其他分支，等再切回来的时候就会报这个错，怎么确认(y)都无济于事。
+
+解决方法：这里的 Unlink of file ‘xx’ failed. 这个 xx 就是被占用的文件，只要找到占用这个文件的程序或进程，并把它停掉就可以了。
+
+可以借助unlocker软件帮你查找，如果实在找不到就直接重启电脑。。
+ 

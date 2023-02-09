@@ -9,11 +9,15 @@ JavaScript回顾
 
 在线笔记本
 
-清除垃圾，需要整理，人就是一台高级电脑。
+### 清除垃圾，需要整理，人就是一台高级电脑。
 首先要快速定位垃圾在哪里
 要快速收集、聚合垃圾
 
 C:\Users\zhuqizhong\Documents\Tencent Files\1920702314
+C:\Users\zhuqizhong\Documents\WeChat Files
+## 尝试腾讯电脑管家的每一个功能
+如软件搬家
+虚拟内存已转移到d盘好不好
 
 ## [一间自己的房间](https://xiaoxiang516.github.io/)
 # [webdesignmuseum](https://www.webdesignmuseum.org/)
@@ -30,6 +34,10 @@ https://www.zhangxinxu.com/wordpress/
 云游君
 希望能成为一个有趣的人 Blog: yunyoujun.cn
 [](https://www.yunyoujun.cn/about)
+[](https://hexo.io/zh-cn/index.html)
+
+[](https://vuepress.vuejs.org/zh/)
+[](https://nestjs.com/)
 
 学习与工作时间，探究时间
 放松时间

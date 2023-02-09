@@ -1,16 +1,11 @@
 ## 目录
 markdown中支持html
 典型理论：网页功能分析
-重点理论
 - [跳转]()
 - [图片](#图片)
-- [表格]()
+- [表格](#表格)
 - [注释]()
 - [html-md](#html-md)
-- []()
-- []()
-- []()
-
 
 ### html-md
 <!-- markdown中使用样式 -->
@@ -206,3 +201,21 @@ Int32|4|32位带符号整数|int
 Uint32|4|32位不带符号的整数|unsigned int
 Float32|4|32位浮点数|float
 Float64|8|64位浮点数|double
+
+
+自定义容器
+::: tip 提示
+this is a tip
+:::
+
+::: warning 注意
+this is a tip
+:::
+
+::: danger 警告
+this is a tip
+:::
+
+支持Emoji
+代码：
+:tada: :100: :bamboo: :gift_heart: :fire:

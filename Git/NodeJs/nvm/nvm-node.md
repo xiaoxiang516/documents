@@ -1,3 +1,4 @@
+[nvm](https://nvm.uihtm.com/)
 npm -v 6.11.3
 node -v v12.12.0
 nvm install
