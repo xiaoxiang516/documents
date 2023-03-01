@@ -1,5 +1,40 @@
 我是否能成为自己生命中英雄，还是说现在的处境只能由他人来改变，未来的岁月将会是说明
 
+不写成文字不足以了解，不足以反馈，不足以说明，不足以知道。
+不写成文字就讲不清楚
+
+
+微前端
+微仓库
+
+[lolitasian](https://lolitasian.github.io/about/)
+
+
+[](https://juejin.cn/column/7041871760995647502)
+[冴羽专栏](https://juejin.cn/user/712139234359182/columns)
+学习的八个境界 | 飞行的蜗牛 (r9it.com)
+https://www.r9it.com/20190719/8-realms-of-learning.html
+演绎学习
+
+[github排名](https://githubrank.com/)
+中文圈，谁是最好的 JavaScript 程序员？
+玉伯
+蚂蚁金服 研究员
+前端架构这一块，很佩服周爱民老师（愚公）
+[](https://blog.csdn.net/aimingoo)
+老程序员，hax、月影（https://github.com/akira-cn）、克军等都挺不错的
+[hax](https://blog.csdn.net/hax?type=blog)
+[](https://www.iteye.com/blog/user/hax)
+
+前端应用这一块，楼上的小虎很不错，还有 YY 等不少牛逼的攻城师
+微前端架构体系--克军.pdf 百度网盘
+
+[克军讲如何成为一名专业的前端工程师](https://www.bilibili.com/video/BV1yV411n716/)
+
+
+[docx转HTML](https://cloudconvert.com/docx-to-html)
+https://github.com/yanhaijing
+https://github.com/i5ting
 ##测试环境搭建
 - ts
 - vue
@@ -24,65 +59,13 @@
 ---- 
 
 
-[熟悉Vue细节](https://cn.vuejs.org/guide/introduction.html)
+[](https://blog.csdn.net/weixin_52834435/article/details/122379232?spm=1001.2014.3001.5502
+https://blog.csdn.net/weixin_52834435/category_11584583.html
 
-个人网站更改及网络通识相关计划
-## [一间自己的房间](https://xiaoxiang516.github.io/)
+https://lolitasian.blog.csdn.net/article/details/100894172?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-100894172-blog-52598863.pc_relevant_3mothn_strategy_recovery&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-100894172-blog-52598863.pc_relevant_3mothn_strategy_recovery&utm_relevant_index=1)
 
----
-[](https://vuepress-theme-blog.billyyyyy3320.com/#intro)
-
-https://aimingoo.github.io/
-http://www.ruanyifeng.com/home.html
-https://www.zhangxinxu.com/wordpress/
-[](https://github.com/Feiyizhan/Feiyizhan.github.io)
-云游君
-希望能成为一个有趣的人 Blog: yunyoujun.cn
-[](https://www.yunyoujun.cn/about)
-[](https://hexo.io/zh-cn/index.html)
-
-[](https://vuepress.vuejs.org/zh/)
-[](https://nestjs.com/)
-
-网站构建工具 http://www.ruanyifeng.com/blog/2015/03/build-website-with-make.html
-网站开发正变得越来越专业，涉及到各种各样的工具和流程，迫切需要构建自动化。
-
-所谓"构建自动化"，就是指使用构建工具，自动实现"从源码到网页"的开发流程。这有利于提高开发效率、改善代码质量。
-
-学习与工作时间，探究时间 放松时间
-documents\ECMA-262\typescript\w3schools-ts.docx
-目标
-回去补简历,简历更新,假如被辞职
-
-计划：**行成于思毁于随**的意思是要有计划，要想清楚自己要做什么，想清楚的意思是至少要明白自己要做哪几步
-
-----
-
-## 楚辞的研究与教学
-
-27岁之前能翻译《楚辞》
-**以《楚辞》为中心，不能得长生则不学**
-楚辞音韵
-资料目录整理，列表
-[教育家](https://weread.qq.com/web/shelf/archive/1672203276)
- 心灵上的教育工作者,成为一名教育者
- 阅读写作翻译
- 阅读、背诵
  
  
- 
-JavaScript高级程序设计第四版》翻译
- 1. 英语读音，有声读
- 2. 
-
-javascript搞懂函数（包括promise与异步函数（async/await））很多问题迎刃而解,而不是对象。
-虽然函数也是对象，对了，先搞清楚函数也是对象，他的自有属性和方法。
-计算机专业 研究生与博士
-代码精读与略读
-
-
-
-
 # [webdesignmuseum](https://www.webdesignmuseum.org/)
 https://www.webdesignmuseum.org/web-design-history/timeline-1990-1994
 http://grid-layout.com/grid-basics.html
@@ -111,7 +94,6 @@ http://grid-layout.com/grid-basics.html
 
 **人的生理和智能的最高峰是 20 岁～30 岁这个年龄段。过了 30 岁，身体就慢慢走下坡路了，思维也不如以前活跃了。年轻的时候，长年累月的加班或许还可以承受，等进入中年，再这样拼，你的身体吃得消吗？加班好比折旧，加班越凶，折旧越快。`我见过很多程序员刚过 30 岁，但看上去好像 40 岁`，长期的缺乏运动和工作压力，使得他们的身体有着各种疾病，实际上已经不能承担高强度的工作，或者 deadline（截止期）的赶工压力了。**
 
-不写成文字就讲不清楚
 基础是业务，开始是业务，也就是提出问题。业务，产品，开发，测试，运维
 
 知识量太大有时会被吞没
@@ -205,3 +187,11 @@ javascript，typescript
 
 扎心：离开风厂后的几个月
 除了工作，对周边的同事一无所知，这里是工作并产出价值的地方，不是交朋友的地方。
+
+
+学习与工作时间，探究时间 放松时间
+documents\ECMA-262\typescript\w3schools-ts.docx
+目标
+回去补简历,简历更新,假如被辞职
+
+计划：**行成于思毁于随**的意思是要有计划，要想清楚自己要做什么，想清楚的意思是至少要明白自己要做哪几步

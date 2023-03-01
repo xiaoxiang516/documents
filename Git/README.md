@@ -1,3 +1,7 @@
+[版本回退](https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192)
+[Git高级教程(二)] 远程仓库版本回退方法
+C:\Users\zhuqizhong\.gitconfig
+
 ## ![Windows关闭指定端口命令](README_files/1.jpg)
 netstat -ano|findstr 9527
 taskkill /PID 22876 /F
@@ -12,22 +16,22 @@ git bash 与git命令行
 [node版本切换](../../NodeJs/nvm/nvm-node.md)
 
 常用命令
+#查看一下当前源
 npm get config registry
 npm config set registry https://registry.npm.taobao.org
 npm config set registry https://npm.countrygarden.com.cn/
 npm config  set registry  https://registry.npmmirror.com
 
-yarn config get registry #查看一下当前源
+yarn config get registry
 yarn config set registry https://registry.npm.taobao.org #切换为淘宝源
+yarn config set registry https://npm.countrygarden.com.cn/
 yarn config set registry https://registry.yarnpkg.com #或者切换为自带的
 
-yarn config set registry https://npm.countrygarden.com.cn/
 
 
 淘宝镜像源（单次安装）：npm install --registry=https://registry.npmmirror.com     
 碧桂园内网源（单次安装）：npm install --registry=https://npm.countrygarden.com.cn/
 Npm阿里云地址：http://www.npmmirror.com
-
 **：更换镜像会导致重新npm login
 
 
